@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="User_tdd" namespace="" name="User_tdd" abstract="false" final="false" start="7" end="94">
+  <file path="/opt/lampp/htdocs/poc2/application/controllers/testing/model" file="User_tdd.php" realpath="/opt/lampp/htdocs/poc2/application/controllers/testing/model/User_tdd.php" size="3778" time="2019-02-17T21:57:18+01:00" unixtime="1550437038" sha1="bcf67b5376092d55deba824ba2f860f43632386d" relative="controllers/testing/model/User_tdd.php"/>
+  <extends full="CI_Controller" namespace="" name="CI_Controller" unresolved="true"/>
+  <constructor name="__construct" start="9" end="13" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="index" start="15" end="51" abstract="false" final="false" static="false" visibility="public">
+    <inline>
+      <comment value="TEST CASE ****" line="16"/>
+    </inline>
+  </method>
+  <method name="checkingUserDoesNotExist" start="56" end="59" abstract="false" final="false" static="false" visibility="private">
+    <docblock>
+      <description compact="This test checks that the test case does not already exist prior to testing"/>
+    </docblock>
+    <parameter name="username" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="registrationWithValidDetails" start="65" end="68" abstract="false" final="false" static="false" visibility="private">
+    <docblock>
+      <description compact="This test checks that creating a user with valid details returns true when inserting the data into the database."/>
+    </docblock>
+    <parameter name="fname" byreference="false" type="{unknown}"/>
+    <parameter name="lname" byreference="false" type="{unknown}"/>
+    <parameter name="username" byreference="false" type="{unknown}"/>
+    <parameter name="email" byreference="false" type="{unknown}"/>
+    <parameter name="enc_pass" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="registrationThenCheckingUserLogin" start="74" end="78" abstract="false" final="false" static="false" visibility="private">
+    <docblock>
+      <description compact="This test checks that creating a user with valid details then allows the same user to log in via the user model."/>
+    </docblock>
+    <parameter name="fname" byreference="false" type="{unknown}"/>
+    <parameter name="lname" byreference="false" type="{unknown}"/>
+    <parameter name="username" byreference="false" type="{unknown}"/>
+    <parameter name="email" byreference="false" type="{unknown}"/>
+    <parameter name="enc_pass" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="assertThatProfileExists" start="80" end="84" abstract="false" final="false" static="false" visibility="private">
+    <parameter name="firstname" byreference="false" type="{unknown}"/>
+    <parameter name="lastname" byreference="false" type="{unknown}"/>
+    <parameter name="username" byreference="false" type="{unknown}"/>
+    <parameter name="email" byreference="false" type="{unknown}"/>
+    <parameter name="pass" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="cleanupRegisteredAccounts" start="89" end="92" abstract="false" final="false" static="false" visibility="private">
+    <docblock>
+      <description compact="This function removes the account created in the test run to allow test re-runs."/>
+    </docblock>
+    <parameter name="username" byreference="false" type="{unknown}"/>
+    <parameter name="last_name" byreference="false" type="{unknown}"/>
+  </method>
+</class>

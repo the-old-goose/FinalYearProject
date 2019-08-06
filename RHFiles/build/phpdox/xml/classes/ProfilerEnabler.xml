@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="ProfilerEnabler" namespace="" name="ProfilerEnabler" abstract="false" final="false" start="10" end="17">
+  <file path="/opt/lampp/htdocs/poc2/application/hooks" file="hooks.profiler.php" realpath="/opt/lampp/htdocs/poc2/application/hooks/hooks.profiler.php" size="403" time="2018-11-09T13:33:01+01:00" unixtime="1541766781" sha1="cacc00ca0ec05dfdd35001e6f6ef726c4bc62f31" relative="hooks/hooks.profiler.php"/>
+  <method name="enableProfiler" start="13" end="16" abstract="false" final="false" static="false" visibility="public"/>
+</class>

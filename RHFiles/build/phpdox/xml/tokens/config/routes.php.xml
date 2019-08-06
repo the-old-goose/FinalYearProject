@@ -1,0 +1,242 @@
+<?xml version="1.0"?>
+<source xmlns="http://xml.phpdox.net/token">
+  <file xmlns="http://xml.phpdox.net/src" path="/opt/lampp/htdocs/poc2/application/config" file="routes.php" realpath="/opt/lampp/htdocs/poc2/application/config/routes.php" size="2347" time="2018-11-26T17:23:44+01:00" unixtime="1543249424" sha1="24ce8e9450e381926388ef2ef7af1f4f41031b53" relative="config/routes.php"/>
+  <line no="1">
+    <token name="T_OPEN_TAG">&lt;?php</token>
+  </line>
+  <line no="2">
+    <token name="T_STRING">defined</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'BASEPATH'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_LOGICAL_OR">OR</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_EXIT">exit</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'No direct script access allowed'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="3"/>
+  <line no="4">
+    <token name="T_COMMENT">/*</token>
+  </line>
+  <line no="5">
+    <token name="T_COMMENT">| -------------------------------------------------------------------------</token>
+  </line>
+  <line no="6">
+    <token name="T_COMMENT">| URI ROUTING</token>
+  </line>
+  <line no="7">
+    <token name="T_COMMENT">| -------------------------------------------------------------------------</token>
+  </line>
+  <line no="8">
+    <token name="T_COMMENT">| This file lets you re-map URI requests to specific controller functions.</token>
+  </line>
+  <line no="9">
+    <token name="T_COMMENT">|</token>
+  </line>
+  <line no="10">
+    <token name="T_COMMENT">| Typically there is a one-to-one relationship between a URL string</token>
+  </line>
+  <line no="11">
+    <token name="T_COMMENT">| and its corresponding controller class/method. The segments in a</token>
+  </line>
+  <line no="12">
+    <token name="T_COMMENT">| URL normally follow this pattern:</token>
+  </line>
+  <line no="13">
+    <token name="T_COMMENT">|</token>
+  </line>
+  <line no="14">
+    <token name="T_COMMENT">| example.com/class/method/id/</token>
+  </line>
+  <line no="15">
+    <token name="T_COMMENT">|</token>
+  </line>
+  <line no="16">
+    <token name="T_COMMENT">| In some instances, however, you may want to remap this relationship</token>
+  </line>
+  <line no="17">
+    <token name="T_COMMENT">| so that a different class/function is called than the one</token>
+  </line>
+  <line no="18">
+    <token name="T_COMMENT">| corresponding to the URL.</token>
+  </line>
+  <line no="19">
+    <token name="T_COMMENT">|</token>
+  </line>
+  <line no="20">
+    <token name="T_COMMENT">| Please see the user guide for complete details:</token>
+  </line>
+  <line no="21">
+    <token name="T_COMMENT">|</token>
+  </line>
+  <line no="22">
+    <token name="T_COMMENT">| https://codeigniter.com/user_guide/general/routing.html</token>
+  </line>
+  <line no="23">
+    <token name="T_COMMENT">|</token>
+  </line>
+  <line no="24">
+    <token name="T_COMMENT">| -------------------------------------------------------------------------</token>
+  </line>
+  <line no="25">
+    <token name="T_COMMENT">| RESERVED ROUTES</token>
+  </line>
+  <line no="26">
+    <token name="T_COMMENT">| -------------------------------------------------------------------------</token>
+  </line>
+  <line no="27">
+    <token name="T_COMMENT">|</token>
+  </line>
+  <line no="28">
+    <token name="T_COMMENT">| There are three reserved routes:</token>
+  </line>
+  <line no="29">
+    <token name="T_COMMENT">|</token>
+  </line>
+  <line no="30">
+    <token name="T_COMMENT">| $route['default_controller'] = 'welcome';</token>
+  </line>
+  <line no="31">
+    <token name="T_COMMENT">|</token>
+  </line>
+  <line no="32">
+    <token name="T_COMMENT">| This route indicates which controller class should be loaded if the</token>
+  </line>
+  <line no="33">
+    <token name="T_COMMENT">| URI contains no data. In the above example, the "welcome" class</token>
+  </line>
+  <line no="34">
+    <token name="T_COMMENT">| would be loaded.</token>
+  </line>
+  <line no="35">
+    <token name="T_COMMENT">|</token>
+  </line>
+  <line no="36">
+    <token name="T_COMMENT">| $route['404_override'] = 'errors/page_missing';</token>
+  </line>
+  <line no="37">
+    <token name="T_COMMENT">|</token>
+  </line>
+  <line no="38">
+    <token name="T_COMMENT">| This route will tell the Router which controller/method to use if those</token>
+  </line>
+  <line no="39">
+    <token name="T_COMMENT">| provided in the URL cannot be matched to a valid route.</token>
+  </line>
+  <line no="40">
+    <token name="T_COMMENT">|</token>
+  </line>
+  <line no="41">
+    <token name="T_COMMENT">| $route['translate_uri_dashes'] = FALSE;</token>
+  </line>
+  <line no="42">
+    <token name="T_COMMENT">|</token>
+  </line>
+  <line no="43">
+    <token name="T_COMMENT">| This is not exactly a route, but allows you to automatically route</token>
+  </line>
+  <line no="44">
+    <token name="T_COMMENT">| controller and method names that contain dashes. '-' isn't a valid</token>
+  </line>
+  <line no="45">
+    <token name="T_COMMENT">| class or method name character, so it requires translation.</token>
+  </line>
+  <line no="46">
+    <token name="T_COMMENT">| When you set this option to TRUE, it will replace ALL dashes in the</token>
+  </line>
+  <line no="47">
+    <token name="T_COMMENT">| controller and method URI segments.</token>
+  </line>
+  <line no="48">
+    <token name="T_COMMENT">|</token>
+  </line>
+  <line no="49">
+    <token name="T_COMMENT">| Examples: my-controller/index -&gt; my_controller/index</token>
+  </line>
+  <line no="50">
+    <token name="T_COMMENT">|   my-controller/my-method -&gt; my_controller/my_method</token>
+  </line>
+  <line no="51">
+    <token name="T_COMMENT">*/</token>
+  </line>
+  <line no="52">
+    <token name="T_VARIABLE">$route</token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'default_controller'</token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'pages/view'</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="53">
+    <token name="T_VARIABLE">$route</token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'404_override'</token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">''</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="54">
+    <token name="T_VARIABLE">$route</token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'translate_uri_dashes'</token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">TRUE</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="55"/>
+  <line no="56">
+    <token name="T_COMMENT">/*</token>
+  </line>
+  <line no="57">
+    <token name="T_COMMENT">| -------------------------------------------------------------------------</token>
+  </line>
+  <line no="58">
+    <token name="T_COMMENT">| Sample REST API Routes</token>
+  </line>
+  <line no="59">
+    <token name="T_COMMENT">| -------------------------------------------------------------------------</token>
+  </line>
+  <line no="60">
+    <token name="T_COMMENT">*/</token>
+  </line>
+  <line no="61">
+    <token name="T_VARIABLE">$route</token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'api/example/users/(:num)'</token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'api/example/users/id/$1'</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_COMMENT">// Example 4</token>
+  </line>
+  <line no="62">
+    <token name="T_VARIABLE">$route</token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'api/example/users/(:num)(\.)([a-zA-Z0-9_-]+)(.*)'</token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'api/example/users/id/$1/format/$3$4'</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_COMMENT">// Example 8</token>
+  </line>
+  <line no="63"/>
+</source>

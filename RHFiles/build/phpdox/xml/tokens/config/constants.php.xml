@@ -1,0 +1,609 @@
+<?xml version="1.0"?>
+<source xmlns="http://xml.phpdox.net/token">
+  <file xmlns="http://xml.phpdox.net/src" path="/opt/lampp/htdocs/poc2/application/config" file="constants.php" realpath="/opt/lampp/htdocs/poc2/application/config/constants.php" size="4322" time="2018-06-12T15:45:46+02:00" unixtime="1528811146" sha1="ae3f1b02b3aeb5d6a8a436ae6dae0138592f11b9" relative="config/constants.php"/>
+  <line no="1">
+    <token name="T_OPEN_TAG">&lt;?php</token>
+  </line>
+  <line no="2">
+    <token name="T_STRING">defined</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'BASEPATH'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_LOGICAL_OR">OR</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_EXIT">exit</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'No direct script access allowed'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="3"/>
+  <line no="4">
+    <token name="T_COMMENT">/*</token>
+  </line>
+  <line no="5">
+    <token name="T_COMMENT">|--------------------------------------------------------------------------</token>
+  </line>
+  <line no="6">
+    <token name="T_COMMENT">| Display Debug backtrace</token>
+  </line>
+  <line no="7">
+    <token name="T_COMMENT">|--------------------------------------------------------------------------</token>
+  </line>
+  <line no="8">
+    <token name="T_COMMENT">|</token>
+  </line>
+  <line no="9">
+    <token name="T_COMMENT">| If set to TRUE, a backtrace will be displayed along with php errors. If</token>
+  </line>
+  <line no="10">
+    <token name="T_COMMENT">| error_reporting is disabled, the backtrace will not display, regardless</token>
+  </line>
+  <line no="11">
+    <token name="T_COMMENT">| of this setting</token>
+  </line>
+  <line no="12">
+    <token name="T_COMMENT">|</token>
+  </line>
+  <line no="13">
+    <token name="T_COMMENT">*/</token>
+  </line>
+  <line no="14">
+    <token name="T_STRING">defined</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'SHOW_DEBUG_BACKTRACE'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_LOGICAL_OR">OR</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">define</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'SHOW_DEBUG_BACKTRACE'</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">TRUE</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="15"/>
+  <line no="16">
+    <token name="T_COMMENT">/*</token>
+  </line>
+  <line no="17">
+    <token name="T_COMMENT">|--------------------------------------------------------------------------</token>
+  </line>
+  <line no="18">
+    <token name="T_COMMENT">| File and Directory Modes</token>
+  </line>
+  <line no="19">
+    <token name="T_COMMENT">|--------------------------------------------------------------------------</token>
+  </line>
+  <line no="20">
+    <token name="T_COMMENT">|</token>
+  </line>
+  <line no="21">
+    <token name="T_COMMENT">| These prefs are used when checking and setting modes when working</token>
+  </line>
+  <line no="22">
+    <token name="T_COMMENT">| with the file system.  The defaults are fine on servers with proper</token>
+  </line>
+  <line no="23">
+    <token name="T_COMMENT">| security, but you may wish (or even need) to change the values in</token>
+  </line>
+  <line no="24">
+    <token name="T_COMMENT">| certain environments (Apache running a separate process for each</token>
+  </line>
+  <line no="25">
+    <token name="T_COMMENT">| user, PHP under CGI with Apache suEXEC, etc.).  Octal values should</token>
+  </line>
+  <line no="26">
+    <token name="T_COMMENT">| always be used to set the mode correctly.</token>
+  </line>
+  <line no="27">
+    <token name="T_COMMENT">|</token>
+  </line>
+  <line no="28">
+    <token name="T_COMMENT">*/</token>
+  </line>
+  <line no="29">
+    <token name="T_STRING">defined</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'FILE_READ_MODE'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_WHITESPACE">  </token>
+    <token name="T_LOGICAL_OR">OR</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">define</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'FILE_READ_MODE'</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_LNUMBER">0644</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="30">
+    <token name="T_STRING">defined</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'FILE_WRITE_MODE'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_LOGICAL_OR">OR</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">define</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'FILE_WRITE_MODE'</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_LNUMBER">0666</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="31">
+    <token name="T_STRING">defined</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'DIR_READ_MODE'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_WHITESPACE">   </token>
+    <token name="T_LOGICAL_OR">OR</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">define</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'DIR_READ_MODE'</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_LNUMBER">0755</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="32">
+    <token name="T_STRING">defined</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'DIR_WRITE_MODE'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_WHITESPACE">  </token>
+    <token name="T_LOGICAL_OR">OR</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">define</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'DIR_WRITE_MODE'</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_LNUMBER">0755</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="33"/>
+  <line no="34">
+    <token name="T_COMMENT">/*</token>
+  </line>
+  <line no="35">
+    <token name="T_COMMENT">|--------------------------------------------------------------------------</token>
+  </line>
+  <line no="36">
+    <token name="T_COMMENT">| File Stream Modes</token>
+  </line>
+  <line no="37">
+    <token name="T_COMMENT">|--------------------------------------------------------------------------</token>
+  </line>
+  <line no="38">
+    <token name="T_COMMENT">|</token>
+  </line>
+  <line no="39">
+    <token name="T_COMMENT">| These modes are used when working with fopen()/popen()</token>
+  </line>
+  <line no="40">
+    <token name="T_COMMENT">|</token>
+  </line>
+  <line no="41">
+    <token name="T_COMMENT">*/</token>
+  </line>
+  <line no="42">
+    <token name="T_STRING">defined</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'FOPEN_READ'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_WHITESPACE">                           </token>
+    <token name="T_LOGICAL_OR">OR</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">define</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'FOPEN_READ'</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'rb'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="43">
+    <token name="T_STRING">defined</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'FOPEN_READ_WRITE'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_WHITESPACE">                     </token>
+    <token name="T_LOGICAL_OR">OR</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">define</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'FOPEN_READ_WRITE'</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'r+b'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="44">
+    <token name="T_STRING">defined</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'FOPEN_WRITE_CREATE_DESTRUCTIVE'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_WHITESPACE">       </token>
+    <token name="T_LOGICAL_OR">OR</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">define</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'FOPEN_WRITE_CREATE_DESTRUCTIVE'</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'wb'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_COMMENT">// truncates existing file data, use with care</token>
+  </line>
+  <line no="45">
+    <token name="T_STRING">defined</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'FOPEN_READ_WRITE_CREATE_DESTRUCTIVE'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_WHITESPACE">  </token>
+    <token name="T_LOGICAL_OR">OR</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">define</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'FOPEN_READ_WRITE_CREATE_DESTRUCTIVE'</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'w+b'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_COMMENT">// truncates existing file data, use with care</token>
+  </line>
+  <line no="46">
+    <token name="T_STRING">defined</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'FOPEN_WRITE_CREATE'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_WHITESPACE">                   </token>
+    <token name="T_LOGICAL_OR">OR</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">define</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'FOPEN_WRITE_CREATE'</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'ab'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="47">
+    <token name="T_STRING">defined</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'FOPEN_READ_WRITE_CREATE'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_WHITESPACE">              </token>
+    <token name="T_LOGICAL_OR">OR</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">define</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'FOPEN_READ_WRITE_CREATE'</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'a+b'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="48">
+    <token name="T_STRING">defined</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'FOPEN_WRITE_CREATE_STRICT'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_WHITESPACE">            </token>
+    <token name="T_LOGICAL_OR">OR</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">define</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'FOPEN_WRITE_CREATE_STRICT'</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'xb'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="49">
+    <token name="T_STRING">defined</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'FOPEN_READ_WRITE_CREATE_STRICT'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_WHITESPACE">       </token>
+    <token name="T_LOGICAL_OR">OR</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">define</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'FOPEN_READ_WRITE_CREATE_STRICT'</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'x+b'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="50"/>
+  <line no="51">
+    <token name="T_COMMENT">/*</token>
+  </line>
+  <line no="52">
+    <token name="T_COMMENT">|--------------------------------------------------------------------------</token>
+  </line>
+  <line no="53">
+    <token name="T_COMMENT">| Exit Status Codes</token>
+  </line>
+  <line no="54">
+    <token name="T_COMMENT">|--------------------------------------------------------------------------</token>
+  </line>
+  <line no="55">
+    <token name="T_COMMENT">|</token>
+  </line>
+  <line no="56">
+    <token name="T_COMMENT">| Used to indicate the conditions under which the script is exit()ing.</token>
+  </line>
+  <line no="57">
+    <token name="T_COMMENT">| While there is no universal standard for error codes, there are some</token>
+  </line>
+  <line no="58">
+    <token name="T_COMMENT">| broad conventions.  Three such conventions are mentioned below, for</token>
+  </line>
+  <line no="59">
+    <token name="T_COMMENT">| those who wish to make use of them.  The CodeIgniter defaults were</token>
+  </line>
+  <line no="60">
+    <token name="T_COMMENT">| chosen for the least overlap with these conventions, while still</token>
+  </line>
+  <line no="61">
+    <token name="T_COMMENT">| leaving room for others to be defined in future versions and user</token>
+  </line>
+  <line no="62">
+    <token name="T_COMMENT">| applications.</token>
+  </line>
+  <line no="63">
+    <token name="T_COMMENT">|</token>
+  </line>
+  <line no="64">
+    <token name="T_COMMENT">| The three main conventions used for determining exit status codes</token>
+  </line>
+  <line no="65">
+    <token name="T_COMMENT">| are as follows:</token>
+  </line>
+  <line no="66">
+    <token name="T_COMMENT">|</token>
+  </line>
+  <line no="67">
+    <token name="T_COMMENT">|    Standard C/C++ Library (stdlibc):</token>
+  </line>
+  <line no="68">
+    <token name="T_COMMENT">|       http://www.gnu.org/software/libc/manual/html_node/Exit-Status.html</token>
+  </line>
+  <line no="69">
+    <token name="T_COMMENT">|       (This link also contains other GNU-specific conventions)</token>
+  </line>
+  <line no="70">
+    <token name="T_COMMENT">|    BSD sysexits.h:</token>
+  </line>
+  <line no="71">
+    <token name="T_COMMENT">|       http://www.gsp.com/cgi-bin/man.cgi?section=3&amp;topic=sysexits</token>
+  </line>
+  <line no="72">
+    <token name="T_COMMENT">|    Bash scripting:</token>
+  </line>
+  <line no="73">
+    <token name="T_COMMENT">|       http://tldp.org/LDP/abs/html/exitcodes.html</token>
+  </line>
+  <line no="74">
+    <token name="T_COMMENT">|</token>
+  </line>
+  <line no="75">
+    <token name="T_COMMENT">*/</token>
+  </line>
+  <line no="76">
+    <token name="T_STRING">defined</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'EXIT_SUCCESS'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_LOGICAL_OR">OR</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">define</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'EXIT_SUCCESS'</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_LNUMBER">0</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_COMMENT">// no errors</token>
+  </line>
+  <line no="77">
+    <token name="T_STRING">defined</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'EXIT_ERROR'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_WHITESPACE">          </token>
+    <token name="T_LOGICAL_OR">OR</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">define</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'EXIT_ERROR'</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_LNUMBER">1</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_COMMENT">// generic error</token>
+  </line>
+  <line no="78">
+    <token name="T_STRING">defined</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'EXIT_CONFIG'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_WHITESPACE">         </token>
+    <token name="T_LOGICAL_OR">OR</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">define</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'EXIT_CONFIG'</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_LNUMBER">3</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_COMMENT">// configuration error</token>
+  </line>
+  <line no="79">
+    <token name="T_STRING">defined</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'EXIT_UNKNOWN_FILE'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_WHITESPACE">   </token>
+    <token name="T_LOGICAL_OR">OR</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">define</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'EXIT_UNKNOWN_FILE'</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_LNUMBER">4</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_COMMENT">// file not found</token>
+  </line>
+  <line no="80">
+    <token name="T_STRING">defined</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'EXIT_UNKNOWN_CLASS'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_WHITESPACE">  </token>
+    <token name="T_LOGICAL_OR">OR</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">define</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'EXIT_UNKNOWN_CLASS'</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_LNUMBER">5</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_COMMENT">// unknown class</token>
+  </line>
+  <line no="81">
+    <token name="T_STRING">defined</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'EXIT_UNKNOWN_METHOD'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_LOGICAL_OR">OR</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">define</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'EXIT_UNKNOWN_METHOD'</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_LNUMBER">6</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_COMMENT">// unknown class member</token>
+  </line>
+  <line no="82">
+    <token name="T_STRING">defined</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'EXIT_USER_INPUT'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_WHITESPACE">     </token>
+    <token name="T_LOGICAL_OR">OR</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">define</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'EXIT_USER_INPUT'</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_LNUMBER">7</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_COMMENT">// invalid user input</token>
+  </line>
+  <line no="83">
+    <token name="T_STRING">defined</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'EXIT_DATABASE'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_WHITESPACE">       </token>
+    <token name="T_LOGICAL_OR">OR</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">define</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'EXIT_DATABASE'</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_LNUMBER">8</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_COMMENT">// database error</token>
+  </line>
+  <line no="84">
+    <token name="T_STRING">defined</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'EXIT__AUTO_MIN'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_WHITESPACE">      </token>
+    <token name="T_LOGICAL_OR">OR</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">define</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'EXIT__AUTO_MIN'</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_LNUMBER">9</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_COMMENT">// lowest automatically-assigned error code</token>
+  </line>
+  <line no="85">
+    <token name="T_STRING">defined</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'EXIT__AUTO_MAX'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_WHITESPACE">      </token>
+    <token name="T_LOGICAL_OR">OR</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">define</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'EXIT__AUTO_MAX'</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_LNUMBER">125</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_COMMENT">// highest automatically-assigned error code</token>
+  </line>
+  <line no="86"/>
+</source>

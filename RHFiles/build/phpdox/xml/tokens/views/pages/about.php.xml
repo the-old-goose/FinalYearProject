@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<source xmlns="http://xml.phpdox.net/token">
+  <file xmlns="http://xml.phpdox.net/src" path="/opt/lampp/htdocs/poc2/application/views/pages" file="about.php" realpath="/opt/lampp/htdocs/poc2/application/views/pages/about.php" size="31" time="2018-12-03T08:41:22+01:00" unixtime="1543822882" sha1="7d90767bbfd46a24fd29ecc4f487584f944e42e2" relative="views/pages/about.php"/>
+  <line no="1">
+    <token name="T_INLINE_HTML">&lt;h1&gt;about page&lt;/h1&gt;</token>
+  </line>
+  <line no="2">
+    <token name="T_INLINE_HTML">&lt;p&gt;todo&lt;/p&gt;</token>
+  </line>
+</source>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="Availability" namespace="" name="Availability" abstract="false" final="false" start="4" end="84">
+  <file path="/opt/lampp/htdocs/poc2/application/libraries" file="Availability.php" realpath="/opt/lampp/htdocs/poc2/application/libraries/Availability.php" size="2328" time="2019-02-20T21:03:36+01:00" unixtime="1550693016" sha1="5f77b34b4457f37c25c8934836366b20faa3d75c" relative="libraries/Availability.php"/>
+  <member name="proposed_dates" visibility="public" static="false" line="6"/>
+  <constructor name="__construct" start="8" end="11" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="proposed_dates" byreference="false" type="{unknown}" default="NULL"/>
+  </constructor>
+  <method name="generate_calendar" start="13" end="23" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="ordinal" start="25" end="31" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="number" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="parse_available_dates" start="33" end="36" abstract="false" final="false" static="false" visibility="private"/>
+  <method name="build_date" start="39" end="50" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="date" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="convert_accepted_date_tostring" start="53" end="56" abstract="false" final="false" static="false" visibility="public">
+    <inline>
+      <comment value="strip first 3 chars then convert to full month name get ordinal and return" line="54"/>
+      <comment value="case('jan')return january" line="55"/>
+    </inline>
+  </method>
+  <method name="date_today" start="61" end="64" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="get_month_days" start="66" end="69" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="get_proposed_dates" start="71" end="83" abstract="false" final="false" static="false" visibility="public">
+    <inline>
+      <comment value="build array using key and number" line="73"/>
+    </inline>
+  </method>
+</class>

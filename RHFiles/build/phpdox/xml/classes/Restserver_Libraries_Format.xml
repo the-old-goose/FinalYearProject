@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="Restserver\Libraries\Format" namespace="Restserver\Libraries" name="Format" abstract="false" final="false" start="14" end="529">
+  <file path="/opt/lampp/htdocs/poc2/application/libraries" file="Format.php" realpath="/opt/lampp/htdocs/poc2/application/libraries/Format.php" size="14775" time="2018-11-09T13:33:01+01:00" unixtime="1541766781" sha1="f53685b1041930dd9785ac8e9d5bca1d21e3180f" relative="libraries/Format.php"/>
+  <docblock>
+    <description compact="Format class Help convert between various formats such as XML, JSON, CSV, etc."/>
+    <author value="Phil Sturgeon, Chris Kacerguis, @softwarespot"/>
+    <license name="http://www.dbad-license.org/"/>
+  </docblock>
+  <constant type="string" name="ARRAY_FORMAT" value="'array'">
+    <docblock>
+      <description compact="Array output format"/>
+    </docblock>
+  </constant>
+  <constant type="string" name="CSV_FORMAT" value="'csv'">
+    <docblock>
+      <description compact="Comma Separated Value (CSV) output format"/>
+    </docblock>
+  </constant>
+  <constant type="string" name="JSON_FORMAT" value="'json'">
+    <docblock>
+      <description compact="Json output format"/>
+    </docblock>
+  </constant>
+  <constant type="string" name="HTML_FORMAT" value="'html'">
+    <docblock>
+      <description compact="HTML output format"/>
+    </docblock>
+  </constant>
+  <constant type="string" name="PHP_FORMAT" value="'php'">
+    <docblock>
+      <description compact="PHP output format"/>
+    </docblock>
+  </constant>
+  <constant type="string" name="SERIALIZED_FORMAT" value="'serialized'">
+    <docblock>
+      <description compact="Serialized output format"/>
+    </docblock>
+  </constant>
+  <constant type="string" name="XML_FORMAT" value="'xml'">
+    <docblock>
+      <description compact="XML output format"/>
+    </docblock>
+  </constant>
+  <constant type="{unknown}" name="DEFAULT_FORMAT" value="" constant="self::JSON_FORMAT">
+    <docblock>
+      <description compact="Default format of this class"/>
+    </docblock>
+  </constant>
+  <member name="_CI" visibility="private" static="false" line="61">
+    <docblock>
+      <description compact="CodeIgniter instance"/>
+      <var type="object"/>
+    </docblock>
+  </member>
+  <member name="_data" default="" type="array" visibility="protected" static="false" line="68">
+    <docblock>
+      <description compact="Data to parse"/>
+      <var type="mixed"/>
+    </docblock>
+  </member>
+  <member name="_from_type" default="NULL" visibility="protected" static="false" line="75">
+    <docblock>
+      <description compact="Type to convert from"/>
+      <var type="string"/>
+    </docblock>
+  </member>
+  <constructor name="__construct" start="85" end="108" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="DO NOT CALL THIS DIRECTLY, USE factory()"/>
+      <param type="object" variable="$data">
+        <type full="Restserver\Libraries\NULL" namespace="Restserver\Libraries" name="NULL"/>
+      </param>
+      <param type="object" variable="$from_type">
+        <type full="Restserver\Libraries\NULL" namespace="Restserver\Libraries" name="NULL"/>
+      </param>
+      <throws type="object">
+        <type full="Exception" namespace="" name="Exception"/>
+      </throws>
+    </docblock>
+    <parameter name="data" byreference="false" type="{unknown}" default="NULL"/>
+    <parameter name="from_type" byreference="false" type="{unknown}" default="NULL"/>
+    <inline>
+      <comment value="Get the CodeIgniter reference" line="87"/>
+      <comment value="Load the inflector helper" line="90"/>
+      <comment value="If the provided data is already formatted we should probably convert it to an array" line="93"/>
+      <comment value="Set the member variable to the data passed" line="106"/>
+    </inline>
+  </constructor>
+  <method name="factory" start="119" end="125" abstract="false" final="false" static="true" visibility="public">
+    <docblock>
+      <description compact="Create an instance of the format class e.g: echo $this-&gt;format-&gt;factory(['foo' =&gt; 'bar'])-&gt;to_csv();"/>
+      <param description="Data to convert/parse" type="mixed" variable="$data"/>
+      <param description="Type to convert from e.g. json, csv, html" type="string" variable="$from_type"/>
+      <return description="Instance of the format class" type="object"/>
+    </docblock>
+    <parameter name="data" byreference="false" type="{unknown}"/>
+    <parameter name="from_type" byreference="false" type="{unknown}" default="NULL"/>
+    <inline>
+      <comment value="$class = __CLASS__;" line="121"/>
+      <comment value="return new $class();" line="122"/>
+    </inline>
+  </method>
+  <method name="to_array" start="136" end="165" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Format data as an array"/>
+      <param description="Optional data to pass, so as to override the data passed" type="object" variable="$data">to the constructor<type full="Restserver\Libraries\mixed|NULL" namespace="Restserver\Libraries" name="mixed|NULL"/></param>
+      <return description="Data parsed as an array; otherwise, an empty array" type="array"/>
+    </docblock>
+    <parameter name="data" byreference="false" type="{unknown}" default="NULL"/>
+    <inline>
+      <comment value="If no data is passed as a parameter, then use the data passed" line="138"/>
+      <comment value="via the constructor" line="139"/>
+      <comment value="Cast as an array if not already" line="145"/>
+    </inline>
+  </method>
+  <method name="to_xml" start="176" end="244" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Format data as XML"/>
+      <param description="Optional data to pass, so as to override the data passed" type="object" variable="$data">to the constructor<type full="Restserver\Libraries\mixed|NULL" namespace="Restserver\Libraries" name="mixed|NULL"/></param>
+      <param type="object" variable="$structure">
+        <type full="Restserver\Libraries\NULL" namespace="Restserver\Libraries" name="NULL"/>
+      </param>
+      <param type="string" variable="$basenode"/>
+      <return type="mixed"/>
+    </docblock>
+    <parameter name="data" byreference="false" type="{unknown}" default="NULL"/>
+    <parameter name="structure" byreference="false" type="{unknown}" default="NULL"/>
+    <parameter name="basenode" byreference="false" type="string" default="'xml'"/>
+    <inline>
+      <comment value="Force it to be something useful" line="188"/>
+    </inline>
+  </method>
+  <method name="to_html" start="253" end="296" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Format data as HTML"/>
+      <param description="Optional data to pass, so as to override the data passed" type="object" variable="$data">to the constructor<type full="Restserver\Libraries\mixed|NULL" namespace="Restserver\Libraries" name="mixed|NULL"/></param>
+      <return type="mixed"/>
+    </docblock>
+    <parameter name="data" byreference="false" type="{unknown}" default="NULL"/>
+    <inline>
+      <comment value="If no data is passed as a parameter, then use the data passed" line="255"/>
+      <comment value="via the constructor" line="256"/>
+      <comment value="Cast as an array if not already" line="262"/>
+      <comment value="Check if it's a multi-dimensional array" line="268"/>
+      <comment value="Load the table library" line="281"/>
+    </inline>
+  </method>
+  <method name="to_csv" start="308" end="388" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <link value="http://www.metashock.de/2014/02/create-csv-file-in-memory-php/"/>
+      <param description="Optional data to pass, so as to override the data passed" type="object" variable="$data">to the constructor<type full="Restserver\Libraries\mixed|NULL" namespace="Restserver\Libraries" name="mixed|NULL"/></param>
+      <param description="The optional delimiter parameter sets the field" type="string" variable="$delimiter">delimiter (one character only). NULL will use the default value (,)</param>
+      <param description="The optional enclosure parameter sets the field" type="string" variable="$enclosure">enclosure (one character only). NULL will use the default value (")</param>
+      <return description="A csv string" type="string"/>
+    </docblock>
+    <parameter name="data" byreference="false" type="{unknown}" default="NULL"/>
+    <parameter name="delimiter" byreference="false" type="string" default="','"/>
+    <parameter name="enclosure" byreference="false" type="string" default="'&quot;'"/>
+    <inline>
+      <comment value="Use a threshold of 1 MB (1024 * 1024)" line="310"/>
+      <comment value="If no data is passed as a parameter, then use the data passed" line="317"/>
+      <comment value="via the constructor" line="318"/>
+      <comment value="If NULL, then set as the default delimiter" line="324"/>
+      <comment value="If NULL, then set as the default enclosure" line="330"/>
+      <comment value="Cast as an array if not already" line="336"/>
+      <comment value="Check if it's a multi-dimensional array" line="342"/>
+      <comment value="Apply the headings" line="355"/>
+      <comment value="Reset the file pointer" line="375"/>
+      <comment value="Retrieve the csv contents" line="378"/>
+      <comment value="Close the handle" line="381"/>
+      <comment value="Convert UTF-8 encoding to UTF-16LE which is supported by MS Excel" line="384"/>
+    </inline>
+  </method>
+  <method name="to_json" start="397" end="426" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Encode data as json"/>
+      <param description="Optional data to pass, so as to override the data passed" type="object" variable="$data">to the constructor<type full="Restserver\Libraries\mixed|NULL" namespace="Restserver\Libraries" name="mixed|NULL"/></param>
+      <return description="Json representation of a value" type="string"/>
+    </docblock>
+    <parameter name="data" byreference="false" type="{unknown}" default="NULL"/>
+    <inline>
+      <comment value="If no data is passed as a parameter, then use the data passed" line="399"/>
+      <comment value="via the constructor" line="400"/>
+      <comment value="Get the callback parameter (if set)" line="406"/>
+      <comment value="An invalid jsonp callback function provided." line="421"/>
+      <comment value="Though I don't believe this should be hardcoded here" line="422"/>
+    </inline>
+  </method>
+  <method name="to_serialized" start="435" end="445" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Encode data as a serialized array"/>
+      <param description="Optional data to pass, so as to override the data passed" type="object" variable="$data">to the constructor<type full="Restserver\Libraries\mixed|NULL" namespace="Restserver\Libraries" name="mixed|NULL"/></param>
+      <return description="Serialized data" type="string"/>
+    </docblock>
+    <parameter name="data" byreference="false" type="{unknown}" default="NULL"/>
+    <inline>
+      <comment value="If no data is passed as a parameter, then use the data passed" line="437"/>
+      <comment value="via the constructor" line="438"/>
+    </inline>
+  </method>
+  <method name="to_php" start="454" end="464" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Format data using a PHP structure"/>
+      <param description="Optional data to pass, so as to override the data passed" type="object" variable="$data">to the constructor<type full="Restserver\Libraries\mixed|NULL" namespace="Restserver\Libraries" name="mixed|NULL"/></param>
+      <return description="String representation of a variable" type="mixed"/>
+    </docblock>
+    <parameter name="data" byreference="false" type="{unknown}" default="NULL"/>
+    <inline>
+      <comment value="If no data is passed as a parameter, then use the data passed" line="456"/>
+      <comment value="via the constructor" line="457"/>
+    </inline>
+  </method>
+  <method name="_from_xml" start="472" end="475" abstract="false" final="false" static="false" visibility="protected">
+    <docblock>
+      <description/>
+      <param description="XML string" type="string" variable="$data"/>
+      <return description="XML element object; otherwise, empty array" type="array"/>
+    </docblock>
+    <parameter name="data" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="_from_csv" start="486" end="501" abstract="false" final="false" static="false" visibility="protected">
+    <docblock>
+      <description/>
+      <param description="CSV string" type="string" variable="$data"/>
+      <param description="The optional delimiter parameter sets the field" type="string" variable="$delimiter">delimiter (one character only). NULL will use the default value (,)</param>
+      <param description="The optional enclosure parameter sets the field" type="string" variable="$enclosure">enclosure (one character only). NULL will use the default value (")</param>
+      <return description="A multi-dimensional array with the outer array being the number of rows" type="array">and the inner arrays the individual fields</return>
+    </docblock>
+    <parameter name="data" byreference="false" type="{unknown}"/>
+    <parameter name="delimiter" byreference="false" type="string" default="','"/>
+    <parameter name="enclosure" byreference="false" type="string" default="'&quot;'"/>
+    <inline>
+      <comment value="If NULL, then set as the default delimiter" line="488"/>
+      <comment value="If NULL, then set as the default enclosure" line="494"/>
+    </inline>
+  </method>
+  <method name="_from_json" start="507" end="510" abstract="false" final="false" static="false" visibility="protected">
+    <docblock>
+      <description/>
+      <param description="Encoded json string" type="string" variable="$data"/>
+      <return description="Decoded json string with leading and trailing whitespace removed" type="mixed"/>
+    </docblock>
+    <parameter name="data" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="_from_serialize" start="516" end="519" abstract="false" final="false" static="false" visibility="protected">
+    <docblock>
+      <description/>
+      <param description="Data to unserialize" type="string" variable="$data"/>
+      <return description="Unserialized data" type="mixed"/>
+    </docblock>
+    <parameter name="data" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="_from_php" start="525" end="528" abstract="false" final="false" static="false" visibility="protected">
+    <docblock>
+      <description/>
+      <param description="Data to trim leading and trailing whitespace" type="string" variable="$data"/>
+      <return description="Data with leading and trailing whitespace removed" type="string"/>
+    </docblock>
+    <parameter name="data" byreference="false" type="{unknown}"/>
+  </method>
+</class>

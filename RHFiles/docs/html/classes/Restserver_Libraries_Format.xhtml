@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <title>phpDox - Restserver\Libraries\Format</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css" media="screen"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+  </head>
+  <body>
+    <nav class="topnav">
+      <ul>
+        <li>
+          <div class="logo"><span>/**</span>phpDox</div>
+        </li>
+        <li class="separator">
+          <a href="../index.xhtml">Overview</a>
+        </li>
+        <li class="separator">
+          <a href="../namespaces.xhtml">Namespaces</a>
+        </li>
+        <li>
+          <a href="../classes.xhtml">Classes</a>
+        </li>
+        <li class="separator">
+          <a href="../source/index.xhtml">Source</a>
+        </li>
+      </ul>
+    </nav>
+    <div id="mainstage">
+      <div class="box">
+        <ul class="breadcrumb">
+          <li>
+            <a href="../index.xhtml">Overview</a>
+          </li>
+          <li class="separator">
+            <a href="../classes.xhtml">Classes</a>
+          </li>
+          <li class="separator">
+            <a href="../classes.xhtml#Restserver_Libraries">Restserver\Libraries</a>
+          </li>
+          <li class="separator">Format</li>
+        </ul>
+      </div>
+      <nav class="box">
+        <ul>
+          <li>
+            <a href="#introduction">Introduction</a>
+          </li>
+          <li>
+            <a href="#synopsis">Synopsis</a>
+          </li>
+          <li>
+            <a href="#constants">Constants</a>
+          </li>
+          <li>
+            <a href="#members">Members</a>
+          </li>
+          <li>
+            <a href="#methods">Methods</a>
+          </li>
+          <li>
+            <a href="../source/libraries/Format.php.xhtml#line14">Source</a>
+          </li>
+        </ul>
+      </nav>
+      <section>
+        <h1 id="introduction"><small>Restserver\Libraries\</small>Format</h1>
+        <h4>Format class Help convert between various formats such as XML, JSON, CSV, etc.</h4>
+        <p/>
+        <ul>
+          <li>Author: Phil Sturgeon, Chris Kacerguis, @softwarespot</li>
+          <li>License: http://www.dbad-license.org/</li>
+        </ul>
+        <h2 id="synopsis">Synopsis</h2>
+        <div class="synopsis">class Format
+            {<br/><ul class="none"><li>// constants</li><li>const ARRAY_FORMAT = 'array';</li><li>const CSV_FORMAT = 'csv';</li><li>const JSON_FORMAT = 'json';</li><li>const HTML_FORMAT = 'html';</li><li>const PHP_FORMAT = 'php';</li><li>const SERIALIZED_FORMAT = 'serialized';</li><li>const XML_FORMAT = 'xml';</li><li>const DEFAULT_FORMAT = self::JSON_FORMAT;</li></ul><ul class="none"><li>// members</li><li>private <span title=""/> <a href="#members">$_CI</a>;
+                    </li><li>protected array <a href="#members">$_data</a> =
+                        ;
+                    </li><li>protected  <a href="#members">$_from_type</a> =
+                        NULL;
+                    </li></ul><ul class="none"><li>// methods</li><li>public void <a title="Restserver\Libraries\Format" href="../classes/Restserver_Libraries_Format/__construct.xhtml">__construct</a>()
+                    </li><li>public static  <a title="Restserver\Libraries\Format" href="../classes/Restserver_Libraries_Format/factory.xhtml">factory</a>()
+                    </li><li>public array <a title="Restserver\Libraries\Format" href="../classes/Restserver_Libraries_Format/to_array.xhtml">to_array</a>()
+                    </li><li>public mixed <a title="Restserver\Libraries\Format" href="../classes/Restserver_Libraries_Format/to_xml.xhtml">to_xml</a>()
+                    </li><li>public mixed <a title="Restserver\Libraries\Format" href="../classes/Restserver_Libraries_Format/to_html.xhtml">to_html</a>()
+                    </li><li>public string <a title="Restserver\Libraries\Format" href="../classes/Restserver_Libraries_Format/to_csv.xhtml">to_csv</a>()
+                    </li><li>public string <a title="Restserver\Libraries\Format" href="../classes/Restserver_Libraries_Format/to_json.xhtml">to_json</a>()
+                    </li><li>public string <a title="Restserver\Libraries\Format" href="../classes/Restserver_Libraries_Format/to_serialized.xhtml">to_serialized</a>()
+                    </li><li>public mixed <a title="Restserver\Libraries\Format" href="../classes/Restserver_Libraries_Format/to_php.xhtml">to_php</a>()
+                    </li><li>protected array <a title="Restserver\Libraries\Format" href="../classes/Restserver_Libraries_Format/_from_xml.xhtml">_from_xml</a>()
+                    </li><li>protected array <a title="Restserver\Libraries\Format" href="../classes/Restserver_Libraries_Format/_from_csv.xhtml">_from_csv</a>()
+                    </li><li>protected mixed <a title="Restserver\Libraries\Format" href="../classes/Restserver_Libraries_Format/_from_json.xhtml">_from_json</a>()
+                    </li><li>protected mixed <a title="Restserver\Libraries\Format" href="../classes/Restserver_Libraries_Format/_from_serialize.xhtml">_from_serialize</a>()
+                    </li><li>protected string <a title="Restserver\Libraries\Format" href="../classes/Restserver_Libraries_Format/_from_php.xhtml">_from_php</a>()
+                    </li></ul>
+
+            }<br/></div>
+        <h2 id="constants">Constants</h2>
+        <table class="styled">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Value</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td id="ARRAY_FORMAT">ARRAY_FORMAT</td>
+              <td>'array'</td>
+            </tr>
+            <tr>
+              <td id="CSV_FORMAT">CSV_FORMAT</td>
+              <td>'csv'</td>
+            </tr>
+            <tr>
+              <td id="JSON_FORMAT">JSON_FORMAT</td>
+              <td>'json'</td>
+            </tr>
+            <tr>
+              <td id="HTML_FORMAT">HTML_FORMAT</td>
+              <td>'html'</td>
+            </tr>
+            <tr>
+              <td id="PHP_FORMAT">PHP_FORMAT</td>
+              <td>'php'</td>
+            </tr>
+            <tr>
+              <td id="SERIALIZED_FORMAT">SERIALIZED_FORMAT</td>
+              <td>'serialized'</td>
+            </tr>
+            <tr>
+              <td id="XML_FORMAT">XML_FORMAT</td>
+              <td>'xml'</td>
+            </tr>
+            <tr>
+              <td id="DEFAULT_FORMAT">DEFAULT_FORMAT</td>
+              <td>self::JSON_FORMAT</td>
+            </tr>
+          </tbody>
+        </table>
+        <h2 id="members">Members</h2>
+        <div class="styled members">
+          <h4>private</h4>
+          <ul class="members">
+            <li id="_CI"><strong>$_CI</strong>
+                —
+                <a title="" href="../classes/.xhtml"/><br/><span class="indent">CodeIgniter instance</span></li>
+          </ul>
+          <h4>protected</h4>
+          <ul class="members">
+            <li id="_data"><strong>$_data</strong>
+                —
+                mixed<br/><span class="indent">Data to parse</span></li>
+            <li id="_from_type"><strong>$_from_type</strong>
+                —
+                string<br/><span class="indent">Type to convert from</span></li>
+          </ul>
+        </div>
+        <h2 id="methods">Methods</h2>
+        <div class="styled">
+          <h4>protected</h4>
+          <ul>
+            <li id="_from_csv">
+              <a title="Restserver\Libraries\Format" href="../classes/Restserver_Libraries_Format/_from_csv.xhtml">_from_csv()</a>
+            </li>
+            <li id="_from_json">
+              <a title="Restserver\Libraries\Format" href="../classes/Restserver_Libraries_Format/_from_json.xhtml">_from_json()</a>
+            </li>
+            <li id="_from_php">
+              <a title="Restserver\Libraries\Format" href="../classes/Restserver_Libraries_Format/_from_php.xhtml">_from_php()</a>
+            </li>
+            <li id="_from_serialize">
+              <a title="Restserver\Libraries\Format" href="../classes/Restserver_Libraries_Format/_from_serialize.xhtml">_from_serialize()</a>
+            </li>
+            <li id="_from_xml">
+              <a title="Restserver\Libraries\Format" href="../classes/Restserver_Libraries_Format/_from_xml.xhtml">_from_xml()</a>
+            </li>
+          </ul>
+          <h4>public</h4>
+          <ul>
+            <li id="__construct"><a title="Restserver\Libraries\Format" href="../classes/Restserver_Libraries_Format/__construct.xhtml">__construct()</a>
+                — DO NOT CALL THIS DIRECTLY, USE factory()</li>
+            <li id="factory"><a title="Restserver\Libraries\Format" href="../classes/Restserver_Libraries_Format/factory.xhtml">factory()</a>
+                — Create an instance of the format class e.g: echo $this-&gt;format-&gt;factory(['foo' =&gt; 'bar'])-&gt;to_csv();</li>
+            <li id="to_array"><a title="Restserver\Libraries\Format" href="../classes/Restserver_Libraries_Format/to_array.xhtml">to_array()</a>
+                — Format data as an array</li>
+            <li id="to_csv">
+              <a title="Restserver\Libraries\Format" href="../classes/Restserver_Libraries_Format/to_csv.xhtml">to_csv()</a>
+            </li>
+            <li id="to_html"><a title="Restserver\Libraries\Format" href="../classes/Restserver_Libraries_Format/to_html.xhtml">to_html()</a>
+                — Format data as HTML</li>
+            <li id="to_json"><a title="Restserver\Libraries\Format" href="../classes/Restserver_Libraries_Format/to_json.xhtml">to_json()</a>
+                — Encode data as json</li>
+            <li id="to_php"><a title="Restserver\Libraries\Format" href="../classes/Restserver_Libraries_Format/to_php.xhtml">to_php()</a>
+                — Format data using a PHP structure</li>
+            <li id="to_serialized"><a title="Restserver\Libraries\Format" href="../classes/Restserver_Libraries_Format/to_serialized.xhtml">to_serialized()</a>
+                — Encode data as a serialized array</li>
+            <li id="to_xml"><a title="Restserver\Libraries\Format" href="../classes/Restserver_Libraries_Format/to_xml.xhtml">to_xml()</a>
+                — Format data as XML</li>
+          </ul>
+        </div>
+      </section>
+    </div>
+    <footer>
+      <span>Generated using phpDox 0.11.0-dev - Copyright (C) 2010 - 2019 by Arne Blankerts and Contributors</span>
+    </footer>
+  </body>
+</html>

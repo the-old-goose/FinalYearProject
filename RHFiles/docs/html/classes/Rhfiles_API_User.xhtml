@@ -1,0 +1,630 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <title>phpDox - Rhfiles\API\User</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css" media="screen"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+  </head>
+  <body>
+    <nav class="topnav">
+      <ul>
+        <li>
+          <div class="logo"><span>/**</span>phpDox</div>
+        </li>
+        <li class="separator">
+          <a href="../index.xhtml">Overview</a>
+        </li>
+        <li class="separator">
+          <a href="../namespaces.xhtml">Namespaces</a>
+        </li>
+        <li>
+          <a href="../classes.xhtml">Classes</a>
+        </li>
+        <li class="separator">
+          <a href="../source/index.xhtml">Source</a>
+        </li>
+      </ul>
+    </nav>
+    <div id="mainstage">
+      <div class="box">
+        <ul class="breadcrumb">
+          <li>
+            <a href="../index.xhtml">Overview</a>
+          </li>
+          <li class="separator">
+            <a href="../classes.xhtml">Classes</a>
+          </li>
+          <li class="separator">
+            <a href="../classes.xhtml#Rhfiles_API">Rhfiles\API</a>
+          </li>
+          <li class="separator">User</li>
+        </ul>
+      </div>
+      <nav class="box">
+        <ul>
+          <li>
+            <a href="#introduction">Introduction</a>
+          </li>
+          <li>
+            <a href="#synopsis">Synopsis</a>
+          </li>
+          <li>
+            <a href="#hierarchy">Hierarchy</a>
+          </li>
+          <li>
+            <a href="#tasks">Tasks</a>
+          </li>
+          <li>
+            <a href="#constants">Constants</a>
+          </li>
+          <li>
+            <a href="#members">Members</a>
+          </li>
+          <li>
+            <a href="#methods">Methods</a>
+          </li>
+          <li>
+            <a href="../source/controllers/api/User.php.xhtml#line22">Source</a>
+          </li>
+        </ul>
+      </nav>
+      <section>
+        <h1 id="introduction"><small>Rhfiles\API\</small>User</h1>
+        <h4>This class uses the Rest library which processes HTTP requests returning resources concerning User queries in many formats such as JSON,csv,html,xml by adding optional format parameters to the http request.</h4>
+        <p>URI : {api}/{resource}/{parameter}/{format}<br/>Credit to Guide: CodeIgniter RestApi tutorial &lt;https://code.tutsplus.com/tutorials/working-with-restful-services-in-codeigniter--net-8814&gt;</p>
+        <ul>
+          <li>Author: Youcef Adoum</li>
+        </ul>
+        <h2 id="synopsis">Synopsis</h2>
+        <div class="synopsis">class User
+                extends <a title="Restserver\Libraries\REST_Controller" href="../classes/Restserver_Libraries_REST_Controller.xhtml">REST_Controller</a>
+            {<br/><ul class="none"><li>// Inherited constants from <a title="Restserver\Libraries\REST_Controller" href="../classes/Restserver_Libraries_REST_Controller.xhtml">REST_Controller</a></li><li>const <a href="#HTTP_CONTINUE">HTTP_CONTINUE</a> = 100;</li><li>const <a href="#HTTP_SWITCHING_PROTOCOLS">HTTP_SWITCHING_PROTOCOLS</a> = 101;</li><li>const <a href="#HTTP_PROCESSING">HTTP_PROCESSING</a> = 102;</li><li>const <a href="#HTTP_OK">HTTP_OK</a> = 200;</li><li>const <a href="#HTTP_CREATED">HTTP_CREATED</a> = 201;</li><li>const <a href="#HTTP_ACCEPTED">HTTP_ACCEPTED</a> = 202;</li><li>const <a href="#HTTP_NON_AUTHORITATIVE_INFORMATION">HTTP_NON_AUTHORITATIVE_INFORMATION</a> = 203;</li><li>const <a href="#HTTP_NO_CONTENT">HTTP_NO_CONTENT</a> = 204;</li><li>const <a href="#HTTP_RESET_CONTENT">HTTP_RESET_CONTENT</a> = 205;</li><li>const <a href="#HTTP_PARTIAL_CONTENT">HTTP_PARTIAL_CONTENT</a> = 206;</li><li>const <a href="#HTTP_MULTI_STATUS">HTTP_MULTI_STATUS</a> = 207;</li><li>const <a href="#HTTP_ALREADY_REPORTED">HTTP_ALREADY_REPORTED</a> = 208;</li><li>const <a href="#HTTP_IM_USED">HTTP_IM_USED</a> = 226;</li><li>const <a href="#HTTP_MULTIPLE_CHOICES">HTTP_MULTIPLE_CHOICES</a> = 300;</li><li>const <a href="#HTTP_MOVED_PERMANENTLY">HTTP_MOVED_PERMANENTLY</a> = 301;</li><li>const <a href="#HTTP_FOUND">HTTP_FOUND</a> = 302;</li><li>const <a href="#HTTP_SEE_OTHER">HTTP_SEE_OTHER</a> = 303;</li><li>const <a href="#HTTP_NOT_MODIFIED">HTTP_NOT_MODIFIED</a> = 304;</li><li>const <a href="#HTTP_USE_PROXY">HTTP_USE_PROXY</a> = 305;</li><li>const <a href="#HTTP_RESERVED">HTTP_RESERVED</a> = 306;</li><li>const <a href="#HTTP_TEMPORARY_REDIRECT">HTTP_TEMPORARY_REDIRECT</a> = 307;</li><li>const <a href="#HTTP_PERMANENTLY_REDIRECT">HTTP_PERMANENTLY_REDIRECT</a> = 308;</li><li>const <a href="#HTTP_BAD_REQUEST">HTTP_BAD_REQUEST</a> = 400;</li><li>const <a href="#HTTP_UNAUTHORIZED">HTTP_UNAUTHORIZED</a> = 401;</li><li>const <a href="#HTTP_PAYMENT_REQUIRED">HTTP_PAYMENT_REQUIRED</a> = 402;</li><li>const <a href="#HTTP_FORBIDDEN">HTTP_FORBIDDEN</a> = 403;</li><li>const <a href="#HTTP_NOT_FOUND">HTTP_NOT_FOUND</a> = 404;</li><li>const <a href="#HTTP_METHOD_NOT_ALLOWED">HTTP_METHOD_NOT_ALLOWED</a> = 405;</li><li>const <a href="#HTTP_NOT_ACCEPTABLE">HTTP_NOT_ACCEPTABLE</a> = 406;</li><li>const <a href="#HTTP_PROXY_AUTHENTICATION_REQUIRED">HTTP_PROXY_AUTHENTICATION_REQUIRED</a> = 407;</li><li>const <a href="#HTTP_REQUEST_TIMEOUT">HTTP_REQUEST_TIMEOUT</a> = 408;</li><li>const <a href="#HTTP_CONFLICT">HTTP_CONFLICT</a> = 409;</li><li>const <a href="#HTTP_GONE">HTTP_GONE</a> = 410;</li><li>const <a href="#HTTP_LENGTH_REQUIRED">HTTP_LENGTH_REQUIRED</a> = 411;</li><li>const <a href="#HTTP_PRECONDITION_FAILED">HTTP_PRECONDITION_FAILED</a> = 412;</li><li>const <a href="#HTTP_REQUEST_ENTITY_TOO_LARGE">HTTP_REQUEST_ENTITY_TOO_LARGE</a> = 413;</li><li>const <a href="#HTTP_REQUEST_URI_TOO_LONG">HTTP_REQUEST_URI_TOO_LONG</a> = 414;</li><li>const <a href="#HTTP_UNSUPPORTED_MEDIA_TYPE">HTTP_UNSUPPORTED_MEDIA_TYPE</a> = 415;</li><li>const <a href="#HTTP_REQUESTED_RANGE_NOT_SATISFIABLE">HTTP_REQUESTED_RANGE_NOT_SATISFIABLE</a> = 416;</li><li>const <a href="#HTTP_EXPECTATION_FAILED">HTTP_EXPECTATION_FAILED</a> = 417;</li><li>const <a href="#HTTP_I_AM_A_TEAPOT">HTTP_I_AM_A_TEAPOT</a> = 418;</li><li>const <a href="#HTTP_UNPROCESSABLE_ENTITY">HTTP_UNPROCESSABLE_ENTITY</a> = 422;</li><li>const <a href="#HTTP_LOCKED">HTTP_LOCKED</a> = 423;</li><li>const <a href="#HTTP_FAILED_DEPENDENCY">HTTP_FAILED_DEPENDENCY</a> = 424;</li><li>const <a href="#HTTP_RESERVED_FOR_WEBDAV_ADVANCED_COLLECTIONS_EXPIRED_PROPOSAL">HTTP_RESERVED_FOR_WEBDAV_ADVANCED_COLLECTIONS_EXPIRED_PROPOSAL</a> = 425;</li><li>const <a href="#HTTP_UPGRADE_REQUIRED">HTTP_UPGRADE_REQUIRED</a> = 426;</li><li>const <a href="#HTTP_PRECONDITION_REQUIRED">HTTP_PRECONDITION_REQUIRED</a> = 428;</li><li>const <a href="#HTTP_TOO_MANY_REQUESTS">HTTP_TOO_MANY_REQUESTS</a> = 429;</li><li>const <a href="#HTTP_REQUEST_HEADER_FIELDS_TOO_LARGE">HTTP_REQUEST_HEADER_FIELDS_TOO_LARGE</a> = 431;</li><li>const <a href="#HTTP_INTERNAL_SERVER_ERROR">HTTP_INTERNAL_SERVER_ERROR</a> = 500;</li><li>const <a href="#HTTP_NOT_IMPLEMENTED">HTTP_NOT_IMPLEMENTED</a> = 501;</li><li>const <a href="#HTTP_BAD_GATEWAY">HTTP_BAD_GATEWAY</a> = 502;</li><li>const <a href="#HTTP_SERVICE_UNAVAILABLE">HTTP_SERVICE_UNAVAILABLE</a> = 503;</li><li>const <a href="#HTTP_GATEWAY_TIMEOUT">HTTP_GATEWAY_TIMEOUT</a> = 504;</li><li>const <a href="#HTTP_VERSION_NOT_SUPPORTED">HTTP_VERSION_NOT_SUPPORTED</a> = 505;</li><li>const <a href="#HTTP_VARIANT_ALSO_NEGOTIATES_EXPERIMENTAL">HTTP_VARIANT_ALSO_NEGOTIATES_EXPERIMENTAL</a> = 506;</li><li>const <a href="#HTTP_INSUFFICIENT_STORAGE">HTTP_INSUFFICIENT_STORAGE</a> = 507;</li><li>const <a href="#HTTP_LOOP_DETECTED">HTTP_LOOP_DETECTED</a> = 508;</li><li>const <a href="#HTTP_NOT_EXTENDED">HTTP_NOT_EXTENDED</a> = 510;</li><li>const <a href="#HTTP_NETWORK_AUTHENTICATION_REQUIRED">HTTP_NETWORK_AUTHENTICATION_REQUIRED</a> = 511;</li></ul><ul class="none"><li>// Inherited members from <span title="Restserver\Libraries\REST_Controller">REST_Controller</span></li><li>protected <span title="Restserver\Libraries\string|NULL">string|NULL</span> <a href="#members">$rest_format</a>;
+                        </li><li>protected array <a href="#members">$methods</a>;
+                        </li><li>protected array <a href="#members">$allowed_http_methods</a>;
+                        </li><li>protected <span title=""/> <a href="#members">$request</a>;
+                        </li><li>protected <span title=""/> <a href="#members">$response</a>;
+                        </li><li>protected <span title=""/> <a href="#members">$rest</a>;
+                        </li><li>protected array <a href="#members">$_get_args</a>;
+                        </li><li>protected array <a href="#members">$_post_args</a>;
+                        </li><li>protected array <a href="#members">$_put_args</a>;
+                        </li><li>protected array <a href="#members">$_delete_args</a>;
+                        </li><li>protected array <a href="#members">$_patch_args</a>;
+                        </li><li>protected array <a href="#members">$_head_args</a>;
+                        </li><li>protected array <a href="#members">$_options_args</a>;
+                        </li><li>protected array <a href="#members">$_query_args</a>;
+                        </li><li>protected array <a href="#members">$_args</a>;
+                        </li><li>protected string <a href="#members">$_insert_id</a>;
+                        </li><li>protected <span title="Restserver\Libraries\bool">bool</span> <a href="#members">$_allow</a>;
+                        </li><li>protected string <a href="#members">$_user_ldap_dn</a>;
+                        </li><li>protected <span title="Restserver\Libraries\number">number</span> <a href="#members">$_start_rtime</a>;
+                        </li><li>protected <span title="Restserver\Libraries\number">number</span> <a href="#members">$_end_rtime</a>;
+                        </li><li>protected array <a href="#members">$_supported_formats</a>;
+                        </li><li>protected <span title=""/> <a href="#members">$_apiuser</a>;
+                        </li><li>protected <span title="Restserver\Libraries\bool">bool</span> <a href="#members">$check_cors</a>;
+                        </li><li>protected <span title="Restserver\Libraries\bool">bool</span> <a href="#members">$_enable_xss</a>;
+                        </li><li>protected array <a href="#members">$http_status_codes</a>;
+                        </li></ul><ul class="none"><li>// methods</li><li>public  <a title="Rhfiles\API\User" href="../classes/Rhfiles_API_User/login_get.xhtml">login_get</a>()
+                    </li><li>public void <a title="Rhfiles\API\User" href="../classes/Rhfiles_API_User/register_post.xhtml">register_post</a>()
+                    </li></ul><ul class="none"><li>// Inherited methods from <span title="Restserver\Libraries\REST_Controller">REST_Controller</span></li><li>protected void <a title="Restserver\Libraries\REST_Controller" href="../classes/Restserver_Libraries_REST_Controller/early_checks.xhtml">early_checks</a>()
+                        </li><li>public void <a title="Restserver\Libraries\REST_Controller" href="../classes/Restserver_Libraries_REST_Controller/__construct.xhtml">__construct</a>()
+                        </li><li>public void <a title="Restserver\Libraries\REST_Controller" href="../classes/Restserver_Libraries_REST_Controller/__destruct.xhtml">__destruct</a>()
+                        </li><li>protected void <a title="Restserver\Libraries\REST_Controller" href="../classes/Restserver_Libraries_REST_Controller/preflight_checks.xhtml">preflight_checks</a>()
+                        </li><li>public void <a title="Restserver\Libraries\REST_Controller" href="../classes/Restserver_Libraries_REST_Controller/_remap.xhtml">_remap</a>()
+                        </li><li>public void <a title="Restserver\Libraries\REST_Controller" href="../classes/Restserver_Libraries_REST_Controller/response.xhtml">response</a>()
+                        </li><li>public void <a title="Restserver\Libraries\REST_Controller" href="../classes/Restserver_Libraries_REST_Controller/set_response.xhtml">set_response</a>()
+                        </li><li>protected string|NULL <a title="Restserver\Libraries\REST_Controller" href="../classes/Restserver_Libraries_REST_Controller/_detect_input_format.xhtml">_detect_input_format</a>()
+                        </li><li>protected string <a title="Restserver\Libraries\REST_Controller" href="../classes/Restserver_Libraries_REST_Controller/_get_default_output_format.xhtml">_get_default_output_format</a>()
+                        </li><li>protected mixed|NULL|string <a title="Restserver\Libraries\REST_Controller" href="../classes/Restserver_Libraries_REST_Controller/_detect_output_format.xhtml">_detect_output_format</a>()
+                        </li><li>protected string|NULL <a title="Restserver\Libraries\REST_Controller" href="../classes/Restserver_Libraries_REST_Controller/_detect_method.xhtml">_detect_method</a>()
+                        </li><li>protected bool <a title="Restserver\Libraries\REST_Controller" href="../classes/Restserver_Libraries_REST_Controller/_detect_api_key.xhtml">_detect_api_key</a>()
+                        </li><li>protected string|NULL|array <a title="Restserver\Libraries\REST_Controller" href="../classes/Restserver_Libraries_REST_Controller/_detect_lang.xhtml">_detect_lang</a>()
+                        </li><li>protected bool <a title="Restserver\Libraries\REST_Controller" href="../classes/Restserver_Libraries_REST_Controller/_log_request.xhtml">_log_request</a>()
+                        </li><li>protected bool <a title="Restserver\Libraries\REST_Controller" href="../classes/Restserver_Libraries_REST_Controller/_check_limit.xhtml">_check_limit</a>()
+                        </li><li>protected bool <a title="Restserver\Libraries\REST_Controller" href="../classes/Restserver_Libraries_REST_Controller/_auth_override_check.xhtml">_auth_override_check</a>()
+                        </li><li>protected void <a title="Restserver\Libraries\REST_Controller" href="../classes/Restserver_Libraries_REST_Controller/_parse_get.xhtml">_parse_get</a>()
+                        </li><li>protected void <a title="Restserver\Libraries\REST_Controller" href="../classes/Restserver_Libraries_REST_Controller/_parse_post.xhtml">_parse_post</a>()
+                        </li><li>protected void <a title="Restserver\Libraries\REST_Controller" href="../classes/Restserver_Libraries_REST_Controller/_parse_put.xhtml">_parse_put</a>()
+                        </li><li>protected void <a title="Restserver\Libraries\REST_Controller" href="../classes/Restserver_Libraries_REST_Controller/_parse_head.xhtml">_parse_head</a>()
+                        </li><li>protected void <a title="Restserver\Libraries\REST_Controller" href="../classes/Restserver_Libraries_REST_Controller/_parse_options.xhtml">_parse_options</a>()
+                        </li><li>protected void <a title="Restserver\Libraries\REST_Controller" href="../classes/Restserver_Libraries_REST_Controller/_parse_patch.xhtml">_parse_patch</a>()
+                        </li><li>protected void <a title="Restserver\Libraries\REST_Controller" href="../classes/Restserver_Libraries_REST_Controller/_parse_delete.xhtml">_parse_delete</a>()
+                        </li><li>protected void <a title="Restserver\Libraries\REST_Controller" href="../classes/Restserver_Libraries_REST_Controller/_parse_query.xhtml">_parse_query</a>()
+                        </li><li>public array|string|NULL <a title="Restserver\Libraries\REST_Controller" href="../classes/Restserver_Libraries_REST_Controller/get.xhtml">get</a>()
+                        </li><li>public array|string|NULL <a title="Restserver\Libraries\REST_Controller" href="../classes/Restserver_Libraries_REST_Controller/options.xhtml">options</a>()
+                        </li><li>public array|string|NULL <a title="Restserver\Libraries\REST_Controller" href="../classes/Restserver_Libraries_REST_Controller/head.xhtml">head</a>()
+                        </li><li>public array|string|NULL <a title="Restserver\Libraries\REST_Controller" href="../classes/Restserver_Libraries_REST_Controller/post.xhtml">post</a>()
+                        </li><li>public array|string|NULL <a title="Restserver\Libraries\REST_Controller" href="../classes/Restserver_Libraries_REST_Controller/put.xhtml">put</a>()
+                        </li><li>public array|string|NULL <a title="Restserver\Libraries\REST_Controller" href="../classes/Restserver_Libraries_REST_Controller/delete.xhtml">delete</a>()
+                        </li><li>public array|string|NULL <a title="Restserver\Libraries\REST_Controller" href="../classes/Restserver_Libraries_REST_Controller/patch.xhtml">patch</a>()
+                        </li><li>public array|string|NULL <a title="Restserver\Libraries\REST_Controller" href="../classes/Restserver_Libraries_REST_Controller/query.xhtml">query</a>()
+                        </li><li>protected string <a title="Restserver\Libraries\REST_Controller" href="../classes/Restserver_Libraries_REST_Controller/_xss_clean.xhtml">_xss_clean</a>()
+                        </li><li>public array <a title="Restserver\Libraries\REST_Controller" href="../classes/Restserver_Libraries_REST_Controller/validation_errors.xhtml">validation_errors</a>()
+                        </li><li>protected bool <a title="Restserver\Libraries\REST_Controller" href="../classes/Restserver_Libraries_REST_Controller/_perform_ldap_auth.xhtml">_perform_ldap_auth</a>()
+                        </li><li>protected bool <a title="Restserver\Libraries\REST_Controller" href="../classes/Restserver_Libraries_REST_Controller/_perform_library_auth.xhtml">_perform_library_auth</a>()
+                        </li><li>protected bool <a title="Restserver\Libraries\REST_Controller" href="../classes/Restserver_Libraries_REST_Controller/_check_login.xhtml">_check_login</a>()
+                        </li><li>protected void <a title="Restserver\Libraries\REST_Controller" href="../classes/Restserver_Libraries_REST_Controller/_check_php_session.xhtml">_check_php_session</a>()
+                        </li><li>protected void <a title="Restserver\Libraries\REST_Controller" href="../classes/Restserver_Libraries_REST_Controller/_prepare_basic_auth.xhtml">_prepare_basic_auth</a>()
+                        </li><li>protected void <a title="Restserver\Libraries\REST_Controller" href="../classes/Restserver_Libraries_REST_Controller/_prepare_digest_auth.xhtml">_prepare_digest_auth</a>()
+                        </li><li>protected void <a title="Restserver\Libraries\REST_Controller" href="../classes/Restserver_Libraries_REST_Controller/_check_blacklist_auth.xhtml">_check_blacklist_auth</a>()
+                        </li><li>protected void <a title="Restserver\Libraries\REST_Controller" href="../classes/Restserver_Libraries_REST_Controller/_check_whitelist_auth.xhtml">_check_whitelist_auth</a>()
+                        </li><li>protected void <a title="Restserver\Libraries\REST_Controller" href="../classes/Restserver_Libraries_REST_Controller/_force_login.xhtml">_force_login</a>()
+                        </li><li>protected bool <a title="Restserver\Libraries\REST_Controller" href="../classes/Restserver_Libraries_REST_Controller/_log_access_time.xhtml">_log_access_time</a>()
+                        </li><li>protected bool <a title="Restserver\Libraries\REST_Controller" href="../classes/Restserver_Libraries_REST_Controller/_log_response_code.xhtml">_log_response_code</a>()
+                        </li><li>protected bool <a title="Restserver\Libraries\REST_Controller" href="../classes/Restserver_Libraries_REST_Controller/_check_access.xhtml">_check_access</a>()
+                        </li><li>protected void <a title="Restserver\Libraries\REST_Controller" href="../classes/Restserver_Libraries_REST_Controller/_check_cors.xhtml">_check_cors</a>()
+                        </li></ul>
+
+            }<br/></div>
+        <h2 id="hierarchy">Hierarchy</h2>
+        <div class="styled">
+          <h4>Extends</h4>
+          <ul>
+            <li>
+              <a title="Restserver\Libraries\REST_Controller" href="../classes/Restserver_Libraries_REST_Controller.xhtml">Restserver\Libraries\REST_Controller</a>
+            </li>
+          </ul>
+        </div>
+        <h2 id="tasks">Tasks</h2>
+        <table class="styled">
+          <thead>
+            <tr>
+              <th style="width:3em;">Line</th>
+              <th>Task</th>
+            </tr>
+          </thead>
+          <tr>
+            <td class="nummeric">32+</td>
+            <td>login to use POST as GET is unsecure for passwords</td>
+          </tr>
+          <tr>
+            <td class="nummeric">56+</td>
+            <td>respond with a success response code</td>
+          </tr>
+        </table>
+        <h2 id="constants">Constants</h2>
+        <table class="styled">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Value</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td id="HTTP_CONTINUE">HTTP_CONTINUE</td>
+              <td>100</td>
+            </tr>
+            <tr>
+              <td id="HTTP_SWITCHING_PROTOCOLS">HTTP_SWITCHING_PROTOCOLS</td>
+              <td>101</td>
+            </tr>
+            <tr>
+              <td id="HTTP_PROCESSING">HTTP_PROCESSING</td>
+              <td>102</td>
+            </tr>
+            <tr>
+              <td id="HTTP_OK">HTTP_OK</td>
+              <td>200</td>
+            </tr>
+            <tr>
+              <td id="HTTP_CREATED">HTTP_CREATED</td>
+              <td>201</td>
+            </tr>
+            <tr>
+              <td id="HTTP_ACCEPTED">HTTP_ACCEPTED</td>
+              <td>202</td>
+            </tr>
+            <tr>
+              <td id="HTTP_NON_AUTHORITATIVE_INFORMATION">HTTP_NON_AUTHORITATIVE_INFORMATION</td>
+              <td>203</td>
+            </tr>
+            <tr>
+              <td id="HTTP_NO_CONTENT">HTTP_NO_CONTENT</td>
+              <td>204</td>
+            </tr>
+            <tr>
+              <td id="HTTP_RESET_CONTENT">HTTP_RESET_CONTENT</td>
+              <td>205</td>
+            </tr>
+            <tr>
+              <td id="HTTP_PARTIAL_CONTENT">HTTP_PARTIAL_CONTENT</td>
+              <td>206</td>
+            </tr>
+            <tr>
+              <td id="HTTP_MULTI_STATUS">HTTP_MULTI_STATUS</td>
+              <td>207</td>
+            </tr>
+            <tr>
+              <td id="HTTP_ALREADY_REPORTED">HTTP_ALREADY_REPORTED</td>
+              <td>208</td>
+            </tr>
+            <tr>
+              <td id="HTTP_IM_USED">HTTP_IM_USED</td>
+              <td>226</td>
+            </tr>
+            <tr>
+              <td id="HTTP_MULTIPLE_CHOICES">HTTP_MULTIPLE_CHOICES</td>
+              <td>300</td>
+            </tr>
+            <tr>
+              <td id="HTTP_MOVED_PERMANENTLY">HTTP_MOVED_PERMANENTLY</td>
+              <td>301</td>
+            </tr>
+            <tr>
+              <td id="HTTP_FOUND">HTTP_FOUND</td>
+              <td>302</td>
+            </tr>
+            <tr>
+              <td id="HTTP_SEE_OTHER">HTTP_SEE_OTHER</td>
+              <td>303</td>
+            </tr>
+            <tr>
+              <td id="HTTP_NOT_MODIFIED">HTTP_NOT_MODIFIED</td>
+              <td>304</td>
+            </tr>
+            <tr>
+              <td id="HTTP_USE_PROXY">HTTP_USE_PROXY</td>
+              <td>305</td>
+            </tr>
+            <tr>
+              <td id="HTTP_RESERVED">HTTP_RESERVED</td>
+              <td>306</td>
+            </tr>
+            <tr>
+              <td id="HTTP_TEMPORARY_REDIRECT">HTTP_TEMPORARY_REDIRECT</td>
+              <td>307</td>
+            </tr>
+            <tr>
+              <td id="HTTP_PERMANENTLY_REDIRECT">HTTP_PERMANENTLY_REDIRECT</td>
+              <td>308</td>
+            </tr>
+            <tr>
+              <td id="HTTP_BAD_REQUEST">HTTP_BAD_REQUEST</td>
+              <td>400</td>
+            </tr>
+            <tr>
+              <td id="HTTP_UNAUTHORIZED">HTTP_UNAUTHORIZED</td>
+              <td>401</td>
+            </tr>
+            <tr>
+              <td id="HTTP_PAYMENT_REQUIRED">HTTP_PAYMENT_REQUIRED</td>
+              <td>402</td>
+            </tr>
+            <tr>
+              <td id="HTTP_FORBIDDEN">HTTP_FORBIDDEN</td>
+              <td>403</td>
+            </tr>
+            <tr>
+              <td id="HTTP_NOT_FOUND">HTTP_NOT_FOUND</td>
+              <td>404</td>
+            </tr>
+            <tr>
+              <td id="HTTP_METHOD_NOT_ALLOWED">HTTP_METHOD_NOT_ALLOWED</td>
+              <td>405</td>
+            </tr>
+            <tr>
+              <td id="HTTP_NOT_ACCEPTABLE">HTTP_NOT_ACCEPTABLE</td>
+              <td>406</td>
+            </tr>
+            <tr>
+              <td id="HTTP_PROXY_AUTHENTICATION_REQUIRED">HTTP_PROXY_AUTHENTICATION_REQUIRED</td>
+              <td>407</td>
+            </tr>
+            <tr>
+              <td id="HTTP_REQUEST_TIMEOUT">HTTP_REQUEST_TIMEOUT</td>
+              <td>408</td>
+            </tr>
+            <tr>
+              <td id="HTTP_CONFLICT">HTTP_CONFLICT</td>
+              <td>409</td>
+            </tr>
+            <tr>
+              <td id="HTTP_GONE">HTTP_GONE</td>
+              <td>410</td>
+            </tr>
+            <tr>
+              <td id="HTTP_LENGTH_REQUIRED">HTTP_LENGTH_REQUIRED</td>
+              <td>411</td>
+            </tr>
+            <tr>
+              <td id="HTTP_PRECONDITION_FAILED">HTTP_PRECONDITION_FAILED</td>
+              <td>412</td>
+            </tr>
+            <tr>
+              <td id="HTTP_REQUEST_ENTITY_TOO_LARGE">HTTP_REQUEST_ENTITY_TOO_LARGE</td>
+              <td>413</td>
+            </tr>
+            <tr>
+              <td id="HTTP_REQUEST_URI_TOO_LONG">HTTP_REQUEST_URI_TOO_LONG</td>
+              <td>414</td>
+            </tr>
+            <tr>
+              <td id="HTTP_UNSUPPORTED_MEDIA_TYPE">HTTP_UNSUPPORTED_MEDIA_TYPE</td>
+              <td>415</td>
+            </tr>
+            <tr>
+              <td id="HTTP_REQUESTED_RANGE_NOT_SATISFIABLE">HTTP_REQUESTED_RANGE_NOT_SATISFIABLE</td>
+              <td>416</td>
+            </tr>
+            <tr>
+              <td id="HTTP_EXPECTATION_FAILED">HTTP_EXPECTATION_FAILED</td>
+              <td>417</td>
+            </tr>
+            <tr>
+              <td id="HTTP_I_AM_A_TEAPOT">HTTP_I_AM_A_TEAPOT</td>
+              <td>418</td>
+            </tr>
+            <tr>
+              <td id="HTTP_UNPROCESSABLE_ENTITY">HTTP_UNPROCESSABLE_ENTITY</td>
+              <td>422</td>
+            </tr>
+            <tr>
+              <td id="HTTP_LOCKED">HTTP_LOCKED</td>
+              <td>423</td>
+            </tr>
+            <tr>
+              <td id="HTTP_FAILED_DEPENDENCY">HTTP_FAILED_DEPENDENCY</td>
+              <td>424</td>
+            </tr>
+            <tr>
+              <td id="HTTP_RESERVED_FOR_WEBDAV_ADVANCED_COLLECTIONS_EXPIRED_PROPOSAL">HTTP_RESERVED_FOR_WEBDAV_ADVANCED_COLLECTIONS_EXPIRED_PROPOSAL</td>
+              <td>425</td>
+            </tr>
+            <tr>
+              <td id="HTTP_UPGRADE_REQUIRED">HTTP_UPGRADE_REQUIRED</td>
+              <td>426</td>
+            </tr>
+            <tr>
+              <td id="HTTP_PRECONDITION_REQUIRED">HTTP_PRECONDITION_REQUIRED</td>
+              <td>428</td>
+            </tr>
+            <tr>
+              <td id="HTTP_TOO_MANY_REQUESTS">HTTP_TOO_MANY_REQUESTS</td>
+              <td>429</td>
+            </tr>
+            <tr>
+              <td id="HTTP_REQUEST_HEADER_FIELDS_TOO_LARGE">HTTP_REQUEST_HEADER_FIELDS_TOO_LARGE</td>
+              <td>431</td>
+            </tr>
+            <tr>
+              <td id="HTTP_INTERNAL_SERVER_ERROR">HTTP_INTERNAL_SERVER_ERROR</td>
+              <td>500</td>
+            </tr>
+            <tr>
+              <td id="HTTP_NOT_IMPLEMENTED">HTTP_NOT_IMPLEMENTED</td>
+              <td>501</td>
+            </tr>
+            <tr>
+              <td id="HTTP_BAD_GATEWAY">HTTP_BAD_GATEWAY</td>
+              <td>502</td>
+            </tr>
+            <tr>
+              <td id="HTTP_SERVICE_UNAVAILABLE">HTTP_SERVICE_UNAVAILABLE</td>
+              <td>503</td>
+            </tr>
+            <tr>
+              <td id="HTTP_GATEWAY_TIMEOUT">HTTP_GATEWAY_TIMEOUT</td>
+              <td>504</td>
+            </tr>
+            <tr>
+              <td id="HTTP_VERSION_NOT_SUPPORTED">HTTP_VERSION_NOT_SUPPORTED</td>
+              <td>505</td>
+            </tr>
+            <tr>
+              <td id="HTTP_VARIANT_ALSO_NEGOTIATES_EXPERIMENTAL">HTTP_VARIANT_ALSO_NEGOTIATES_EXPERIMENTAL</td>
+              <td>506</td>
+            </tr>
+            <tr>
+              <td id="HTTP_INSUFFICIENT_STORAGE">HTTP_INSUFFICIENT_STORAGE</td>
+              <td>507</td>
+            </tr>
+            <tr>
+              <td id="HTTP_LOOP_DETECTED">HTTP_LOOP_DETECTED</td>
+              <td>508</td>
+            </tr>
+            <tr>
+              <td id="HTTP_NOT_EXTENDED">HTTP_NOT_EXTENDED</td>
+              <td>510</td>
+            </tr>
+            <tr>
+              <td id="HTTP_NETWORK_AUTHENTICATION_REQUIRED">HTTP_NETWORK_AUTHENTICATION_REQUIRED</td>
+              <td>511</td>
+            </tr>
+          </tbody>
+        </table>
+        <h2 id="members">Members</h2>
+        <div class="styled members">
+          <h4>protected</h4>
+          <ul class="members">
+            <li id="_allow"><strong>$_allow</strong>
+                —
+                <a title="Restserver\Libraries\bool" href="../classes/Restserver_Libraries_bool.xhtml">Restserver\Libraries\bool</a><br/><span class="indent">If the request is allowed based on the API key provided</span></li>
+            <li id="_apiuser"><strong>$_apiuser</strong>
+                —
+                <a title="" href="../classes/.xhtml"/><br/><span class="indent">Information about the current API user</span></li>
+            <li id="_args"><strong>$_args</strong>
+                —
+                array<br/><span class="indent">The arguments from GET, POST, PUT, DELETE, PATCH, HEAD and OPTIONS request methods combined</span></li>
+            <li id="_delete_args"><strong>$_delete_args</strong>
+                —
+                array<br/><span class="indent">The arguments for the DELETE request method</span></li>
+            <li id="_enable_xss"><strong>$_enable_xss</strong>
+                —
+                <a title="Restserver\Libraries\bool" href="../classes/Restserver_Libraries_bool.xhtml">Restserver\Libraries\bool</a><br/><span class="indent">Enable XSS flag Determines whether the XSS filter is always active when GET, OPTIONS, HEAD, POST, PUT, DELETE and PATCH data is encountered Set automatically based on config setting</span></li>
+            <li id="_end_rtime"><strong>$_end_rtime</strong>
+                —
+                <a title="Restserver\Libraries\number" href="../classes/Restserver_Libraries_number.xhtml">Restserver\Libraries\number</a><br/><span class="indent">The end of the response time from the server</span></li>
+            <li id="_get_args"><strong>$_get_args</strong>
+                —
+                array<br/><span class="indent">The arguments for the GET request method</span></li>
+            <li id="_head_args"><strong>$_head_args</strong>
+                —
+                array<br/><span class="indent">The arguments for the HEAD request method</span></li>
+            <li id="_insert_id"><strong>$_insert_id</strong>
+                —
+                string<br/><span class="indent">The insert_id of the log entry (if we have one)</span></li>
+            <li id="_options_args"><strong>$_options_args</strong>
+                —
+                array<br/><span class="indent">The arguments for the OPTIONS request method</span></li>
+            <li id="_patch_args"><strong>$_patch_args</strong>
+                —
+                array<br/><span class="indent">The arguments for the PATCH request method</span></li>
+            <li id="_post_args"><strong>$_post_args</strong>
+                —
+                array<br/><span class="indent">The arguments for the POST request method</span></li>
+            <li id="_put_args"><strong>$_put_args</strong>
+                —
+                array<br/><span class="indent">The arguments for the PUT request method</span></li>
+            <li id="_query_args"><strong>$_query_args</strong>
+                —
+                array<br/><span class="indent">The arguments for the query parameters</span></li>
+            <li id="_start_rtime"><strong>$_start_rtime</strong>
+                —
+                <a title="Restserver\Libraries\number" href="../classes/Restserver_Libraries_number.xhtml">Restserver\Libraries\number</a><br/><span class="indent">The start of the response time from the server</span></li>
+            <li id="_supported_formats"><strong>$_supported_formats</strong>
+                —
+                array<br/><span class="indent">List all supported methods, the first will be the default format</span></li>
+            <li id="_user_ldap_dn"><strong>$_user_ldap_dn</strong>
+                —
+                string<br/><span class="indent">The LDAP Distinguished Name of the User post authentication</span></li>
+            <li id="allowed_http_methods"><strong>$allowed_http_methods</strong>
+                —
+                array<br/><span class="indent">List of allowed HTTP methods</span></li>
+            <li id="check_cors"><strong>$check_cors</strong>
+                —
+                <a title="Restserver\Libraries\bool" href="../classes/Restserver_Libraries_bool.xhtml">Restserver\Libraries\bool</a><br/><span class="indent">Whether or not to perform a CORS check and apply CORS headers to the request</span></li>
+            <li id="http_status_codes"><strong>$http_status_codes</strong>
+                —
+                array<br/><span class="indent">HTTP status codes and their respective description Note: Only the widely used HTTP status codes are used</span></li>
+            <li id="methods"><strong>$methods</strong>
+                —
+                array<br/><span class="indent">Defines the list of method properties such as limit, log and level</span></li>
+            <li id="request"><strong>$request</strong>
+                —
+                <a title="" href="../classes/.xhtml"/><br/><span class="indent">Contains details about the request Fields: body, format, method, ssl Note: This is a dynamic object (stdClass)</span></li>
+            <li id="response"><strong>$response</strong>
+                —
+                <a title="" href="../classes/.xhtml"/><br/><span class="indent">Contains details about the response Fields: format, lang Note: This is a dynamic object (stdClass)</span></li>
+            <li id="rest"><strong>$rest</strong>
+                —
+                <a title="" href="../classes/.xhtml"/><br/><span class="indent">Contains details about the REST API Fields: db, ignore_limits, key, level, user_id Note: This is a dynamic object (stdClass)</span></li>
+            <li id="rest_format"><strong>$rest_format</strong>
+                —
+                <a title="Restserver\Libraries\string|NULL" href="../classes/Restserver_Libraries_string|NULL.xhtml">Restserver\Libraries\string|NULL</a><br/><span class="indent">This defines the rest format Must be overridden it in a controller so that it is set</span></li>
+          </ul>
+        </div>
+        <h2 id="methods">Methods</h2>
+        <div class="styled">
+          <h4>public</h4>
+          <ul>
+            <li id="login_get"><a title="Rhfiles\API\User" href="../classes/Rhfiles_API_User/login_get.xhtml">login_get()</a>
+                — This function is called when a get request is sent to the api controller with parameters of login, The api uses the user model to check for a matching $email and $enc_pass.If successful will return a JSON object and HTTP_OK (200) response code or HTTP 404 response code A $email and $enc_pass value must be provided in the get request</li>
+            <li id="register_post"><a title="Rhfiles\API\User" href="../classes/Rhfiles_API_User/register_post.xhtml">register_post()</a>
+                — This function is called when a post request is sent to the api controller with a $username,$email and $enc_pass, The api uses the user model to insert the data into the User table An $email and $enc_pass value must be provided in the post request</li>
+          </ul>
+          <h3>Inherited from <a title="Restserver\Libraries\REST_Controller" href="../classes/Restserver_Libraries_REST_Controller.xhtml">Restserver\Libraries\REST_Controller</a></h3>
+          <h4>protected</h4>
+          <ul>
+            <li id="_auth_override_check"><a title="Restserver\Libraries\REST_Controller" href="../classes/Restserver_Libraries_REST_Controller/_auth_override_check.xhtml">_auth_override_check()</a>
+                — Check if there is a specific auth type set for the current class/method/HTTP-method being called</li>
+            <li id="_check_access"><a title="Restserver\Libraries\REST_Controller" href="../classes/Restserver_Libraries_REST_Controller/_check_access.xhtml">_check_access()</a>
+                — Check to see if the API key has access to the controller and methods</li>
+            <li id="_check_blacklist_auth"><a title="Restserver\Libraries\REST_Controller" href="../classes/Restserver_Libraries_REST_Controller/_check_blacklist_auth.xhtml">_check_blacklist_auth()</a>
+                — Checks if the client's ip is in the 'rest_ip_blacklist' config and generates a 401 response</li>
+            <li id="_check_cors"><a title="Restserver\Libraries\REST_Controller" href="../classes/Restserver_Libraries_REST_Controller/_check_cors.xhtml">_check_cors()</a>
+                — Checks allowed domains, and adds appropriate headers for HTTP access control (CORS)</li>
+            <li id="_check_limit"><a title="Restserver\Libraries\REST_Controller" href="../classes/Restserver_Libraries_REST_Controller/_check_limit.xhtml">_check_limit()</a>
+                — Check if the requests to a controller method exceed a limit</li>
+            <li id="_check_login"><a title="Restserver\Libraries\REST_Controller" href="../classes/Restserver_Libraries_REST_Controller/_check_login.xhtml">_check_login()</a>
+                — Check if the user is logged in</li>
+            <li id="_check_php_session"><a title="Restserver\Libraries\REST_Controller" href="../classes/Restserver_Libraries_REST_Controller/_check_php_session.xhtml">_check_php_session()</a>
+                — Check to see if the user is logged in with a PHP session key</li>
+            <li id="_check_whitelist_auth"><a title="Restserver\Libraries\REST_Controller" href="../classes/Restserver_Libraries_REST_Controller/_check_whitelist_auth.xhtml">_check_whitelist_auth()</a>
+                — Check if the client's ip is in the 'rest_ip_whitelist' config and generates a 401 response</li>
+            <li id="_detect_api_key"><a title="Restserver\Libraries\REST_Controller" href="../classes/Restserver_Libraries_REST_Controller/_detect_api_key.xhtml">_detect_api_key()</a>
+                — See if the user has provided an API key</li>
+            <li id="_detect_input_format"><a title="Restserver\Libraries\REST_Controller" href="../classes/Restserver_Libraries_REST_Controller/_detect_input_format.xhtml">_detect_input_format()</a>
+                — Get the input format e.g. json or xml</li>
+            <li id="_detect_lang"><a title="Restserver\Libraries\REST_Controller" href="../classes/Restserver_Libraries_REST_Controller/_detect_lang.xhtml">_detect_lang()</a>
+                — Preferred return language</li>
+            <li id="_detect_method"><a title="Restserver\Libraries\REST_Controller" href="../classes/Restserver_Libraries_REST_Controller/_detect_method.xhtml">_detect_method()</a>
+                — Get the HTTP request string e.g. get or post</li>
+            <li id="_detect_output_format"><a title="Restserver\Libraries\REST_Controller" href="../classes/Restserver_Libraries_REST_Controller/_detect_output_format.xhtml">_detect_output_format()</a>
+                — Detect which format should be used to output the data</li>
+            <li id="_force_login"><a title="Restserver\Libraries\REST_Controller" href="../classes/Restserver_Libraries_REST_Controller/_force_login.xhtml">_force_login()</a>
+                — Force logging in by setting the WWW-Authenticate header</li>
+            <li id="_get_default_output_format"><a title="Restserver\Libraries\REST_Controller" href="../classes/Restserver_Libraries_REST_Controller/_get_default_output_format.xhtml">_get_default_output_format()</a>
+                — Gets the default format from the configuration. Fallbacks to 'json' if the corresponding configuration option $config['rest_default_format'] is missing or is empty</li>
+            <li id="_log_access_time"><a title="Restserver\Libraries\REST_Controller" href="../classes/Restserver_Libraries_REST_Controller/_log_access_time.xhtml">_log_access_time()</a>
+                — Updates the log table with the total access time</li>
+            <li id="_log_request"><a title="Restserver\Libraries\REST_Controller" href="../classes/Restserver_Libraries_REST_Controller/_log_request.xhtml">_log_request()</a>
+                — Add the request to the log table</li>
+            <li id="_log_response_code"><a title="Restserver\Libraries\REST_Controller" href="../classes/Restserver_Libraries_REST_Controller/_log_response_code.xhtml">_log_response_code()</a>
+                — Updates the log table with HTTP response code</li>
+            <li id="_parse_delete"><a title="Restserver\Libraries\REST_Controller" href="../classes/Restserver_Libraries_REST_Controller/_parse_delete.xhtml">_parse_delete()</a>
+                — Parse the DELETE request arguments</li>
+            <li id="_parse_get"><a title="Restserver\Libraries\REST_Controller" href="../classes/Restserver_Libraries_REST_Controller/_parse_get.xhtml">_parse_get()</a>
+                — Parse the GET request arguments</li>
+            <li id="_parse_head"><a title="Restserver\Libraries\REST_Controller" href="../classes/Restserver_Libraries_REST_Controller/_parse_head.xhtml">_parse_head()</a>
+                — Parse the HEAD request arguments</li>
+            <li id="_parse_options"><a title="Restserver\Libraries\REST_Controller" href="../classes/Restserver_Libraries_REST_Controller/_parse_options.xhtml">_parse_options()</a>
+                — Parse the OPTIONS request arguments</li>
+            <li id="_parse_patch"><a title="Restserver\Libraries\REST_Controller" href="../classes/Restserver_Libraries_REST_Controller/_parse_patch.xhtml">_parse_patch()</a>
+                — Parse the PATCH request arguments</li>
+            <li id="_parse_post"><a title="Restserver\Libraries\REST_Controller" href="../classes/Restserver_Libraries_REST_Controller/_parse_post.xhtml">_parse_post()</a>
+                — Parse the POST request arguments</li>
+            <li id="_parse_put"><a title="Restserver\Libraries\REST_Controller" href="../classes/Restserver_Libraries_REST_Controller/_parse_put.xhtml">_parse_put()</a>
+                — Parse the PUT request arguments</li>
+            <li id="_parse_query"><a title="Restserver\Libraries\REST_Controller" href="../classes/Restserver_Libraries_REST_Controller/_parse_query.xhtml">_parse_query()</a>
+                — Parse the query parameters</li>
+            <li id="_perform_ldap_auth"><a title="Restserver\Libraries\REST_Controller" href="../classes/Restserver_Libraries_REST_Controller/_perform_ldap_auth.xhtml">_perform_ldap_auth()</a>
+                — Perform LDAP Authentication</li>
+            <li id="_perform_library_auth"><a title="Restserver\Libraries\REST_Controller" href="../classes/Restserver_Libraries_REST_Controller/_perform_library_auth.xhtml">_perform_library_auth()</a>
+                — Perform Library Authentication - Override this function to change the way the library is called</li>
+            <li id="_prepare_basic_auth"><a title="Restserver\Libraries\REST_Controller" href="../classes/Restserver_Libraries_REST_Controller/_prepare_basic_auth.xhtml">_prepare_basic_auth()</a>
+                — Prepares for basic authentication</li>
+            <li id="_prepare_digest_auth"><a title="Restserver\Libraries\REST_Controller" href="../classes/Restserver_Libraries_REST_Controller/_prepare_digest_auth.xhtml">_prepare_digest_auth()</a>
+                — Prepares for digest authentication</li>
+            <li id="_xss_clean"><a title="Restserver\Libraries\REST_Controller" href="../classes/Restserver_Libraries_REST_Controller/_xss_clean.xhtml">_xss_clean()</a>
+                — Sanitizes data so that Cross Site Scripting Hacks can be prevented</li>
+            <li id="early_checks"><a title="Restserver\Libraries\REST_Controller" href="../classes/Restserver_Libraries_REST_Controller/early_checks.xhtml">early_checks()</a>
+                — Extend this function to apply additional checking early on in the process</li>
+            <li id="preflight_checks"><a title="Restserver\Libraries\REST_Controller" href="../classes/Restserver_Libraries_REST_Controller/preflight_checks.xhtml">preflight_checks()</a>
+                — Checks to see if we have everything we need to run this library.</li>
+          </ul>
+          <h4>public</h4>
+          <ul>
+            <li id="_remap"><a title="Restserver\Libraries\REST_Controller" href="../classes/Restserver_Libraries_REST_Controller/_remap.xhtml">_remap()</a>
+                — Requests are not made to methods directly, the request will be for an "object". This simply maps the object and method to the correct Controller method</li>
+            <li id="delete"><a title="Restserver\Libraries\REST_Controller" href="../classes/Restserver_Libraries_REST_Controller/delete.xhtml">delete()</a>
+                — Retrieve a value from a DELETE request</li>
+            <li id="get"><a title="Restserver\Libraries\REST_Controller" href="../classes/Restserver_Libraries_REST_Controller/get.xhtml">get()</a>
+                — Retrieve a value from a GET request</li>
+            <li id="head"><a title="Restserver\Libraries\REST_Controller" href="../classes/Restserver_Libraries_REST_Controller/head.xhtml">head()</a>
+                — Retrieve a value from a HEAD request</li>
+            <li id="options"><a title="Restserver\Libraries\REST_Controller" href="../classes/Restserver_Libraries_REST_Controller/options.xhtml">options()</a>
+                — Retrieve a value from a OPTIONS request</li>
+            <li id="patch"><a title="Restserver\Libraries\REST_Controller" href="../classes/Restserver_Libraries_REST_Controller/patch.xhtml">patch()</a>
+                — Retrieve a value from a PATCH request</li>
+            <li id="post"><a title="Restserver\Libraries\REST_Controller" href="../classes/Restserver_Libraries_REST_Controller/post.xhtml">post()</a>
+                — Retrieve a value from a POST request</li>
+            <li id="put"><a title="Restserver\Libraries\REST_Controller" href="../classes/Restserver_Libraries_REST_Controller/put.xhtml">put()</a>
+                — Retrieve a value from a PUT request</li>
+            <li id="query"><a title="Restserver\Libraries\REST_Controller" href="../classes/Restserver_Libraries_REST_Controller/query.xhtml">query()</a>
+                — Retrieve a value from the query parameters</li>
+            <li id="response"><a title="Restserver\Libraries\REST_Controller" href="../classes/Restserver_Libraries_REST_Controller/response.xhtml">response()</a>
+                — Takes mixed data and optionally a status code, then creates the response</li>
+            <li id="set_response"><a title="Restserver\Libraries\REST_Controller" href="../classes/Restserver_Libraries_REST_Controller/set_response.xhtml">set_response()</a>
+                — Takes mixed data and optionally a status code, then creates the response within the buffers of the Output class. The response is sent to the client lately by the framework, after the current controller's method termination.</li>
+            <li id="validation_errors"><a title="Restserver\Libraries\REST_Controller" href="../classes/Restserver_Libraries_REST_Controller/validation_errors.xhtml">validation_errors()</a>
+                — Retrieve the validation errors</li>
+          </ul>
+        </div>
+      </section>
+    </div>
+    <footer>
+      <span>Generated using phpDox 0.11.0-dev - Copyright (C) 2010 - 2019 by Arne Blankerts and Contributors</span>
+    </footer>
+  </body>
+</html>

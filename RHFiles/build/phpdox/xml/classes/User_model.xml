@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="User_model" namespace="" name="User_model" abstract="false" final="false" start="11" end="137">
+  <file path="/opt/lampp/htdocs/poc2/application/models" file="User_model.php" realpath="/opt/lampp/htdocs/poc2/application/models/User_model.php" size="4716" time="2019-02-23T03:15:23+01:00" unixtime="1550888123" sha1="1f334037e36a82ba36602bdb077aff1ad4bf62c3" relative="models/User_model.php"/>
+  <docblock>
+    <description compact="The user model is used to carry out database queries on the User table, Create and Read functionality so far"/>
+    <author value="Youcef Adoum Credit to Guide: Travesy media &lt;https://www.youtube.com/watch?v=qS0a4nKQ6h8&amp;index=6&amp;list=PLillGF-RfqbaP_71rOyChhjeK1swokUIS&gt; Followed the youtube guide while making this model"/>
+  </docblock>
+  <extends full="CI_Model" namespace="" name="CI_Model" unresolved="true"/>
+  <method name="create_user_and_profile" start="23" end="47" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="This function will create a user, inserting the values into the User table"/>
+      <param description="The unique username to be inserted" type="string" variable="$username"/>
+      <param description="The email to be inserted" type="string" variable="$email"/>
+      <param description="The password encrypted by sha1" type="string" variable="$encrypt_pass"/>
+      <return description="True on successful insertion" type="boolean"/>
+      <todo value="Create entry in profile table as well"/>
+    </docblock>
+    <parameter name="username" byreference="false" type="{unknown}"/>
+    <parameter name="email" byreference="false" type="{unknown}"/>
+    <parameter name="encrypt_pass" byreference="false" type="{unknown}"/>
+    <parameter name="first_name" byreference="false" type="{unknown}"/>
+    <parameter name="last_name" byreference="false" type="{unknown}"/>
+    <parameter name="location_id" byreference="false" type="{unknown}"/>
+    <parameter name="test_flag" byreference="false" type="boolean" default="FALSE"/>
+  </method>
+  <method name="read_email" start="49" end="62" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="user_id" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="read_username_from_skill" start="64" end="75" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="skill_id" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="read_username" start="77" end="81" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="user_id" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="login" start="92" end="107" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="This function will check the User table for a specific user record with matching $email and $encrypt_pass returning false if the record isnt found or the id of the user if it exists"/>
+      <param description="A users email" type="string" variable="$email"/>
+      <param description="The sha1 of a users password" type="string" variable="$encrypt_pass"/>
+      <return description="Returns an int of user_id if the $email/$encryp_pass combo are found, false if not found" type="object">
+        <type full="int|boolean" namespace="" name="int|boolean"/>
+      </return>
+      <todo value="return row array instead attribute"/>
+    </docblock>
+    <parameter name="email" byreference="false" type="{unknown}"/>
+    <parameter name="encrypt_pass" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="delete_user" start="108" end="117" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="username" byreference="false" type="{unknown}"/>
+    <parameter name="last_name" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="check_exists" start="125" end="136" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="This fuction checks the User Table to see if a user record already exists with the username=$username"/>
+      <param description="A username to be checked" type="string" variable="$username"/>
+      <return description="Return True if the username DOES NOT exists: else return False it exists" type="boolean"/>
+    </docblock>
+    <parameter name="username" byreference="false" type="{unknown}"/>
+  </method>
+</class>

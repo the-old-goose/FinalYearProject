@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="Tdd" namespace="" name="Tdd" abstract="false" final="false" start="4" end="103">
+  <file path="/opt/lampp/htdocs/poc2/application/controllers/testing" file="Tdd.php" realpath="/opt/lampp/htdocs/poc2/application/controllers/testing/Tdd.php" size="4040" time="2019-02-17T22:13:23+01:00" unixtime="1550438003" sha1="f8071424aa4ca0c9c95d9ab92a82f8a239df3dc1" relative="controllers/testing/Tdd.php"/>
+  <extends full="CI_Controller" namespace="" name="CI_Controller" unresolved="true"/>
+  <constructor name="__construct" start="5" end="9" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="getSingleSkillUsingModelTest" start="32" end="36" abstract="false" final="false" static="false" visibility="private">
+    <parameter name="id" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="getSingleSkillUsingAPITest" start="37" end="41" abstract="false" final="false" static="false" visibility="private">
+    <parameter name="id" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="getSingleSearchedSkillUsingModelTest" start="42" end="46" abstract="false" final="false" static="false" visibility="private">
+    <parameter name="searchterm" byreference="false" type="{unknown}"/>
+    <parameter name="items" byreference="false" type="{unknown}"/>
+    <parameter name="offset" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="getSingleSearchedSkillUsingAPITest" start="47" end="52" abstract="false" final="false" static="false" visibility="private">
+    <parameter name="searchterm" byreference="false" type="{unknown}"/>
+    <parameter name="items" byreference="false" type="{unknown}"/>
+    <parameter name="offset" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="registerUserTest" start="54" end="56" abstract="false" final="false" static="false" visibility="private">
+    <parameter name="username" byreference="false" type="{unknown}"/>
+    <parameter name="email" byreference="false" type="{unknown}"/>
+    <parameter name="enc_pass" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="loginUserTest" start="58" end="64" abstract="false" final="false" static="false" visibility="private">
+    <parameter name="email" byreference="false" type="{unknown}"/>
+    <parameter name="enc_pass" byreference="false" type="{unknown}"/>
+    <inline>
+      <comment value="returns userid or false" line="62"/>
+    </inline>
+  </method>
+  <method name="index" start="65" end="102" abstract="false" final="false" static="false" visibility="public">
+    <inline>
+      <comment value="Testing for a single skill using the model" line="67"/>
+      <comment value="Testing for a single skill using a GET request to the api" line="73"/>
+      <comment value="Testing for a single skill using a search term 'index" line="79"/>
+      <comment value="expected id of 'index test' skill" line="81"/>
+      <comment value="Testing for a single skill using a search term index via the api" line="85"/>
+      <comment value="expected id of 'index test' skill" line="87"/>
+      <comment value="Testing for a registering a user with valid information(validation still to do)" line="91"/>
+      <comment value="$test5=$this-&gt;registerUserTest(&quot;auserName&quot;, &quot;email@unittest.com&quot;, sha1(&quot;pass&quot;));" line="92"/>
+      <comment value="$expected_result=true;" line="93"/>
+      <comment value="$test_name=&quot;Registering with valid details &quot;;" line="94"/>
+      <comment value="echo $this-&gt;unit-&gt;run($test5,$expected_result,$test_name);" line="95"/>
+    </inline>
+  </method>
+</class>

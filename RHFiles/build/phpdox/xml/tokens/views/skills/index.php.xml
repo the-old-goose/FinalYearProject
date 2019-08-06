@@ -1,0 +1,429 @@
+<?xml version="1.0"?>
+<source xmlns="http://xml.phpdox.net/token">
+  <file xmlns="http://xml.phpdox.net/src" path="/opt/lampp/htdocs/poc2/application/views/skills" file="index.php" realpath="/opt/lampp/htdocs/poc2/application/views/skills/index.php" size="2008" time="2019-02-24T23:59:13+01:00" unixtime="1551049153" sha1="b86526116c12b4b4a884b2da653ae8726160d76d" relative="views/skills/index.php"/>
+  <line no="1">
+    <token name="T_INLINE_HTML">&lt;!-- skill-index --&gt;</token>
+  </line>
+  <line no="2"/>
+  <line no="3">
+    <token name="T_INLINE_HTML">&lt;!--search bar--&gt;</token>
+  </line>
+  <line no="4">
+    <token name="T_INLINE_HTML">&lt;div class="row center height10"&gt;</token>
+  </line>
+  <line no="5">
+    <token name="T_INLINE_HTML">	&lt;div class="twelve columns tile" style="height:65px;"&gt;</token>
+  </line>
+  <line no="6">
+    <token name="T_INLINE_HTML">		&lt;div id="search"&gt;</token>
+  </line>
+  <line no="7"/>
+  <line no="8">
+    <token name="T_INLINE_HTML">			</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_ECHO">echo</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">form_open</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'skills/search'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="9">
+    <token name="T_INLINE_HTML">			</token>
+  </line>
+  <line no="10">
+    <token name="T_INLINE_HTML">			&lt;input type="text" placeholder="Search..." name="search" size="30"&gt;</token>
+  </line>
+  <line no="11">
+    <token name="T_INLINE_HTML">			&lt;input id="btn" type='submit' value='Search'&gt;</token>
+  </line>
+  <line no="12">
+    <token name="T_INLINE_HTML">			</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_ECHO">echo</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">form_close</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="13"/>
+  <line no="14">
+    <token name="T_INLINE_HTML">		&lt;/div&gt;</token>
+  </line>
+  <line no="15">
+    <token name="T_INLINE_HTML">	&lt;/div&gt;</token>
+  </line>
+  <line no="16">
+    <token name="T_INLINE_HTML">&lt;/div&gt;</token>
+  </line>
+  <line no="17"/>
+  <line no="18">
+    <token name="T_INLINE_HTML">&lt;div class="row"&gt;</token>
+  </line>
+  <line no="19"/>
+  <line no="20">
+    <token name="T_INLINE_HTML">	&lt;!-- Category Menu --&gt;</token>
+  </line>
+  <line no="21">
+    <token name="T_INLINE_HTML">  &lt;div class="three columns tile" style="margin-left: 5px; width:20%;"&gt;</token>
+  </line>
+  <line no="22">
+    <token name="T_INLINE_HTML">	  &lt;div id="categories"&gt;</token>
+  </line>
+  <line no="23">
+    <token name="T_INLINE_HTML">			&lt;h1&gt;Categories&lt;/h1&gt;</token>
+  </line>
+  <line no="24">
+    <token name="T_INLINE_HTML">			</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_ECHO">echo</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_DOUBLE_QUOTES">"</token>
+    <token name="T_ENCAPSED_AND_WHITESPACE">[</token>
+    <token name="T_VARIABLE">$total_rows</token>
+    <token name="T_ENCAPSED_AND_WHITESPACE">] Results Found in </token>
+    <token name="T_VARIABLE">$query_time</token>
+    <token name="T_ENCAPSED_AND_WHITESPACE">.</token>
+    <token name="T_PHPDOX_DOUBLE_QUOTES">"</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="25">
+    <token name="T_INLINE_HTML">			</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_FOREACH">foreach</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_VARIABLE">$categories</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_AS">as</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$category</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_COLON">:</token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="26">
+    <token name="T_INLINE_HTML">				</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_IF">if</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_VARIABLE">$c_id</token>
+    <token name="T_IS_IDENTICAL">===</token>
+    <token name="T_VARIABLE">$category</token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'category_id'</token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_COLON">:</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="27">
+    <token name="T_INLINE_HTML">				  &lt;a class="current-category" href="</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_ECHO">echo</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">site_url</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'/skills/categories/'</token>
+    <token name="T_PHPDOX_DOT">.</token>
+    <token name="T_VARIABLE">$category</token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'category_id'</token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+    <token name="T_INLINE_HTML">"&gt;</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_ECHO">echo</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$category</token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'name'</token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+    <token name="T_INLINE_HTML">&lt;/a&gt;&lt;br&gt;</token>
+  </line>
+  <line no="28">
+    <token name="T_INLINE_HTML">				</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_ELSE">else</token>
+    <token name="T_PHPDOX_COLON">:</token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="29">
+    <token name="T_INLINE_HTML">					&lt;a href="</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_ECHO">echo</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">site_url</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'/skills/categories/'</token>
+    <token name="T_PHPDOX_DOT">.</token>
+    <token name="T_VARIABLE">$category</token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'category_id'</token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+    <token name="T_INLINE_HTML">"&gt;</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_ECHO">echo</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$category</token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'name'</token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+    <token name="T_INLINE_HTML">&lt;/a&gt;&lt;br&gt; </token>
+  </line>
+  <line no="30">
+    <token name="T_INLINE_HTML">				</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_ENDIF">endif</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="31">
+    <token name="T_INLINE_HTML">			</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_ENDFOREACH">endforeach</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="32">
+    <token name="T_INLINE_HTML">	  &lt;/div&gt;</token>
+  </line>
+  <line no="33">
+    <token name="T_INLINE_HTML">	&lt;/div&gt;</token>
+  </line>
+  <line no="34"/>
+  <line no="35">
+    <token name="T_INLINE_HTML">	&lt;div class="nine columns tile"&gt;</token>
+  </line>
+  <line no="36"/>
+  <line no="37">
+    <token name="T_INLINE_HTML">		&lt;!-- Skills output --&gt;</token>
+  </line>
+  <line no="38">
+    <token name="T_INLINE_HTML">		</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_IF">if</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_VARIABLE">$noresults</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_COLON">:</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="39">
+    <token name="T_INLINE_HTML">  			&lt;p&gt;No Skills Match&lt;/p&gt;</token>
+  </line>
+  <line no="40">
+    <token name="T_INLINE_HTML">		</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_ELSE">else</token>
+    <token name="T_PHPDOX_COLON">:</token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="41">
+    <token name="T_INLINE_HTML">				</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_VARIABLE">$x</token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_LNUMBER">1</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="42">
+    <token name="T_INLINE_HTML">				</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_FOREACH">foreach</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_VARIABLE">$skills</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_AS">as</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$skill</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_COLON">:</token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="43">
+    <token name="T_INLINE_HTML">					&lt;div id="</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_ECHO">echo</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'skill-'</token>
+    <token name="T_PHPDOX_DOT">.</token>
+    <token name="T_VARIABLE">$x</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+    <token name="T_INLINE_HTML">" class="skill"&gt;</token>
+  </line>
+  <line no="44">
+    <token name="T_INLINE_HTML">					  &lt;div class="card"&gt;</token>
+  </line>
+  <line no="45">
+    <token name="T_INLINE_HTML">							&lt;img src="</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_ECHO">echo</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">base_url</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+    <token name="T_INLINE_HTML">images/woman-icon.png" alt="username" heigh="100" width="100"&gt;</token>
+  </line>
+  <line no="46">
+    <token name="T_INLINE_HTML">							&lt;h1&gt;</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_ECHO">echo</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$skill</token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'name'</token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+    <token name="T_INLINE_HTML">&lt;/h1&gt;</token>
+  </line>
+  <line no="47">
+    <token name="T_INLINE_HTML">							&lt;p class="title"&gt;</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_ECHO">echo</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$skill</token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'username'</token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+    <token name="T_INLINE_HTML">&lt;/p&gt;</token>
+  </line>
+  <line no="48">
+    <token name="T_INLINE_HTML">							&lt;p&gt;</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_ECHO">echo</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">substr</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_VARIABLE">$skill</token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'description'</token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+    <token name="T_LNUMBER">0</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+    <token name="T_LNUMBER">50</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_DOT">.</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">"..."</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+    <token name="T_INLINE_HTML">&lt;/p&gt;</token>
+  </line>
+  <line no="49">
+    <token name="T_INLINE_HTML">							&lt;p&gt;&lt;button id="ttt" onclick="window.location.href='</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_ECHO">echo</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">site_url</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+    <token name="T_INLINE_HTML">skills/view/</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_ECHO">echo</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$skill</token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'skill_id'</token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+    <token name="T_INLINE_HTML">'"&gt;View&lt;/button&gt;&lt;/p&gt;</token>
+  </line>
+  <line no="50">
+    <token name="T_INLINE_HTML">						&lt;/div&gt;</token>
+  </line>
+  <line no="51">
+    <token name="T_INLINE_HTML">					&lt;/div&gt;</token>
+  </line>
+  <line no="52">
+    <token name="T_INLINE_HTML">					</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_VARIABLE">$x</token>
+    <token name="T_INC">++</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="53">
+    <token name="T_INLINE_HTML">				</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_ENDFOREACH">endforeach</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="54">
+    <token name="T_INLINE_HTML">		</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_ENDIF">endif</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="55">
+    <token name="T_INLINE_HTML">		</token>
+  </line>
+  <line no="56">
+    <token name="T_INLINE_HTML">&lt;/div&gt;</token>
+  </line>
+  <line no="57">
+    <token name="T_INLINE_HTML">&lt;/div&gt;</token>
+  </line>
+  <line no="58">
+    <token name="T_INLINE_HTML">	&lt;!-- Pagination output --&gt;</token>
+  </line>
+  <line no="59">
+    <token name="T_INLINE_HTML">&lt;div class="row"&gt;</token>
+  </line>
+  <line no="60">
+    <token name="T_INLINE_HTML">	&lt;div class="pagination tile center"&gt;</token>
+  </line>
+  <line no="61">
+    <token name="T_INLINE_HTML">	  </token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_ECHO">echo</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$this</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">pagination</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">create_links</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="62">
+    <token name="T_INLINE_HTML">	&lt;/div&gt;</token>
+  </line>
+  <line no="63">
+    <token name="T_INLINE_HTML">&lt;/div&gt;</token>
+  </line>
+  <line no="64"/>
+</source>

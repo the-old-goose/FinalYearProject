@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="Verify_User" namespace="" name="Verify_User" abstract="false" final="false" start="4" end="61">
+  <file path="/opt/lampp/htdocs/poc2/application/libraries" file="Verify_User.php" realpath="/opt/lampp/htdocs/poc2/application/libraries/Verify_User.php" size="2155" time="2019-02-23T01:27:45+01:00" unixtime="1550881665" sha1="d8b912ca9335917ee78669933672622016f78800" relative="libraries/Verify_User.php"/>
+  <member name="user" visibility="public" static="false" line="6"/>
+  <member name="CI" visibility="protected" static="false" line="7"/>
+  <constructor name="__construct" start="9" end="13" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="user" byreference="false" type="{unknown}" default="NULL"/>
+  </constructor>
+  <method name="verify_user_profile" start="14" end="24" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="verify_user_register" start="26" end="44" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="checkLoggedIn" start="49" end="60" abstract="false" final="false" static="false" visibility="public"/>
+</class>

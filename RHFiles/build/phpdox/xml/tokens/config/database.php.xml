@@ -1,0 +1,440 @@
+<?xml version="1.0"?>
+<source xmlns="http://xml.phpdox.net/token">
+  <file xmlns="http://xml.phpdox.net/src" path="/opt/lampp/htdocs/poc2/application/config" file="database.php" realpath="/opt/lampp/htdocs/poc2/application/config/database.php" size="4542" time="2018-12-03T18:29:14+01:00" unixtime="1543858154" sha1="574e2056aabf17a635ab7b1cdf4767ee0f12c807" relative="config/database.php"/>
+  <line no="1">
+    <token name="T_OPEN_TAG">&lt;?php</token>
+  </line>
+  <line no="2">
+    <token name="T_STRING">defined</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'BASEPATH'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_LOGICAL_OR">OR</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_EXIT">exit</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'No direct script access allowed'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="3"/>
+  <line no="4">
+    <token name="T_COMMENT">/*</token>
+  </line>
+  <line no="5">
+    <token name="T_COMMENT">| -------------------------------------------------------------------</token>
+  </line>
+  <line no="6">
+    <token name="T_COMMENT">| DATABASE CONNECTIVITY SETTINGS</token>
+  </line>
+  <line no="7">
+    <token name="T_COMMENT">| -------------------------------------------------------------------</token>
+  </line>
+  <line no="8">
+    <token name="T_COMMENT">| This file will contain the settings needed to access your database.</token>
+  </line>
+  <line no="9">
+    <token name="T_COMMENT">|</token>
+  </line>
+  <line no="10">
+    <token name="T_COMMENT">| For complete instructions please consult the 'Database Connection'</token>
+  </line>
+  <line no="11">
+    <token name="T_COMMENT">| page of the User Guide.</token>
+  </line>
+  <line no="12">
+    <token name="T_COMMENT">|</token>
+  </line>
+  <line no="13">
+    <token name="T_COMMENT">| -------------------------------------------------------------------</token>
+  </line>
+  <line no="14">
+    <token name="T_COMMENT">| EXPLANATION OF VARIABLES</token>
+  </line>
+  <line no="15">
+    <token name="T_COMMENT">| -------------------------------------------------------------------</token>
+  </line>
+  <line no="16">
+    <token name="T_COMMENT">|</token>
+  </line>
+  <line no="17">
+    <token name="T_COMMENT">|	['dsn']      The full DSN string describe a connection to the database.</token>
+  </line>
+  <line no="18">
+    <token name="T_COMMENT">|	['hostname'] The hostname of your database server.</token>
+  </line>
+  <line no="19">
+    <token name="T_COMMENT">|	['username'] The username used to connect to the database</token>
+  </line>
+  <line no="20">
+    <token name="T_COMMENT">|	['password'] The password used to connect to the database</token>
+  </line>
+  <line no="21">
+    <token name="T_COMMENT">|	['database'] The name of the database you want to connect to</token>
+  </line>
+  <line no="22">
+    <token name="T_COMMENT">|	['dbdriver'] The database driver. e.g.: mysqli.</token>
+  </line>
+  <line no="23">
+    <token name="T_COMMENT">|			Currently supported:</token>
+  </line>
+  <line no="24">
+    <token name="T_COMMENT">|				 cubrid, ibase, mssql, mysql, mysqli, oci8,</token>
+  </line>
+  <line no="25">
+    <token name="T_COMMENT">|				 odbc, pdo, postgre, sqlite, sqlite3, sqlsrv</token>
+  </line>
+  <line no="26">
+    <token name="T_COMMENT">|	['dbprefix'] You can add an optional prefix, which will be added</token>
+  </line>
+  <line no="27">
+    <token name="T_COMMENT">|				 to the table name when using the  Query Builder class</token>
+  </line>
+  <line no="28">
+    <token name="T_COMMENT">|	['pconnect'] TRUE/FALSE - Whether to use a persistent connection</token>
+  </line>
+  <line no="29">
+    <token name="T_COMMENT">|	['db_debug'] TRUE/FALSE - Whether database errors should be displayed.</token>
+  </line>
+  <line no="30">
+    <token name="T_COMMENT">|	['cache_on'] TRUE/FALSE - Enables/disables query caching</token>
+  </line>
+  <line no="31">
+    <token name="T_COMMENT">|	['cachedir'] The path to the folder where cache files should be stored</token>
+  </line>
+  <line no="32">
+    <token name="T_COMMENT">|	['char_set'] The character set used in communicating with the database</token>
+  </line>
+  <line no="33">
+    <token name="T_COMMENT">|	['dbcollat'] The character collation used in communicating with the database</token>
+  </line>
+  <line no="34">
+    <token name="T_COMMENT">|				 NOTE: For MySQL and MySQLi databases, this setting is only used</token>
+  </line>
+  <line no="35">
+    <token name="T_COMMENT">| 				 as a backup if your server is running PHP &lt; 5.2.3 or MySQL &lt; 5.0.7</token>
+  </line>
+  <line no="36">
+    <token name="T_COMMENT">|				 (and in table creation queries made with DB Forge).</token>
+  </line>
+  <line no="37">
+    <token name="T_COMMENT">| 				 There is an incompatibility in PHP with mysql_real_escape_string() which</token>
+  </line>
+  <line no="38">
+    <token name="T_COMMENT">| 				 can make your site vulnerable to SQL injection if you are using a</token>
+  </line>
+  <line no="39">
+    <token name="T_COMMENT">| 				 multi-byte character set and are running versions lower than these.</token>
+  </line>
+  <line no="40">
+    <token name="T_COMMENT">| 				 Sites using Latin-1 or UTF-8 database character set and collation are unaffected.</token>
+  </line>
+  <line no="41">
+    <token name="T_COMMENT">|	['swap_pre'] A default table prefix that should be swapped with the dbprefix</token>
+  </line>
+  <line no="42">
+    <token name="T_COMMENT">|	['encrypt']  Whether or not to use an encrypted connection.</token>
+  </line>
+  <line no="43">
+    <token name="T_COMMENT">|</token>
+  </line>
+  <line no="44">
+    <token name="T_COMMENT">|			'mysql' (deprecated), 'sqlsrv' and 'pdo/sqlsrv' drivers accept TRUE/FALSE</token>
+  </line>
+  <line no="45">
+    <token name="T_COMMENT">|			'mysqli' and 'pdo/mysql' drivers accept an array with the following options:</token>
+  </line>
+  <line no="46">
+    <token name="T_COMMENT">|</token>
+  </line>
+  <line no="47">
+    <token name="T_COMMENT">|				'ssl_key'    - Path to the private key file</token>
+  </line>
+  <line no="48">
+    <token name="T_COMMENT">|				'ssl_cert'   - Path to the public key certificate file</token>
+  </line>
+  <line no="49">
+    <token name="T_COMMENT">|				'ssl_ca'     - Path to the certificate authority file</token>
+  </line>
+  <line no="50">
+    <token name="T_COMMENT">|				'ssl_capath' - Path to a directory containing trusted CA certificates in PEM format</token>
+  </line>
+  <line no="51">
+    <token name="T_COMMENT">|				'ssl_cipher' - List of *allowed* ciphers to be used for the encryption, separated by colons (':')</token>
+  </line>
+  <line no="52">
+    <token name="T_COMMENT">|				'ssl_verify' - TRUE/FALSE; Whether verify the server certificate or not ('mysqli' only)</token>
+  </line>
+  <line no="53">
+    <token name="T_COMMENT">|</token>
+  </line>
+  <line no="54">
+    <token name="T_COMMENT">|	['compress'] Whether or not to use client compression (MySQL only)</token>
+  </line>
+  <line no="55">
+    <token name="T_COMMENT">|	['stricton'] TRUE/FALSE - forces 'Strict Mode' connections</token>
+  </line>
+  <line no="56">
+    <token name="T_COMMENT">|							- good for ensuring strict SQL while developing</token>
+  </line>
+  <line no="57">
+    <token name="T_COMMENT">|	['ssl_options']	Used to set various SSL options that can be used when making SSL connections.</token>
+  </line>
+  <line no="58">
+    <token name="T_COMMENT">|	['failover'] array - A array with 0 or more data for connections if the main should fail.</token>
+  </line>
+  <line no="59">
+    <token name="T_COMMENT">|	['save_queries'] TRUE/FALSE - Whether to "save" all executed queries.</token>
+  </line>
+  <line no="60">
+    <token name="T_COMMENT">| 				NOTE: Disabling this will also effectively disable both</token>
+  </line>
+  <line no="61">
+    <token name="T_COMMENT">| 				$this-&gt;db-&gt;last_query() and profiling of DB queries.</token>
+  </line>
+  <line no="62">
+    <token name="T_COMMENT">| 				When you run a query, with this setting set to TRUE (default),</token>
+  </line>
+  <line no="63">
+    <token name="T_COMMENT">| 				CodeIgniter will store the SQL statement for debugging purposes.</token>
+  </line>
+  <line no="64">
+    <token name="T_COMMENT">| 				However, this may cause high memory usage, especially if you run</token>
+  </line>
+  <line no="65">
+    <token name="T_COMMENT">| 				a lot of SQL queries ... disable this to avoid that problem.</token>
+  </line>
+  <line no="66">
+    <token name="T_COMMENT">|</token>
+  </line>
+  <line no="67">
+    <token name="T_COMMENT">| The $active_group variable lets you choose which connection group to</token>
+  </line>
+  <line no="68">
+    <token name="T_COMMENT">| make active.  By default there is only one group (the 'default' group).</token>
+  </line>
+  <line no="69">
+    <token name="T_COMMENT">|</token>
+  </line>
+  <line no="70">
+    <token name="T_COMMENT">| The $query_builder variables lets you determine whether or not to load</token>
+  </line>
+  <line no="71">
+    <token name="T_COMMENT">| the query builder class.</token>
+  </line>
+  <line no="72">
+    <token name="T_COMMENT">*/</token>
+  </line>
+  <line no="73">
+    <token name="T_VARIABLE">$active_group</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'default'</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="74">
+    <token name="T_VARIABLE">$query_builder</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">TRUE</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="75"/>
+  <line no="76">
+    <token name="T_VARIABLE">$db</token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'default'</token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_ARRAY">array</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+  </line>
+  <line no="77">
+    <token name="T_WHITESPACE">	</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'dsn'</token>
+    <token name="T_WHITESPACE">	</token>
+    <token name="T_DOUBLE_ARROW">=&gt;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">''</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+  </line>
+  <line no="78">
+    <token name="T_WHITESPACE">	</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'hostname'</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_DOUBLE_ARROW">=&gt;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'localhost'</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+  </line>
+  <line no="79">
+    <token name="T_WHITESPACE">	</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'username'</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_DOUBLE_ARROW">=&gt;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'root'</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+  </line>
+  <line no="80">
+    <token name="T_WHITESPACE">	</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'password'</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_DOUBLE_ARROW">=&gt;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">''</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+  </line>
+  <line no="81">
+    <token name="T_WHITESPACE">	</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'database'</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_DOUBLE_ARROW">=&gt;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'POC2'</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+  </line>
+  <line no="82">
+    <token name="T_WHITESPACE">	</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'dbdriver'</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_DOUBLE_ARROW">=&gt;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'mysqli'</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+  </line>
+  <line no="83">
+    <token name="T_WHITESPACE">	</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'dbprefix'</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_DOUBLE_ARROW">=&gt;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">''</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+  </line>
+  <line no="84">
+    <token name="T_WHITESPACE">	</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'pconnect'</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_DOUBLE_ARROW">=&gt;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">FALSE</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+  </line>
+  <line no="85">
+    <token name="T_WHITESPACE">	</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'db_debug'</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_DOUBLE_ARROW">=&gt;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_STRING">ENVIRONMENT</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_IS_NOT_IDENTICAL">!==</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'production'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+  </line>
+  <line no="86">
+    <token name="T_WHITESPACE">	</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'cache_on'</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_DOUBLE_ARROW">=&gt;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">FALSE</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+  </line>
+  <line no="87">
+    <token name="T_WHITESPACE">	</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'cachedir'</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_DOUBLE_ARROW">=&gt;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'application/dbcache'</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+  </line>
+  <line no="88">
+    <token name="T_WHITESPACE">	</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'char_set'</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_DOUBLE_ARROW">=&gt;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'utf8'</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+  </line>
+  <line no="89">
+    <token name="T_WHITESPACE">	</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'dbcollat'</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_DOUBLE_ARROW">=&gt;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'utf8_general_ci'</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+  </line>
+  <line no="90">
+    <token name="T_WHITESPACE">	</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'swap_pre'</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_DOUBLE_ARROW">=&gt;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">''</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+  </line>
+  <line no="91">
+    <token name="T_WHITESPACE">	</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'encrypt'</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_DOUBLE_ARROW">=&gt;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">FALSE</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+  </line>
+  <line no="92">
+    <token name="T_WHITESPACE">	</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'compress'</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_DOUBLE_ARROW">=&gt;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">FALSE</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+  </line>
+  <line no="93">
+    <token name="T_WHITESPACE">	</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'stricton'</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_DOUBLE_ARROW">=&gt;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">FALSE</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+  </line>
+  <line no="94">
+    <token name="T_WHITESPACE">	</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'failover'</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_DOUBLE_ARROW">=&gt;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_ARRAY">array</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+  </line>
+  <line no="95">
+    <token name="T_WHITESPACE">	</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'save_queries'</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_DOUBLE_ARROW">=&gt;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">TRUE</token>
+  </line>
+  <line no="96">
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="97"/>
+</source>

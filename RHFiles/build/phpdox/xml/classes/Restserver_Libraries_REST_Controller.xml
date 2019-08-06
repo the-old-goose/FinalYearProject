@@ -1,0 +1,1008 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="Restserver\Libraries\REST_Controller" namespace="Restserver\Libraries" name="REST_Controller" abstract="true" final="false" start="22" end="2362">
+  <file path="/opt/lampp/htdocs/poc2/application/libraries" file="REST_Controller.php" realpath="/opt/lampp/htdocs/poc2/application/libraries/REST_Controller.php" size="79683" time="2018-11-09T13:33:01+01:00" unixtime="1541766781" sha1="bed88698c205b95d8dc0a8f364b0df541e66f991" relative="libraries/REST_Controller.php"/>
+  <docblock>
+    <description compact="CodeIgniter Rest Controller A fully RESTful server implementation for CodeIgniter using one library, one config file and one controller."/>
+    <package value="CodeIgniter"/>
+    <subpackage value="Libraries"/>
+    <category value="Libraries"/>
+    <author value="Phil Sturgeon, Chris Kacerguis"/>
+    <license name="MIT"/>
+    <link value="https://github.com/chriskacerguis/codeigniter-restserver"/>
+    <version value="3.0.0"/>
+  </docblock>
+  <extends full="CI_Controller" namespace="" name="CI_Controller" unresolved="true"/>
+  <constant type="{unknown}" name="HTTP_CONTINUE" value="100"/>
+  <constant type="{unknown}" name="HTTP_SWITCHING_PROTOCOLS" value="101"/>
+  <constant type="{unknown}" name="HTTP_PROCESSING" value="102"/>
+  <constant type="{unknown}" name="HTTP_OK" value="200">
+    <docblock>
+      <description compact="The request has succeeded"/>
+    </docblock>
+  </constant>
+  <constant type="{unknown}" name="HTTP_CREATED" value="201">
+    <docblock>
+      <description compact="The server successfully created a new resource"/>
+    </docblock>
+  </constant>
+  <constant type="{unknown}" name="HTTP_ACCEPTED" value="202"/>
+  <constant type="{unknown}" name="HTTP_NON_AUTHORITATIVE_INFORMATION" value="203"/>
+  <constant type="{unknown}" name="HTTP_NO_CONTENT" value="204">
+    <docblock>
+      <description compact="The server successfully processed the request, though no content is returned"/>
+    </docblock>
+  </constant>
+  <constant type="{unknown}" name="HTTP_RESET_CONTENT" value="205"/>
+  <constant type="{unknown}" name="HTTP_PARTIAL_CONTENT" value="206"/>
+  <constant type="{unknown}" name="HTTP_MULTI_STATUS" value="207"/>
+  <constant type="{unknown}" name="HTTP_ALREADY_REPORTED" value="208"/>
+  <constant type="{unknown}" name="HTTP_IM_USED" value="226"/>
+  <constant type="{unknown}" name="HTTP_MULTIPLE_CHOICES" value="300"/>
+  <constant type="{unknown}" name="HTTP_MOVED_PERMANENTLY" value="301"/>
+  <constant type="{unknown}" name="HTTP_FOUND" value="302"/>
+  <constant type="{unknown}" name="HTTP_SEE_OTHER" value="303"/>
+  <constant type="{unknown}" name="HTTP_NOT_MODIFIED" value="304">
+    <docblock>
+      <description compact="The resource has not been modified since the last request"/>
+    </docblock>
+  </constant>
+  <constant type="{unknown}" name="HTTP_USE_PROXY" value="305"/>
+  <constant type="{unknown}" name="HTTP_RESERVED" value="306"/>
+  <constant type="{unknown}" name="HTTP_TEMPORARY_REDIRECT" value="307"/>
+  <constant type="{unknown}" name="HTTP_PERMANENTLY_REDIRECT" value="308"/>
+  <constant type="{unknown}" name="HTTP_BAD_REQUEST" value="400">
+    <docblock>
+      <description compact="The request cannot be fulfilled due to multiple errors"/>
+    </docblock>
+  </constant>
+  <constant type="{unknown}" name="HTTP_UNAUTHORIZED" value="401">
+    <docblock>
+      <description compact="The user is unauthorized to access the requested resource"/>
+    </docblock>
+  </constant>
+  <constant type="{unknown}" name="HTTP_PAYMENT_REQUIRED" value="402"/>
+  <constant type="{unknown}" name="HTTP_FORBIDDEN" value="403">
+    <docblock>
+      <description compact="The requested resource is unavailable at this present time"/>
+    </docblock>
+  </constant>
+  <constant type="{unknown}" name="HTTP_NOT_FOUND" value="404">
+    <docblock>
+      <description compact="The requested resource could not be found">Note: This is sometimes used to mask if there was an UNAUTHORIZED (401) or
+FORBIDDEN (403) error, for security reasons</description>
+    </docblock>
+  </constant>
+  <constant type="{unknown}" name="HTTP_METHOD_NOT_ALLOWED" value="405">
+    <docblock>
+      <description compact="The request method is not supported by the following resource"/>
+    </docblock>
+  </constant>
+  <constant type="{unknown}" name="HTTP_NOT_ACCEPTABLE" value="406">
+    <docblock>
+      <description compact="The request was not acceptable"/>
+    </docblock>
+  </constant>
+  <constant type="{unknown}" name="HTTP_PROXY_AUTHENTICATION_REQUIRED" value="407"/>
+  <constant type="{unknown}" name="HTTP_REQUEST_TIMEOUT" value="408"/>
+  <constant type="{unknown}" name="HTTP_CONFLICT" value="409">
+    <docblock>
+      <description compact="The request could not be completed due to a conflict with the current state of the resource"/>
+    </docblock>
+  </constant>
+  <constant type="{unknown}" name="HTTP_GONE" value="410"/>
+  <constant type="{unknown}" name="HTTP_LENGTH_REQUIRED" value="411"/>
+  <constant type="{unknown}" name="HTTP_PRECONDITION_FAILED" value="412"/>
+  <constant type="{unknown}" name="HTTP_REQUEST_ENTITY_TOO_LARGE" value="413"/>
+  <constant type="{unknown}" name="HTTP_REQUEST_URI_TOO_LONG" value="414"/>
+  <constant type="{unknown}" name="HTTP_UNSUPPORTED_MEDIA_TYPE" value="415"/>
+  <constant type="{unknown}" name="HTTP_REQUESTED_RANGE_NOT_SATISFIABLE" value="416"/>
+  <constant type="{unknown}" name="HTTP_EXPECTATION_FAILED" value="417"/>
+  <constant type="{unknown}" name="HTTP_I_AM_A_TEAPOT" value="418"/>
+  <constant type="{unknown}" name="HTTP_UNPROCESSABLE_ENTITY" value="422"/>
+  <constant type="{unknown}" name="HTTP_LOCKED" value="423"/>
+  <constant type="{unknown}" name="HTTP_FAILED_DEPENDENCY" value="424"/>
+  <constant type="{unknown}" name="HTTP_RESERVED_FOR_WEBDAV_ADVANCED_COLLECTIONS_EXPIRED_PROPOSAL" value="425"/>
+  <constant type="{unknown}" name="HTTP_UPGRADE_REQUIRED" value="426"/>
+  <constant type="{unknown}" name="HTTP_PRECONDITION_REQUIRED" value="428"/>
+  <constant type="{unknown}" name="HTTP_TOO_MANY_REQUESTS" value="429"/>
+  <constant type="{unknown}" name="HTTP_REQUEST_HEADER_FIELDS_TOO_LARGE" value="431"/>
+  <constant type="{unknown}" name="HTTP_INTERNAL_SERVER_ERROR" value="500">
+    <docblock>
+      <description compact="The server encountered an unexpected error">Note: This is a generic error message when no specific message
+is suitable</description>
+    </docblock>
+  </constant>
+  <constant type="{unknown}" name="HTTP_NOT_IMPLEMENTED" value="501">
+    <docblock>
+      <description compact="The server does not recognise the request method"/>
+    </docblock>
+  </constant>
+  <constant type="{unknown}" name="HTTP_BAD_GATEWAY" value="502"/>
+  <constant type="{unknown}" name="HTTP_SERVICE_UNAVAILABLE" value="503"/>
+  <constant type="{unknown}" name="HTTP_GATEWAY_TIMEOUT" value="504"/>
+  <constant type="{unknown}" name="HTTP_VERSION_NOT_SUPPORTED" value="505"/>
+  <constant type="{unknown}" name="HTTP_VARIANT_ALSO_NEGOTIATES_EXPERIMENTAL" value="506"/>
+  <constant type="{unknown}" name="HTTP_INSUFFICIENT_STORAGE" value="507"/>
+  <constant type="{unknown}" name="HTTP_LOOP_DETECTED" value="508"/>
+  <constant type="{unknown}" name="HTTP_NOT_EXTENDED" value="510"/>
+  <constant type="{unknown}" name="HTTP_NETWORK_AUTHENTICATION_REQUIRED" value="511"/>
+  <member name="rest_format" default="NULL" visibility="protected" static="false" line="163">
+    <docblock>
+      <description compact="This defines the rest format Must be overridden it in a controller so that it is set"/>
+      <var type="object">
+        <type full="Restserver\Libraries\string|NULL" namespace="Restserver\Libraries" name="string|NULL"/>
+      </var>
+    </docblock>
+  </member>
+  <member name="methods" default="" type="array" visibility="protected" static="false" line="170">
+    <docblock>
+      <description compact="Defines the list of method properties such as limit, log and level"/>
+      <var type="array"/>
+    </docblock>
+  </member>
+  <member name="allowed_http_methods" default="" type="array" visibility="protected" static="false" line="177">
+    <docblock>
+      <description compact="List of allowed HTTP methods"/>
+      <var type="array"/>
+    </docblock>
+  </member>
+  <member name="request" default="NULL" visibility="protected" static="false" line="186">
+    <docblock>
+      <description compact="Contains details about the request Fields: body, format, method, ssl Note: This is a dynamic object (stdClass)"/>
+      <var type="object"/>
+    </docblock>
+  </member>
+  <member name="response" default="NULL" visibility="protected" static="false" line="195">
+    <docblock>
+      <description compact="Contains details about the response Fields: format, lang Note: This is a dynamic object (stdClass)"/>
+      <var type="object"/>
+    </docblock>
+  </member>
+  <member name="rest" default="NULL" visibility="protected" static="false" line="204">
+    <docblock>
+      <description compact="Contains details about the REST API Fields: db, ignore_limits, key, level, user_id Note: This is a dynamic object (stdClass)"/>
+      <var type="object"/>
+    </docblock>
+  </member>
+  <member name="_get_args" default="" type="array" visibility="protected" static="false" line="211">
+    <docblock>
+      <description compact="The arguments for the GET request method"/>
+      <var type="array"/>
+    </docblock>
+  </member>
+  <member name="_post_args" default="" type="array" visibility="protected" static="false" line="218">
+    <docblock>
+      <description compact="The arguments for the POST request method"/>
+      <var type="array"/>
+    </docblock>
+  </member>
+  <member name="_put_args" default="" type="array" visibility="protected" static="false" line="225">
+    <docblock>
+      <description compact="The arguments for the PUT request method"/>
+      <var type="array"/>
+    </docblock>
+  </member>
+  <member name="_delete_args" default="" type="array" visibility="protected" static="false" line="232">
+    <docblock>
+      <description compact="The arguments for the DELETE request method"/>
+      <var type="array"/>
+    </docblock>
+  </member>
+  <member name="_patch_args" default="" type="array" visibility="protected" static="false" line="239">
+    <docblock>
+      <description compact="The arguments for the PATCH request method"/>
+      <var type="array"/>
+    </docblock>
+  </member>
+  <member name="_head_args" default="" type="array" visibility="protected" static="false" line="246">
+    <docblock>
+      <description compact="The arguments for the HEAD request method"/>
+      <var type="array"/>
+    </docblock>
+  </member>
+  <member name="_options_args" default="" type="array" visibility="protected" static="false" line="253">
+    <docblock>
+      <description compact="The arguments for the OPTIONS request method"/>
+      <var type="array"/>
+    </docblock>
+  </member>
+  <member name="_query_args" default="" type="array" visibility="protected" static="false" line="260">
+    <docblock>
+      <description compact="The arguments for the query parameters"/>
+      <var type="array"/>
+    </docblock>
+  </member>
+  <member name="_args" default="" type="array" visibility="protected" static="false" line="267">
+    <docblock>
+      <description compact="The arguments from GET, POST, PUT, DELETE, PATCH, HEAD and OPTIONS request methods combined"/>
+      <var type="array"/>
+    </docblock>
+  </member>
+  <member name="_insert_id" default="''" type="string" visibility="protected" static="false" line="274">
+    <docblock>
+      <description compact="The insert_id of the log entry (if we have one)"/>
+      <var type="string"/>
+    </docblock>
+  </member>
+  <member name="_allow" default="TRUE" type="boolean" visibility="protected" static="false" line="281">
+    <docblock>
+      <description compact="If the request is allowed based on the API key provided"/>
+      <var type="object">
+        <type full="Restserver\Libraries\bool" namespace="Restserver\Libraries" name="bool"/>
+      </var>
+    </docblock>
+  </member>
+  <member name="_user_ldap_dn" default="''" type="string" visibility="protected" static="false" line="288">
+    <docblock>
+      <description compact="The LDAP Distinguished Name of the User post authentication"/>
+      <var type="string"/>
+    </docblock>
+  </member>
+  <member name="_start_rtime" visibility="protected" static="false" line="295">
+    <docblock>
+      <description compact="The start of the response time from the server"/>
+      <var type="object">
+        <type full="Restserver\Libraries\number" namespace="Restserver\Libraries" name="number"/>
+      </var>
+    </docblock>
+  </member>
+  <member name="_end_rtime" visibility="protected" static="false" line="302">
+    <docblock>
+      <description compact="The end of the response time from the server"/>
+      <var type="object">
+        <type full="Restserver\Libraries\number" namespace="Restserver\Libraries" name="number"/>
+      </var>
+    </docblock>
+  </member>
+  <member name="_supported_formats" default="" type="array" visibility="protected" static="false" line="309">
+    <docblock>
+      <description compact="List all supported methods, the first will be the default format"/>
+      <var type="array"/>
+    </docblock>
+  </member>
+  <member name="_apiuser" visibility="protected" static="false" line="325">
+    <docblock>
+      <description compact="Information about the current API user"/>
+      <var type="object"/>
+    </docblock>
+  </member>
+  <member name="check_cors" default="NULL" visibility="protected" static="false" line="332">
+    <docblock>
+      <description compact="Whether or not to perform a CORS check and apply CORS headers to the request"/>
+      <var type="object">
+        <type full="Restserver\Libraries\bool" namespace="Restserver\Libraries" name="bool"/>
+      </var>
+    </docblock>
+  </member>
+  <member name="_enable_xss" default="FALSE" type="boolean" visibility="protected" static="false" line="342">
+    <docblock>
+      <description compact="Enable XSS flag Determines whether the XSS filter is always active when GET, OPTIONS, HEAD, POST, PUT, DELETE and PATCH data is encountered Set automatically based on config setting"/>
+      <var type="object">
+        <type full="Restserver\Libraries\bool" namespace="Restserver\Libraries" name="bool"/>
+      </var>
+    </docblock>
+  </member>
+  <member name="is_valid_request" default="TRUE" type="boolean" visibility="private" static="false" line="344"/>
+  <member name="http_status_codes" default="" type="array" visibility="protected" static="false" line="353">
+    <docblock>
+      <description compact="HTTP status codes and their respective description Note: Only the widely used HTTP status codes are used"/>
+      <var type="array"/>
+      <link value="http://www.restapitutorial.com/httpstatuscodes.html"/>
+    </docblock>
+  </member>
+  <member name="format" visibility="private" static="false" line="372">
+    <docblock>
+      <description/>
+      <var type="object">
+        <type full="Restserver\Libraries\Format" namespace="Restserver\Libraries" name="Format"/>
+      </var>
+    </docblock>
+  </member>
+  <member name="auth_override" visibility="private" static="false" line="376">
+    <docblock>
+      <description/>
+      <var type="object">
+        <type full="Restserver\Libraries\bool" namespace="Restserver\Libraries" name="bool"/>
+      </var>
+    </docblock>
+  </member>
+  <method name="early_checks" start="384" end="386" abstract="false" final="false" static="false" visibility="protected">
+    <docblock>
+      <description compact="Extend this function to apply additional checking early on in the process"/>
+      <access value="protected"/>
+      <return type="object">
+        <type full="Restserver\Libraries\void" namespace="Restserver\Libraries" name="void"/>
+      </return>
+    </docblock>
+  </method>
+  <constructor name="__construct" start="395" end="599" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Constructor for the REST API"/>
+      <access value="public"/>
+      <param description="Configuration filename minus the file extension" type="string" variable="$config">e.g: my_rest.php is passed as 'my_rest'</param>
+    </docblock>
+    <parameter name="config" byreference="false" type="string" default="'rest'"/>
+    <inline>
+      <comment value="Set the default value of global xss filtering. Same approach as CodeIgniter 3" line="401"/>
+      <comment value="Don't try to parse template variables like {elapsed_time} and {memory_usage}" line="404"/>
+      <comment value="when output is displayed for not damaging data accidentally" line="405"/>
+      <comment value="Start the timer for how long the request takes" line="408"/>
+      <comment value="Load the rest.php configuration file" line="411"/>
+      <comment value="At present the library is bundled with REST_Controller 2.5+, but will eventually be part of CodeIgniter (no citation)" line="414"/>
+      <comment value="if(class_exists('Format'))" line="415"/>
+      <comment value="{" line="416"/>
+      <comment value="$this-&gt;format = new Format();" line="417"/>
+      <comment value="}" line="418"/>
+      <comment value="else" line="419"/>
+      <comment value="{" line="420"/>
+      <comment value="$this-&gt;load-&gt;library('Format', NULL, 'libraryFormat');" line="421"/>
+      <comment value="$this-&gt;format = $this-&gt;libraryFormat;" line="422"/>
+      <comment value="}" line="423"/>
+      <comment value="Determine supported output formats from configuration" line="426"/>
+      <comment value="Validate the configuration setting output formats" line="429"/>
+      <comment value="Add silently the default output format if it is missing" line="440"/>
+      <comment value="Now update $this-&gt;_supported_formats" line="447"/>
+      <comment value="Get the language" line="450"/>
+      <comment value="Load the language file" line="457"/>
+      <comment value="Initialise the response, request and rest objects" line="460"/>
+      <comment value="Check to see if the current IP address is blacklisted" line="465"/>
+      <comment value="Determine whether the connection is HTTPS" line="471"/>
+      <comment value="How is this request being made? GET, POST, PATCH, DELETE, INSERT, PUT, HEAD or OPTIONS" line="474"/>
+      <comment value="Check for CORS access request" line="477"/>
+      <comment value="Create an argument container if it doesn't exist e.g. _get_args" line="484"/>
+      <comment value="Set up the query parameters" line="490"/>
+      <comment value="Set up the GET variables" line="493"/>
+      <comment value="Try to find a format for the request (means we have a request body)" line="496"/>
+      <comment value="Not all methods have a body attached with them" line="499"/>
+      <comment value="Fix parse method return arguments null" line="504"/>
+      <comment value="Which format should the data be returned in?" line="510"/>
+      <comment value="Which language should the data be returned in?" line="513"/>
+      <comment value="Now we know all about our request, let's try and parse the body if it exists" line="516"/>
+      <comment value="get header vars" line="525"/>
+      <comment value="Merge both for one mega-args variable" line="528"/>
+      <comment value="Extend this function to apply additional checking early on in the process" line="540"/>
+      <comment value="Load DB if its enabled" line="543"/>
+      <comment value="Check if there is a specific auth type for the current class/method" line="555"/>
+      <comment value="_auth_override_check could exit so we need $this-&gt;rest-&gt;db initialized before" line="556"/>
+      <comment value="Checking for keys? GET TO WorK!" line="559"/>
+      <comment value="Skip keys test for $config['auth_override_class_method']['class'['method'] = 'none'" line="560"/>
+      <comment value="Only allow ajax requests" line="566"/>
+      <comment value="When there is no specific override for the current class/method, use the default auth value set in the config" line="576"/>
+    </inline>
+  </constructor>
+  <method name="get_local_config" start="604" end="618" abstract="false" final="false" static="false" visibility="private">
+    <docblock>
+      <description/>
+      <param variable="$config_file"/>
+    </docblock>
+    <parameter name="config_file" byreference="false" type="{unknown}"/>
+  </method>
+  <destructor name="__destruct" start="627" end="637" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="De-constructor"/>
+      <author value="Chris Kacerguis"/>
+      <access value="public"/>
+      <return type="object">
+        <type full="Restserver\Libraries\void" namespace="Restserver\Libraries" name="void"/>
+      </return>
+    </docblock>
+    <inline>
+      <comment value="Get the current timestamp" line="629"/>
+      <comment value="Log the loading time to the log table" line="632"/>
+    </inline>
+  </destructor>
+  <method name="preflight_checks" start="645" end="659" abstract="false" final="false" static="false" visibility="protected">
+    <docblock>
+      <description compact="Checks to see if we have everything we need to run this library."/>
+      <access value="protected"/>
+      <throws type="object">
+        <type full="Exception" namespace="" name="Exception"/>
+      </throws>
+    </docblock>
+    <inline>
+      <comment value="Check to see if PHP is equal to or greater than 5.4.x" line="647"/>
+      <comment value="Check to see if this is CI 3.x" line="654"/>
+    </inline>
+  </method>
+  <method name="_remap" start="671" end="812" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Requests are not made to methods directly, the request will be for an &quot;object&quot;. This simply maps the object and method to the correct Controller method"/>
+      <access value="public"/>
+      <param type="string" variable="$object_called"/>
+      <param description="The arguments passed to the controller method" type="array" variable="$arguments"/>
+      <throws type="object">
+        <type full="Exception" namespace="" name="Exception"/>
+      </throws>
+    </docblock>
+    <parameter name="object_called" byreference="false" type="{unknown}"/>
+    <parameter name="arguments" byreference="false" type="array" default=""/>
+    <inline>
+      <comment value="Should we answer if not over SSL?" line="673"/>
+      <comment value="Remove the supported format from the function name e.g. index.json =&gt; index" line="684"/>
+      <comment value="Does this method exist? If not, try executing an index method" line="688"/>
+      <comment value="Do we want to log this method (if allowed by config)?" line="694"/>
+      <comment value="Use keys for this method?" line="697"/>
+      <comment value="They provided a key, but it wasn't valid, so get them out of here" line="700"/>
+      <comment value="Check to see if this key has access to the requested controller" line="721"/>
+      <comment value="Sure it exists, but can they do anything with it?" line="737"/>
+      <comment value="Doing key related stuff? Can only do it if they have a key right?" line="748"/>
+      <comment value="Call the controller method and passed arguments" line="795"/>
+    </inline>
+  </method>
+  <method name="response" start="823" end="907" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Takes mixed data and optionally a status code, then creates the response"/>
+      <access value="public"/>
+      <param description="Data to output to the user" type="object" variable="$data">
+        <type full="Restserver\Libraries\array|NULL" namespace="Restserver\Libraries" name="array|NULL"/>
+      </param>
+      <param description="HTTP status code" type="object" variable="$http_code">
+        <type full="Restserver\Libraries\int|NULL" namespace="Restserver\Libraries" name="int|NULL"/>
+      </param>
+      <param description="TRUE to flush the response to the client and continue" type="object" variable="$continue">running the script; otherwise, exit<type full="Restserver\Libraries\bool" namespace="Restserver\Libraries" name="bool"/></param>
+    </docblock>
+    <parameter name="data" byreference="false" type="{unknown}" default="NULL"/>
+    <parameter name="http_code" byreference="false" type="{unknown}" default="NULL"/>
+    <parameter name="continue" byreference="false" type="boolean" default="FALSE"/>
+    <inline>
+      <comment value="if profiling enabled then print profiling data" line="825"/>
+    </inline>
+  </method>
+  <method name="set_response" start="919" end="922" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Takes mixed data and optionally a status code, then creates the response within the buffers of the Output class. The response is sent to the client lately by the framework, after the current controller's method termination.">All the hooks after the controller's method termination are executable</description>
+      <access value="public"/>
+      <param description="Data to output to the user" type="object" variable="$data">
+        <type full="Restserver\Libraries\array|NULL" namespace="Restserver\Libraries" name="array|NULL"/>
+      </param>
+      <param description="HTTP status code" type="object" variable="$http_code">
+        <type full="Restserver\Libraries\int|NULL" namespace="Restserver\Libraries" name="int|NULL"/>
+      </param>
+    </docblock>
+    <parameter name="data" byreference="false" type="{unknown}" default="NULL"/>
+    <parameter name="http_code" byreference="false" type="{unknown}" default="NULL"/>
+  </method>
+  <method name="_detect_input_format" start="930" end="956" abstract="false" final="false" static="false" visibility="protected">
+    <docblock>
+      <description compact="Get the input format e.g. json or xml"/>
+      <access value="protected"/>
+      <return description="Supported input format; otherwise, NULL" type="object">
+        <type full="Restserver\Libraries\string|NULL" namespace="Restserver\Libraries" name="string|NULL"/>
+      </return>
+    </docblock>
+    <inline>
+      <comment value="Get the CONTENT-TYPE value from the SERVER variable" line="932"/>
+    </inline>
+  </method>
+  <method name="_get_default_output_format" start="966" end="970" abstract="false" final="false" static="false" visibility="protected">
+    <docblock>
+      <description compact="Gets the default format from the configuration. Fallbacks to 'json' if the corresponding configuration option $config['rest_default_format'] is missing or is empty"/>
+      <access value="protected"/>
+      <return description="The default supported input format" type="string"/>
+    </docblock>
+  </method>
+  <method name="_detect_output_format" start="978" end="1041" abstract="false" final="false" static="false" visibility="protected">
+    <docblock>
+      <description compact="Detect which format should be used to output the data"/>
+      <access value="protected"/>
+      <return description="Output format" type="object">
+        <type full="Restserver\Libraries\mixed|NULL|string" namespace="Restserver\Libraries" name="mixed|NULL|string"/>
+      </return>
+    </docblock>
+    <inline>
+      <comment value="Concatenate formats to a regex pattern e.g. \.(csv|json|xml)" line="980"/>
+      <comment value="Check if a file extension is used e.g. http://example.com/api/index.json?param1=param2" line="984"/>
+      <comment value="Get the format parameter named as 'format'" line="990"/>
+      <comment value="Get the HTTP_ACCEPT server variable" line="1001"/>
+      <comment value="Otherwise, check the HTTP_ACCEPT server variable" line="1004"/>
+      <comment value="Check if the controller has a default format" line="1033"/>
+      <comment value="Obtain the default format from the configuration" line="1039"/>
+    </inline>
+  </method>
+  <method name="_detect_method" start="1049" end="1073" abstract="false" final="false" static="false" visibility="protected">
+    <docblock>
+      <description compact="Get the HTTP request string e.g. get or post"/>
+      <access value="protected"/>
+      <return description="Supported request method as a lowercase string; otherwise, NULL if not supported" type="object">
+        <type full="Restserver\Libraries\string|NULL" namespace="Restserver\Libraries" name="string|NULL"/>
+      </return>
+    </docblock>
+    <inline>
+      <comment value="Declare a variable to store the method" line="1051"/>
+      <comment value="Determine whether the 'enable_emulate_request' setting is enabled" line="1054"/>
+    </inline>
+  </method>
+  <method name="_detect_api_key" start="1081" end="1147" abstract="false" final="false" static="false" visibility="protected">
+    <docblock>
+      <description compact="See if the user has provided an API key"/>
+      <access value="protected"/>
+      <return type="object">
+        <type full="Restserver\Libraries\bool" namespace="Restserver\Libraries" name="bool"/>
+      </return>
+    </docblock>
+    <inline>
+      <comment value="Get the api key name variable set in the rest config file" line="1083"/>
+      <comment value="Work out the name of the SERVER entry based on config" line="1086"/>
+      <comment value="Find the key from server or arguments" line="1094"/>
+      <comment value="No key has been sent" line="1145"/>
+    </inline>
+  </method>
+  <method name="_detect_lang" start="1155" end="1181" abstract="false" final="false" static="false" visibility="protected">
+    <docblock>
+      <description compact="Preferred return language"/>
+      <access value="protected"/>
+      <return description="The language code" type="object">
+        <type full="Restserver\Libraries\string|NULL|array" namespace="Restserver\Libraries" name="string|NULL|array"/>
+      </return>
+    </docblock>
+    <inline>
+      <comment value="It appears more than one language has been sent using a comma delimiter" line="1163"/>
+      <comment value="Otherwise simply return as a string" line="1179"/>
+    </inline>
+  </method>
+  <method name="_log_request" start="1190" end="1209" abstract="false" final="false" static="false" visibility="protected">
+    <docblock>
+      <description compact="Add the request to the log table"/>
+      <access value="protected"/>
+      <param description="TRUE the user is authorized; otherwise, FALSE" type="object" variable="$authorized">
+        <type full="Restserver\Libraries\bool" namespace="Restserver\Libraries" name="bool"/>
+      </param>
+      <return description="TRUE the data was inserted; otherwise, FALSE" type="object">
+        <type full="Restserver\Libraries\bool" namespace="Restserver\Libraries" name="bool"/>
+      </return>
+    </docblock>
+    <parameter name="authorized" byreference="false" type="boolean" default="FALSE"/>
+    <inline>
+      <comment value="Insert the request into the log table" line="1192"/>
+      <comment value="Get the last insert id to update at a later stage of the request" line="1205"/>
+    </inline>
+  </method>
+  <method name="_check_limit" start="1218" end="1315" abstract="false" final="false" static="false" visibility="protected">
+    <docblock>
+      <description compact="Check if the requests to a controller method exceed a limit"/>
+      <access value="protected"/>
+      <param description="The method being called" type="string" variable="$controller_method"/>
+      <return description="TRUE the call limit is below the threshold; otherwise, FALSE" type="object">
+        <type full="Restserver\Libraries\bool" namespace="Restserver\Libraries" name="bool"/>
+      </return>
+    </docblock>
+    <parameter name="controller_method" byreference="false" type="{unknown}"/>
+    <inline>
+      <comment value="They are special, or it might not even have a limit" line="1220"/>
+      <comment value="How many times can you get to this method in a defined time_limit (default: 1 hour)?" line="1261"/>
+      <comment value="3600 = 60 * 60" line="1264"/>
+      <comment value="Get data about a keys' usage and limit to one row" line="1266"/>
+      <comment value="No calls have been made for this key" line="1273"/>
+    </inline>
+  </method>
+  <method name="_auth_override_check" start="1323" end="1507" abstract="false" final="false" static="false" visibility="protected">
+    <docblock>
+      <description compact="Check if there is a specific auth type set for the current class/method/HTTP-method being called"/>
+      <access value="protected"/>
+      <return type="object">
+        <type full="Restserver\Libraries\bool" namespace="Restserver\Libraries" name="bool"/>
+      </return>
+    </docblock>
+    <inline>
+      <comment value="Assign the class/method auth type override array from the config" line="1325"/>
+      <comment value="Check to see if the override array is even populated" line="1328"/>
+      <comment value="Assign the class/method/HTTP-method auth type override array from the config" line="1416"/>
+      <comment value="Check to see if the override array is even populated" line="1419"/>
+    </inline>
+  </method>
+  <method name="_parse_get" start="1515" end="1519" abstract="false" final="false" static="false" visibility="protected">
+    <docblock>
+      <description compact="Parse the GET request arguments"/>
+      <access value="protected"/>
+      <return type="object">
+        <type full="Restserver\Libraries\void" namespace="Restserver\Libraries" name="void"/>
+      </return>
+    </docblock>
+    <inline>
+      <comment value="Merge both the URI segments and query parameters" line="1517"/>
+    </inline>
+  </method>
+  <method name="_parse_post" start="1527" end="1535" abstract="false" final="false" static="false" visibility="protected">
+    <docblock>
+      <description compact="Parse the POST request arguments"/>
+      <access value="protected"/>
+      <return type="object">
+        <type full="Restserver\Libraries\void" namespace="Restserver\Libraries" name="void"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="_parse_put" start="1543" end="1558" abstract="false" final="false" static="false" visibility="protected">
+    <docblock>
+      <description compact="Parse the PUT request arguments"/>
+      <access value="protected"/>
+      <return type="object">
+        <type full="Restserver\Libraries\void" namespace="Restserver\Libraries" name="void"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="_parse_head" start="1566" end="1573" abstract="false" final="false" static="false" visibility="protected">
+    <docblock>
+      <description compact="Parse the HEAD request arguments"/>
+      <access value="protected"/>
+      <return type="object">
+        <type full="Restserver\Libraries\void" namespace="Restserver\Libraries" name="void"/>
+      </return>
+    </docblock>
+    <inline>
+      <comment value="Parse the HEAD variables" line="1568"/>
+      <comment value="Merge both the URI segments and HEAD params" line="1571"/>
+    </inline>
+  </method>
+  <method name="_parse_options" start="1581" end="1588" abstract="false" final="false" static="false" visibility="protected">
+    <docblock>
+      <description compact="Parse the OPTIONS request arguments"/>
+      <access value="protected"/>
+      <return type="object">
+        <type full="Restserver\Libraries\void" namespace="Restserver\Libraries" name="void"/>
+      </return>
+    </docblock>
+    <inline>
+      <comment value="Parse the OPTIONS variables" line="1583"/>
+      <comment value="Merge both the URI segments and OPTIONS params" line="1586"/>
+    </inline>
+  </method>
+  <method name="_parse_patch" start="1596" end="1608" abstract="false" final="false" static="false" visibility="protected">
+    <docblock>
+      <description compact="Parse the PATCH request arguments"/>
+      <access value="protected"/>
+      <return type="object">
+        <type full="Restserver\Libraries\void" namespace="Restserver\Libraries" name="void"/>
+      </return>
+    </docblock>
+    <inline>
+      <comment value="It might be a HTTP body" line="1598"/>
+    </inline>
+  </method>
+  <method name="_parse_delete" start="1616" end="1623" abstract="false" final="false" static="false" visibility="protected">
+    <docblock>
+      <description compact="Parse the DELETE request arguments"/>
+      <access value="protected"/>
+      <return type="object">
+        <type full="Restserver\Libraries\void" namespace="Restserver\Libraries" name="void"/>
+      </return>
+    </docblock>
+    <inline>
+      <comment value="These should exist if a DELETE request" line="1618"/>
+    </inline>
+  </method>
+  <method name="_parse_query" start="1631" end="1634" abstract="false" final="false" static="false" visibility="protected">
+    <docblock>
+      <description compact="Parse the query parameters"/>
+      <access value="protected"/>
+      <return type="object">
+        <type full="Restserver\Libraries\void" namespace="Restserver\Libraries" name="void"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="get" start="1647" end="1655" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Retrieve a value from a GET request"/>
+      <access value="public"/>
+      <param description="Key to retrieve from the GET request" type="object" variable="$key">If NULL an array of arguments is returned<type full="Restserver\Libraries\NULL" namespace="Restserver\Libraries" name="NULL"/></param>
+      <param description="Whether to apply XSS filtering" type="object" variable="$xss_clean">
+        <type full="Restserver\Libraries\NULL" namespace="Restserver\Libraries" name="NULL"/>
+      </param>
+      <return description="Value from the GET request; otherwise, NULL" type="object">
+        <type full="Restserver\Libraries\array|string|NULL" namespace="Restserver\Libraries" name="array|string|NULL"/>
+      </return>
+    </docblock>
+    <parameter name="key" byreference="false" type="{unknown}" default="NULL"/>
+    <parameter name="xss_clean" byreference="false" type="{unknown}" default="NULL"/>
+  </method>
+  <method name="options" start="1666" end="1674" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Retrieve a value from a OPTIONS request"/>
+      <access value="public"/>
+      <param description="Key to retrieve from the OPTIONS request." type="object" variable="$key">If NULL an array of arguments is returned<type full="Restserver\Libraries\NULL" namespace="Restserver\Libraries" name="NULL"/></param>
+      <param description="Whether to apply XSS filtering" type="object" variable="$xss_clean">
+        <type full="Restserver\Libraries\NULL" namespace="Restserver\Libraries" name="NULL"/>
+      </param>
+      <return description="Value from the OPTIONS request; otherwise, NULL" type="object">
+        <type full="Restserver\Libraries\array|string|NULL" namespace="Restserver\Libraries" name="array|string|NULL"/>
+      </return>
+    </docblock>
+    <parameter name="key" byreference="false" type="{unknown}" default="NULL"/>
+    <parameter name="xss_clean" byreference="false" type="{unknown}" default="NULL"/>
+  </method>
+  <method name="head" start="1685" end="1693" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Retrieve a value from a HEAD request"/>
+      <access value="public"/>
+      <param description="Key to retrieve from the HEAD request" type="object" variable="$key">If NULL an array of arguments is returned<type full="Restserver\Libraries\NULL" namespace="Restserver\Libraries" name="NULL"/></param>
+      <param description="Whether to apply XSS filtering" type="object" variable="$xss_clean">
+        <type full="Restserver\Libraries\NULL" namespace="Restserver\Libraries" name="NULL"/>
+      </param>
+      <return description="Value from the HEAD request; otherwise, NULL" type="object">
+        <type full="Restserver\Libraries\array|string|NULL" namespace="Restserver\Libraries" name="array|string|NULL"/>
+      </return>
+    </docblock>
+    <parameter name="key" byreference="false" type="{unknown}" default="NULL"/>
+    <parameter name="xss_clean" byreference="false" type="{unknown}" default="NULL"/>
+  </method>
+  <method name="post" start="1704" end="1712" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Retrieve a value from a POST request"/>
+      <access value="public"/>
+      <param description="Key to retrieve from the POST request" type="object" variable="$key">If NULL an array of arguments is returned<type full="Restserver\Libraries\NULL" namespace="Restserver\Libraries" name="NULL"/></param>
+      <param description="Whether to apply XSS filtering" type="object" variable="$xss_clean">
+        <type full="Restserver\Libraries\NULL" namespace="Restserver\Libraries" name="NULL"/>
+      </param>
+      <return description="Value from the POST request; otherwise, NULL" type="object">
+        <type full="Restserver\Libraries\array|string|NULL" namespace="Restserver\Libraries" name="array|string|NULL"/>
+      </return>
+    </docblock>
+    <parameter name="key" byreference="false" type="{unknown}" default="NULL"/>
+    <parameter name="xss_clean" byreference="false" type="{unknown}" default="NULL"/>
+  </method>
+  <method name="put" start="1723" end="1731" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Retrieve a value from a PUT request"/>
+      <access value="public"/>
+      <param description="Key to retrieve from the PUT request" type="object" variable="$key">If NULL an array of arguments is returned<type full="Restserver\Libraries\NULL" namespace="Restserver\Libraries" name="NULL"/></param>
+      <param description="Whether to apply XSS filtering" type="object" variable="$xss_clean">
+        <type full="Restserver\Libraries\NULL" namespace="Restserver\Libraries" name="NULL"/>
+      </param>
+      <return description="Value from the PUT request; otherwise, NULL" type="object">
+        <type full="Restserver\Libraries\array|string|NULL" namespace="Restserver\Libraries" name="array|string|NULL"/>
+      </return>
+    </docblock>
+    <parameter name="key" byreference="false" type="{unknown}" default="NULL"/>
+    <parameter name="xss_clean" byreference="false" type="{unknown}" default="NULL"/>
+  </method>
+  <method name="delete" start="1742" end="1750" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Retrieve a value from a DELETE request"/>
+      <access value="public"/>
+      <param description="Key to retrieve from the DELETE request" type="object" variable="$key">If NULL an array of arguments is returned<type full="Restserver\Libraries\NULL" namespace="Restserver\Libraries" name="NULL"/></param>
+      <param description="Whether to apply XSS filtering" type="object" variable="$xss_clean">
+        <type full="Restserver\Libraries\NULL" namespace="Restserver\Libraries" name="NULL"/>
+      </param>
+      <return description="Value from the DELETE request; otherwise, NULL" type="object">
+        <type full="Restserver\Libraries\array|string|NULL" namespace="Restserver\Libraries" name="array|string|NULL"/>
+      </return>
+    </docblock>
+    <parameter name="key" byreference="false" type="{unknown}" default="NULL"/>
+    <parameter name="xss_clean" byreference="false" type="{unknown}" default="NULL"/>
+  </method>
+  <method name="patch" start="1761" end="1769" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Retrieve a value from a PATCH request"/>
+      <access value="public"/>
+      <param description="Key to retrieve from the PATCH request" type="object" variable="$key">If NULL an array of arguments is returned<type full="Restserver\Libraries\NULL" namespace="Restserver\Libraries" name="NULL"/></param>
+      <param description="Whether to apply XSS filtering" type="object" variable="$xss_clean">
+        <type full="Restserver\Libraries\NULL" namespace="Restserver\Libraries" name="NULL"/>
+      </param>
+      <return description="Value from the PATCH request; otherwise, NULL" type="object">
+        <type full="Restserver\Libraries\array|string|NULL" namespace="Restserver\Libraries" name="array|string|NULL"/>
+      </return>
+    </docblock>
+    <parameter name="key" byreference="false" type="{unknown}" default="NULL"/>
+    <parameter name="xss_clean" byreference="false" type="{unknown}" default="NULL"/>
+  </method>
+  <method name="query" start="1780" end="1788" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Retrieve a value from the query parameters"/>
+      <access value="public"/>
+      <param description="Key to retrieve from the query parameters" type="object" variable="$key">If NULL an array of arguments is returned<type full="Restserver\Libraries\NULL" namespace="Restserver\Libraries" name="NULL"/></param>
+      <param description="Whether to apply XSS filtering" type="object" variable="$xss_clean">
+        <type full="Restserver\Libraries\NULL" namespace="Restserver\Libraries" name="NULL"/>
+      </param>
+      <return description="Value from the query parameters; otherwise, NULL" type="object">
+        <type full="Restserver\Libraries\array|string|NULL" namespace="Restserver\Libraries" name="array|string|NULL"/>
+      </return>
+    </docblock>
+    <parameter name="key" byreference="false" type="{unknown}" default="NULL"/>
+    <parameter name="xss_clean" byreference="false" type="{unknown}" default="NULL"/>
+  </method>
+  <method name="_xss_clean" start="1799" end="1804" abstract="false" final="false" static="false" visibility="protected">
+    <docblock>
+      <description compact="Sanitizes data so that Cross Site Scripting Hacks can be prevented"/>
+      <access value="protected"/>
+      <param description="Input data" type="string" variable="$value"/>
+      <param description="Whether to apply XSS filtering" type="object" variable="$xss_clean">
+        <type full="Restserver\Libraries\bool" namespace="Restserver\Libraries" name="bool"/>
+      </param>
+      <return type="string"/>
+    </docblock>
+    <parameter name="value" byreference="false" type="{unknown}"/>
+    <parameter name="xss_clean" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="validation_errors" start="1812" end="1817" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Retrieve the validation errors"/>
+      <access value="public"/>
+      <return type="array"/>
+    </docblock>
+  </method>
+  <method name="_perform_ldap_auth" start="1829" end="1914" abstract="false" final="false" static="false" visibility="protected">
+    <docblock>
+      <description compact="Perform LDAP Authentication"/>
+      <access value="protected"/>
+      <param description="The username to validate" type="string" variable="$username"/>
+      <param description="The password to validate" type="string" variable="$password"/>
+      <return type="object">
+        <type full="Restserver\Libraries\bool" namespace="Restserver\Libraries" name="bool"/>
+      </return>
+    </docblock>
+    <parameter name="username" byreference="false" type="string" default="''"/>
+    <parameter name="password" byreference="false" type="{unknown}" default="NULL"/>
+    <inline>
+      <comment value="Connect to the ldap server" line="1852"/>
+      <comment value="Search for user" line="1875"/>
+      <comment value="User found, could not authenticate as user" line="1900"/>
+    </inline>
+  </method>
+  <method name="_perform_library_auth" start="1924" end="1953" abstract="false" final="false" static="false" visibility="protected">
+    <docblock>
+      <description compact="Perform Library Authentication - Override this function to change the way the library is called"/>
+      <access value="protected"/>
+      <param description="The username to validate" type="string" variable="$username"/>
+      <param description="The password to validate" type="string" variable="$password"/>
+      <return type="object">
+        <type full="Restserver\Libraries\bool" namespace="Restserver\Libraries" name="bool"/>
+      </return>
+    </docblock>
+    <parameter name="username" byreference="false" type="string" default="''"/>
+    <parameter name="password" byreference="false" type="{unknown}" default="NULL"/>
+  </method>
+  <method name="_check_login" start="1963" end="2010" abstract="false" final="false" static="false" visibility="protected">
+    <docblock>
+      <description compact="Check if the user is logged in"/>
+      <access value="protected"/>
+      <param description="The user's name" type="string" variable="$username"/>
+      <param description="The user's password" type="object" variable="$password">
+        <type full="Restserver\Libraries\bool|string" namespace="Restserver\Libraries" name="bool|string"/>
+      </param>
+      <return type="object">
+        <type full="Restserver\Libraries\bool" namespace="Restserver\Libraries" name="bool"/>
+      </return>
+    </docblock>
+    <parameter name="username" byreference="false" type="{unknown}" default="NULL"/>
+    <parameter name="password" byreference="false" type="boolean" default="FALSE"/>
+  </method>
+  <method name="_check_php_session" start="2018" end="2032" abstract="false" final="false" static="false" visibility="protected">
+    <docblock>
+      <description compact="Check to see if the user is logged in with a PHP session key"/>
+      <access value="protected"/>
+      <return type="object">
+        <type full="Restserver\Libraries\void" namespace="Restserver\Libraries" name="void"/>
+      </return>
+    </docblock>
+    <inline>
+      <comment value="Get the auth_source config item" line="2020"/>
+      <comment value="If false, then the user isn't logged in" line="2023"/>
+    </inline>
+  </method>
+  <method name="_prepare_basic_auth" start="2040" end="2073" abstract="false" final="false" static="false" visibility="protected">
+    <docblock>
+      <description compact="Prepares for basic authentication"/>
+      <access value="protected"/>
+      <return type="object">
+        <type full="Restserver\Libraries\void" namespace="Restserver\Libraries" name="void"/>
+      </return>
+    </docblock>
+    <inline>
+      <comment value="If whitelist is enabled it has the first chance to kick them out" line="2042"/>
+      <comment value="Returns NULL if the SERVER variables PHP_AUTH_USER and HTTP_AUTHENTICATION don't exist" line="2048"/>
+      <comment value="Check if the user is logged into the system" line="2068"/>
+    </inline>
+  </method>
+  <method name="_prepare_digest_auth" start="2081" end="2130" abstract="false" final="false" static="false" visibility="protected">
+    <docblock>
+      <description compact="Prepares for digest authentication"/>
+      <access value="protected"/>
+      <return type="object">
+        <type full="Restserver\Libraries\void" namespace="Restserver\Libraries" name="void"/>
+      </return>
+    </docblock>
+    <inline>
+      <comment value="If whitelist is enabled it has the first chance to kick them out" line="2083"/>
+      <comment value="We need to test which server authentication variable to use," line="2089"/>
+      <comment value="because the PHP ISAPI module in IIS acts different from CGI" line="2090"/>
+      <comment value="The $_SESSION['error_prompted'] variable is used to ask the password" line="2099"/>
+      <comment value="again if none given or if the user enters wrong auth information" line="2100"/>
+      <comment value="We need to retrieve authentication data from the $digest_string variable" line="2106"/>
+      <comment value="For digest authentication the library function should return already stored md5(username:restrealm:password) for that username see rest.php::auth_library_function config" line="2111"/>
+      <comment value="Check if the string don't compare (case-insensitive)" line="2121"/>
+    </inline>
+  </method>
+  <method name="_check_blacklist_auth" start="2138" end="2152" abstract="false" final="false" static="false" visibility="protected">
+    <docblock>
+      <description compact="Checks if the client's ip is in the 'rest_ip_blacklist' config and generates a 401 response"/>
+      <access value="protected"/>
+      <return type="object">
+        <type full="Restserver\Libraries\void" namespace="Restserver\Libraries" name="void"/>
+      </return>
+    </docblock>
+    <inline>
+      <comment value="Match an ip address in a blacklist e.g. 127.0.0.0, 0.0.0.0" line="2140"/>
+      <comment value="Returns 1, 0 or FALSE (on error only). Therefore implicitly convert 1 to TRUE" line="2143"/>
+    </inline>
+  </method>
+  <method name="_check_whitelist_auth" start="2160" end="2180" abstract="false" final="false" static="false" visibility="protected">
+    <docblock>
+      <description compact="Check if the client's ip is in the 'rest_ip_whitelist' config and generates a 401 response"/>
+      <access value="protected"/>
+      <return type="object">
+        <type full="Restserver\Libraries\void" namespace="Restserver\Libraries" name="void"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="_force_login" start="2190" end="2217" abstract="false" final="false" static="false" visibility="protected">
+    <docblock>
+      <description compact="Force logging in by setting the WWW-Authenticate header"/>
+      <access value="protected"/>
+      <param description="A server-specified data string which should be uniquely generated" type="string" variable="$nonce">each time</param>
+      <return type="object">
+        <type full="Restserver\Libraries\void" namespace="Restserver\Libraries" name="void"/>
+      </return>
+    </docblock>
+    <parameter name="nonce" byreference="false" type="string" default="''"/>
+    <inline>
+      <comment value="Display an error response" line="2212"/>
+    </inline>
+  </method>
+  <method name="_log_access_time" start="2226" end="2238" abstract="false" final="false" static="false" visibility="protected">
+    <docblock>
+      <description compact="Updates the log table with the total access time"/>
+      <access value="protected"/>
+      <author value="Chris Kacerguis"/>
+      <return description="TRUE log table updated; otherwise, FALSE" type="object">
+        <type full="Restserver\Libraries\bool" namespace="Restserver\Libraries" name="bool"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="_log_response_code" start="2248" end="2260" abstract="false" final="false" static="false" visibility="protected">
+    <docblock>
+      <description compact="Updates the log table with HTTP response code"/>
+      <access value="protected"/>
+      <author value="Justin Chen"/>
+      <param description="HTTP status code" variable="$http_code" type="int"/>
+      <return description="TRUE log table updated; otherwise, FALSE" type="object">
+        <type full="Restserver\Libraries\bool" namespace="Restserver\Libraries" name="bool"/>
+      </return>
+    </docblock>
+    <parameter name="http_code" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="_check_access" start="2268" end="2302" abstract="false" final="false" static="false" visibility="protected">
+    <docblock>
+      <description compact="Check to see if the API key has access to the controller and methods"/>
+      <access value="protected"/>
+      <return description="TRUE the API key has access; otherwise, FALSE" type="object">
+        <type full="Restserver\Libraries\bool" namespace="Restserver\Libraries" name="bool"/>
+      </return>
+    </docblock>
+    <inline>
+      <comment value="If we don't want to check access, just return TRUE" line="2270"/>
+      <comment value="check if the key has all_access" line="2276"/>
+      <comment value="Fetch controller based on path and controller name" line="2286"/>
+      <comment value="Remove any double slashes for safety" line="2293"/>
+      <comment value="Query the access table and get the number of results" line="2296"/>
+    </inline>
+  </method>
+  <method name="_check_cors" start="2310" end="2361" abstract="false" final="false" static="false" visibility="protected">
+    <docblock>
+      <description compact="Checks allowed domains, and adds appropriate headers for HTTP access control (CORS)"/>
+      <access value="protected"/>
+      <return type="object">
+        <type full="Restserver\Libraries\void" namespace="Restserver\Libraries" name="void"/>
+      </return>
+    </docblock>
+    <inline>
+      <comment value="Convert the config items into strings" line="2312"/>
+      <comment value="If we want to allow any domain to access the API" line="2316"/>
+      <comment value="If there are headers that should be forced in the CORS check, add them now" line="2342"/>
+      <comment value="If the request HTTP method is 'OPTIONS', kill the response and send it to the client" line="2351"/>
+    </inline>
+  </method>
+  <extenders>
+    <extender full="Category" namespace="" name="Category"/>
+    <extender full="Skill" namespace="" name="Skill"/>
+    <extender full="User" namespace="" name="User"/>
+  <extender full="Rhfile\API\User" namespace="Rhfile\API" name="User"/><extender full="Rhfiles\API\User" namespace="Rhfiles\API" name="User"/><extender full="Rhfiles\API\Profile" namespace="Rhfiles\API" name="Profile"/></extenders>
+</class>

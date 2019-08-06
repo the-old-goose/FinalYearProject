@@ -1,0 +1,350 @@
+<?xml version="1.0"?>
+<source xmlns="http://xml.phpdox.net/token">
+  <file xmlns="http://xml.phpdox.net/src" path="/opt/lampp/htdocs/poc2/application/views/pages" file="home.php" realpath="/opt/lampp/htdocs/poc2/application/views/pages/home.php" size="2972" time="2019-02-22T22:56:31+01:00" unixtime="1550872591" sha1="39ffb2c802188a5d2f67a2483decb5defdc9d6a4" relative="views/pages/home.php"/>
+  <line no="1">
+    <token name="T_INLINE_HTML">&lt;body&gt;</token>
+  </line>
+  <line no="2">
+    <token name="T_INLINE_HTML">&lt;section id="main-stage" style="padding-top:0%;margin-top:0%"&gt;</token>
+  </line>
+  <line no="3">
+    <token name="T_INLINE_HTML">&lt;div class="bgimg-1"&gt;</token>
+  </line>
+  <line no="4">
+    <token name="T_INLINE_HTML">  </token>
+  </line>
+  <line no="5">
+    <token name="T_INLINE_HTML">  &lt;div class="caption-logo"&gt;</token>
+  </line>
+  <line no="6">
+    <token name="T_INLINE_HTML">    &lt;img src="</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_ECHO">echo</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">base_url</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+    <token name="T_INLINE_HTML">images/logo-big.png"&gt;</token>
+  </line>
+  <line no="7">
+    <token name="T_INLINE_HTML">  &lt;/div&gt;</token>
+  </line>
+  <line no="8">
+    <token name="T_INLINE_HTML">  &lt;div class="arrow bounce"&gt;</token>
+  </line>
+  <line no="9">
+    <token name="T_INLINE_HTML">    &lt;img src="</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_ECHO">echo</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">base_url</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+    <token name="T_INLINE_HTML">images/double-arrow.png" width="100" height="100"&gt;</token>
+  </line>
+  <line no="10">
+    <token name="T_INLINE_HTML">  &lt;/div&gt;</token>
+  </line>
+  <line no="11">
+    <token name="T_INLINE_HTML">&lt;/div&gt;</token>
+  </line>
+  <line no="12"/>
+  <line no="13">
+    <token name="T_INLINE_HTML">  &lt;div class="home-tiles"&gt;</token>
+  </line>
+  <line no="14">
+    <token name="T_INLINE_HTML">    &lt;div class="container"&gt;</token>
+  </line>
+  <line no="15">
+    <token name="T_INLINE_HTML">    &lt;div class="row"&gt;</token>
+  </line>
+  <line no="16">
+    <token name="T_INLINE_HTML">      &lt;div class="four columns home-tile" &gt;</token>
+  </line>
+  <line no="17">
+    <token name="T_INLINE_HTML">        &lt;img src="</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_ECHO">echo</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">base_url</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+    <token name="T_INLINE_HTML">images/satelite-icon.png" height="225" width="225"&gt; </token>
+  </line>
+  <line no="18">
+    <token name="T_INLINE_HTML">        &lt;h3 style="text-align:center;"&gt;CONNECT&lt;/h3&gt;</token>
+  </line>
+  <line no="19">
+    <token name="T_INLINE_HTML">        &lt;p&gt;hello world hello worldhello world hello worldhello world hello worldhello world hello worldhello world hello world&lt;/p&gt;</token>
+  </line>
+  <line no="20">
+    <token name="T_INLINE_HTML">      &lt;/div&gt;</token>
+  </line>
+  <line no="21">
+    <token name="T_INLINE_HTML">      &lt;div class="four columns home-tile" &gt;</token>
+  </line>
+  <line no="22">
+    <token name="T_INLINE_HTML">      &lt;img src="</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_ECHO">echo</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">base_url</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+    <token name="T_INLINE_HTML">images/alien-icon.png" height="225" width="225"&gt; </token>
+  </line>
+  <line no="23">
+    <token name="T_INLINE_HTML">        &lt;h3 style="text-align:center;"&gt;EXCHANGE&lt;/h3&gt;</token>
+  </line>
+  <line no="24">
+    <token name="T_INLINE_HTML">        &lt;p&gt;hello world hello worldhello world hello worldhello world hello worldhello world hello worldhello world hello world&lt;/p&gt;</token>
+  </line>
+  <line no="25">
+    <token name="T_INLINE_HTML">      &lt;/div&gt;</token>
+  </line>
+  <line no="26">
+    <token name="T_INLINE_HTML">      &lt;div class="four columns home-tile"&gt;</token>
+  </line>
+  <line no="27">
+    <token name="T_INLINE_HTML">        &lt;img src="</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_ECHO">echo</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">base_url</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+    <token name="T_INLINE_HTML">images/atom-icon.png" height="225" width="225"&gt; </token>
+  </line>
+  <line no="28">
+    <token name="T_INLINE_HTML">        &lt;h3 style="text-align:center;"&gt;LEARN&lt;/h3&gt;</token>
+  </line>
+  <line no="29">
+    <token name="T_INLINE_HTML">        &lt;p&gt;hello world hello worldhello world hello worldhello world hello worldhello world hello worldhello world hello world&lt;/p&gt;</token>
+  </line>
+  <line no="30">
+    <token name="T_INLINE_HTML">      &lt;/div&gt;</token>
+  </line>
+  <line no="31"/>
+  <line no="32">
+    <token name="T_INLINE_HTML">    &lt;/div&gt;</token>
+  </line>
+  <line no="33">
+    <token name="T_INLINE_HTML">&lt;/div&gt;</token>
+  </line>
+  <line no="34">
+    <token name="T_INLINE_HTML">  &lt;/div&gt;</token>
+  </line>
+  <line no="35"/>
+  <line no="36">
+    <token name="T_INLINE_HTML">&lt;div class="bgimg-2"&gt;</token>
+  </line>
+  <line no="37">
+    <token name="T_INLINE_HTML">  &lt;div class="caption-logo"  id="xyz"&gt;</token>
+  </line>
+  <line no="38">
+    <token name="T_INLINE_HTML">    &lt;span class="border"&gt;&lt;a href="</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_ECHO">echo</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">site_url</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+    <token name="T_INLINE_HTML">users/login"&gt;LOG IN &amp;#9002;&lt;/a&gt;&lt;/span&gt;</token>
+  </line>
+  <line no="39">
+    <token name="T_INLINE_HTML">  &lt;/div&gt;</token>
+  </line>
+  <line no="40">
+    <token name="T_INLINE_HTML">  </token>
+  </line>
+  <line no="41">
+    <token name="T_INLINE_HTML">&lt;/div&gt;</token>
+  </line>
+  <line no="42"/>
+  <line no="43">
+    <token name="T_INLINE_HTML">&lt;div style="position:relative;"&gt;</token>
+  </line>
+  <line no="44">
+    <token name="T_INLINE_HTML">  &lt;div style="color:#909090;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;"&gt;</token>
+  </line>
+  <line no="45">
+    <token name="T_INLINE_HTML">  &lt;h1 class="center"&gt;TOP TRADERS&lt;/h1&gt;</token>
+  </line>
+  <line no="46">
+    <token name="T_INLINE_HTML">  &lt;/div&gt;</token>
+  </line>
+  <line no="47">
+    <token name="T_INLINE_HTML">&lt;/div&gt;</token>
+  </line>
+  <line no="48"/>
+  <line no="49">
+    <token name="T_INLINE_HTML">&lt;div class="bgimg-3"&gt;</token>
+  </line>
+  <line no="50">
+    <token name="T_INLINE_HTML">      &lt;div class="border" id="tests"&gt;</token>
+  </line>
+  <line no="51">
+    <token name="T_INLINE_HTML">          &lt;div class="leaderboard" id="no1"&gt;</token>
+  </line>
+  <line no="52">
+    <token name="T_INLINE_HTML">            &lt;p&gt;#1&lt;/p&gt;</token>
+  </line>
+  <line no="53">
+    <token name="T_INLINE_HTML">            &lt;img src="</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_ECHO">echo</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">base_url</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+    <token name="T_INLINE_HTML">images/woman-icon.png" height="128" width="128"&gt; </token>
+  </line>
+  <line no="54">
+    <token name="T_INLINE_HTML">            &lt;span&gt;USERNAME&lt;/span&gt; </token>
+  </line>
+  <line no="55">
+    <token name="T_INLINE_HTML">          </token>
+  </line>
+  <line no="56">
+    <token name="T_INLINE_HTML">          &lt;/div&gt;</token>
+  </line>
+  <line no="57"/>
+  <line no="58">
+    <token name="T_INLINE_HTML">          &lt;div class="leaderboard" id="no2"&gt;</token>
+  </line>
+  <line no="59">
+    <token name="T_INLINE_HTML">            &lt;p&gt;#2&lt;/p&gt;</token>
+  </line>
+  <line no="60">
+    <token name="T_INLINE_HTML">            &lt;img src="</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_ECHO">echo</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">base_url</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+    <token name="T_INLINE_HTML">images/profile-pic-1.png" height="128" width="128"&gt;</token>
+  </line>
+  <line no="61">
+    <token name="T_INLINE_HTML">            &lt;span&gt;USERNAME&lt;/span&gt;</token>
+  </line>
+  <line no="62">
+    <token name="T_INLINE_HTML">          &lt;/div&gt;</token>
+  </line>
+  <line no="63"/>
+  <line no="64">
+    <token name="T_INLINE_HTML">          &lt;div class="leaderboard" id="no3"&gt;</token>
+  </line>
+  <line no="65">
+    <token name="T_INLINE_HTML">            &lt;p&gt;#3&lt;/p&gt;</token>
+  </line>
+  <line no="66">
+    <token name="T_INLINE_HTML">            &lt;img src="</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_ECHO">echo</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">base_url</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+    <token name="T_INLINE_HTML">images/profile-pic-2.png" height="128" width="128"&gt;</token>
+  </line>
+  <line no="67">
+    <token name="T_INLINE_HTML">            &lt;span&gt;USERNAME&lt;/span&gt;</token>
+  </line>
+  <line no="68">
+    <token name="T_INLINE_HTML">          &lt;/div&gt;</token>
+  </line>
+  <line no="69"/>
+  <line no="70">
+    <token name="T_INLINE_HTML">     &lt;/div&gt;</token>
+  </line>
+  <line no="71">
+    <token name="T_INLINE_HTML">    </token>
+  </line>
+  <line no="72">
+    <token name="T_INLINE_HTML">&lt;/div&gt;</token>
+  </line>
+  <line no="73"/>
+  <line no="74">
+    <token name="T_INLINE_HTML">&lt;div style="position:relative;"&gt;</token>
+  </line>
+  <line no="75">
+    <token name="T_INLINE_HTML">  &lt;div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;"&gt;</token>
+  </line>
+  <line no="76">
+    <token name="T_INLINE_HTML">  &lt;h1 class="center"&gt;NO ACCOUNT YET?&lt;/h1&gt;</token>
+  </line>
+  <line no="77">
+    <token name="T_INLINE_HTML">  &lt;/div&gt;</token>
+  </line>
+  <line no="78">
+    <token name="T_INLINE_HTML">&lt;/div&gt;</token>
+  </line>
+  <line no="79"/>
+  <line no="80">
+    <token name="T_INLINE_HTML">&lt;div class="bgimg-4"&gt;</token>
+  </line>
+  <line no="81">
+    <token name="T_INLINE_HTML">  &lt;div class="caption-logo" id="xyz" &gt;</token>
+  </line>
+  <line no="82">
+    <token name="T_INLINE_HTML">    &lt;span class="border"&gt;&lt;a href="</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_ECHO">echo</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">site_url</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+    <token name="T_INLINE_HTML">users/register"&gt;SIGN UP &amp;#9002;&lt;/a&gt;&lt;/span&gt;</token>
+  </line>
+  <line no="83">
+    <token name="T_INLINE_HTML">  &lt;/div&gt;</token>
+  </line>
+  <line no="84">
+    <token name="T_INLINE_HTML">&lt;/div&gt;</token>
+  </line>
+  <line no="85"/>
+  <line no="86">
+    <token name="T_INLINE_HTML">&lt;/section&gt;</token>
+  </line>
+  <line no="87">
+    <token name="T_INLINE_HTML">&lt;/body&gt;</token>
+  </line>
+  <line no="88">
+    <token name="T_INLINE_HTML">&lt;/html&gt;</token>
+  </line>
+  <line no="89">
+    <token name="T_INLINE_HTML">  </token>
+  </line>
+  <line no="90"/>
+</source>

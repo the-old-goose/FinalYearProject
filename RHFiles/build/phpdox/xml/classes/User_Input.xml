@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="User_Input" namespace="" name="User_Input" abstract="false" final="false" start="4" end="46">
+  <file path="/opt/lampp/htdocs/poc2/application/libraries" file="User_Input.php" realpath="/opt/lampp/htdocs/poc2/application/libraries/User_Input.php" size="1942" time="2019-02-20T20:06:07+01:00" unixtime="1550689567" sha1="be638e481ec1881993a5c60af24ad503d61093da" relative="libraries/User_Input.php"/>
+  <member name="CI" visibility="protected" static="false" line="6"/>
+  <constructor name="__construct" start="8" end="11" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="getSearchTerm" start="23" end="44" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="This function is used to return the search term that has been POST'ed when searching the skill table.">If the search term is not stored in a session it will be forgotten so this method
+stores the term as session data if one does not already exist. This is so the next SELECT LIMIT WHERE
+query can be ran with this same search term.
+Returning every record that matches the search term snd storing it would not scale compared to
+carrying out a SELECT WHERE LIMT query and using pagination to increment the offset of limit.</description>
+      <return description="$searchterm The searchterm that is either stored from a previous search or newly POST'ed" type="string"/>
+    </docblock>
+  </method>
+</class>

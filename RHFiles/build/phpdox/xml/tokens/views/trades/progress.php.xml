@@ -1,0 +1,234 @@
+<?xml version="1.0"?>
+<source xmlns="http://xml.phpdox.net/token">
+  <file xmlns="http://xml.phpdox.net/src" path="/opt/lampp/htdocs/poc2/application/views/trades" file="progress.php" realpath="/opt/lampp/htdocs/poc2/application/views/trades/progress.php" size="2331" time="2019-02-20T20:56:53+01:00" unixtime="1550692613" sha1="eb5e358c20664d33b0008c35a6ca69cdc5aad6a6" relative="views/trades/progress.php"/>
+  <line no="1">
+    <token name="T_INLINE_HTML">&lt;div class="container tile" id="d1"&gt; </token>
+  </line>
+  <line no="2">
+    <token name="T_INLINE_HTML">    &lt;div class="row" id="title-row"&gt;</token>
+  </line>
+  <line no="3">
+    <token name="T_INLINE_HTML">      &lt;h1&gt;PROGRESS OF TRADE&lt;/h1&gt;</token>
+  </line>
+  <line no="4">
+    <token name="T_INLINE_HTML">    &lt;/div&gt;</token>
+  </line>
+  <line no="5"/>
+  <line no="6">
+    <token name="T_INLINE_HTML">    &lt;div class="row" id="status-row"&gt;</token>
+  </line>
+  <line no="7">
+    <token name="T_INLINE_HTML">        </token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_IF">if</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_VARIABLE">$status</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_COLON">:</token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="8">
+    <token name="T_INLINE_HTML">            </token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_IF">if</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_VARIABLE">$status</token>
+    <token name="T_IS_EQUAL">==</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'inprogress'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_COLON">:</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="9">
+    <token name="T_INLINE_HTML">            &lt;div class="progress"&gt;</token>
+  </line>
+  <line no="10">
+    <token name="T_INLINE_HTML">                &lt;h4&gt;Progress 75% &lt;progress value="75" max="100"&gt;&lt;/progress&gt;&lt;/h2&gt;</token>
+  </line>
+  <line no="11">
+    <token name="T_INLINE_HTML">            &lt;/div&gt;</token>
+  </line>
+  <line no="12">
+    <token name="T_INLINE_HTML">            &lt;div class="row" id="calendar-instructions"&gt;</token>
+  </line>
+  <line no="13">
+    <token name="T_INLINE_HTML">                &lt;div class="eleven columns"&gt;</token>
+  </line>
+  <line no="14">
+    <token name="T_INLINE_HTML">                    &lt;p&gt;</token>
+  </line>
+  <line no="15">
+    <token name="T_INLINE_HTML">                    Great you are on your way to completing a trade! Please meet with &lt;a style="font-size:30px;"&gt;</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_ECHO">echo</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$proposal</token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'username'</token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+    <token name="T_INLINE_HTML">&lt;/a&gt; on &lt;u&gt;</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_ECHO">echo</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$proposal</token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'accepted_date'</token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+    <token name="T_INLINE_HTML">&lt;/u&gt;</token>
+  </line>
+  <line no="16">
+    <token name="T_INLINE_HTML">                    at the time you have arranged. Click the Complete trade button once you have successfully</token>
+  </line>
+  <line no="17">
+    <token name="T_INLINE_HTML">                    completed the trade or press cancel if the trade was unable to happen.</token>
+  </line>
+  <line no="18">
+    <token name="T_INLINE_HTML">                    &lt;/p&gt;</token>
+  </line>
+  <line no="19">
+    <token name="T_INLINE_HTML">                &lt;/div&gt;</token>
+  </line>
+  <line no="20">
+    <token name="T_INLINE_HTML">            &lt;/div&gt;</token>
+  </line>
+  <line no="21">
+    <token name="T_INLINE_HTML">                &lt;div class="row centered"&gt;</token>
+  </line>
+  <line no="22">
+    <token name="T_INLINE_HTML">                &lt;div class="eleven columns"&gt;</token>
+  </line>
+  <line no="23">
+    <token name="T_INLINE_HTML">                    &lt;input type="button" value="Mark Complete" onclick="window.location.href='</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_ECHO">echo</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">site_url</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+    <token name="T_INLINE_HTML">/trades/complete_trade/</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_ECHO">echo</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$skill_proposal_id</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+    <token name="T_INLINE_HTML">'"&gt;</token>
+  </line>
+  <line no="24">
+    <token name="T_INLINE_HTML">                    &lt;input type="button" value="Cancel"&gt;</token>
+  </line>
+  <line no="25">
+    <token name="T_INLINE_HTML">                &lt;/div&gt;</token>
+  </line>
+  <line no="26">
+    <token name="T_INLINE_HTML">                &lt;/div&gt;</token>
+  </line>
+  <line no="27">
+    <token name="T_INLINE_HTML">            </token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_ELSEIF">elseif</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_VARIABLE">$status</token>
+    <token name="T_IS_EQUAL">==</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'pending approval'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_COLON">:</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="28">
+    <token name="T_INLINE_HTML">                &lt;h4&gt;Progress 25% &lt;progress value="25" max="100"&gt;&lt;/progress&gt;&lt;/h2&gt;</token>
+  </line>
+  <line no="29">
+    <token name="T_INLINE_HTML">                &lt;h3&gt;The owner of this proposal still needs to accept or decline the offer&lt;/h2&gt;</token>
+  </line>
+  <line no="30">
+    <token name="T_INLINE_HTML">            </token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_ELSEIF">elseif</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_VARIABLE">$status</token>
+    <token name="T_IS_EQUAL">==</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'complete'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_COLON">:</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="31">
+    <token name="T_INLINE_HTML">                &lt;h4&gt;Progress 100% &lt;progress value="100" max="100"&gt;&lt;/progress&gt;&lt;/h2&gt;</token>
+  </line>
+  <line no="32">
+    <token name="T_INLINE_HTML">                &lt;h3&gt;Trade successfully completed, please leave a review&lt;/h2&gt;</token>
+  </line>
+  <line no="33">
+    <token name="T_INLINE_HTML">                &lt;h1&gt;&amp;#9734; &amp;#9734; &amp;#9734; &amp;#9734; &amp;#9734;&lt;/h1&gt;</token>
+  </line>
+  <line no="34">
+    <token name="T_INLINE_HTML">                &lt;textarea rows="4" cols="50"&gt;</token>
+  </line>
+  <line no="35">
+    <token name="T_INLINE_HTML">                &lt;/textarea&gt;</token>
+  </line>
+  <line no="36">
+    <token name="T_INLINE_HTML">            </token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_ELSEIF">elseif</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_VARIABLE">$status</token>
+    <token name="T_IS_EQUAL">==</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'rejected'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_COLON">:</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="37">
+    <token name="T_INLINE_HTML">                &lt;h4&gt;Progress 0% &lt;progress value="0" max="100"&gt;&lt;/progress&gt;&lt;/h2&gt;</token>
+  </line>
+  <line no="38">
+    <token name="T_INLINE_HTML">                &lt;h3&gt;Unfortunatly this trade was unable to take place, maybe next time.&lt;/h2&gt;</token>
+  </line>
+  <line no="39">
+    <token name="T_INLINE_HTML">            </token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_ENDIF">endif</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="40">
+    <token name="T_INLINE_HTML">        </token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_ELSE">else</token>
+    <token name="T_PHPDOX_COLON">:</token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="41">
+    <token name="T_INLINE_HTML">            &lt;h3&gt; This Trade does not exist or you do not have permission to view this page.&lt;/h3&gt;</token>
+  </line>
+  <line no="42">
+    <token name="T_INLINE_HTML">        </token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_ENDIF">endif</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="43"/>
+  <line no="44">
+    <token name="T_INLINE_HTML">    &lt;/div&gt;</token>
+  </line>
+  <line no="45"/>
+  <line no="46">
+    <token name="T_INLINE_HTML">&lt;/div&gt;</token>
+  </line>
+</source>

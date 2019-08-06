@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="Profiles" namespace="" name="Profiles" abstract="false" final="false" start="4" end="92">
+  <file path="/opt/lampp/htdocs/poc2/application/controllers" file="Profiles.php" realpath="/opt/lampp/htdocs/poc2/application/controllers/Profiles.php" size="3727" time="2019-03-09T20:32:46+01:00" unixtime="1552159966" sha1="de06a8dd0e83b5362a2a7ceaddd72a737bbf3623" relative="controllers/Profiles.php"/>
+  <extends full="CI_Controller" namespace="" name="CI_Controller" unresolved="true"/>
+  <method name="view" start="7" end="34" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="profiles_user_id" byreference="false" type="{unknown}" default="NULL"/>
+    <parameter name="edit" byreference="false" type="integer" default="0"/>
+    <inline>
+      <comment value="Verify user logged in, get user_id" line="9"/>
+      <comment value="If profile_id not given view own profile." line="11"/>
+      <comment value="Check if viewing own profile so edit can be displayed." line="14"/>
+      <comment value="If looking at own profile and edit is true then show  the edit view elements." line="17"/>
+    </inline>
+  </method>
+  <method name="search" start="36" end="55" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="offset" byreference="false" type="integer" default="0"/>
+    <inline>
+      <comment value="Verify user logged in, get user_id" line="38"/>
+      <comment value="get users searched term" line="39"/>
+      <comment value="initialize pagination" line="41"/>
+      <comment value="put in empty ^" line="49"/>
+    </inline>
+  </method>
+  <method name="update" start="57" end="91" abstract="false" final="false" static="false" visibility="public">
+    <inline>
+      <comment value="Verify user logged in, get user_id" line="59"/>
+    </inline>
+  </method>
+</class>

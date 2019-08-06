@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="Proposal_model" namespace="" name="Proposal_model" abstract="false" final="false" start="3" end="38">
+  <file path="/opt/lampp/htdocs/poc2/application/models" file="Proposal_model.php" realpath="/opt/lampp/htdocs/poc2/application/models/Proposal_model.php" size="1316" time="2019-02-16T17:54:04+01:00" unixtime="1550336044" sha1="4ab96f039874bfda4ef161fb7e3f9b4ac48e005b" relative="models/Proposal_model.php"/>
+  <extends full="CI_Model" namespace="" name="CI_Model" unresolved="true"/>
+  <method name="read_proposal_dates" start="5" end="9" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="skill_proposal_id" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="read_initial_skill_user_id" start="11" end="23" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="initial_skill_id" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="read_offer_skill_user_id" start="25" end="37" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="offer_skill_id" byreference="false" type="{unknown}"/>
+  </method>
+</class>

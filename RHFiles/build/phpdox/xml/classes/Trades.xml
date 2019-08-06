@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="Trades" namespace="" name="Trades" abstract="false" final="false" start="4" end="163">
+  <file path="/opt/lampp/htdocs/poc2/application/controllers" file="Trades.php" realpath="/opt/lampp/htdocs/poc2/application/controllers/Trades.php" size="5937" time="2019-03-09T22:14:45+01:00" unixtime="1552166085" sha1="f9b8fd205a682dea82c23727479b0b32f8c10940" relative="controllers/Trades.php"/>
+  <extends full="CI_Controller" namespace="" name="CI_Controller" unresolved="true"/>
+  <method name="initiate" start="6" end="41" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="initial_skill_id" byreference="false" type="{unknown}"/>
+    <parameter name="offer_skill_id" byreference="false" type="{unknown}"/>
+    <inline>
+      <comment value="Verify user logged in, get user_id" line="8"/>
+      <comment value="checks that not own skill proposing for" line="13"/>
+      <comment value="CHECK user owns the offer skill" line="20"/>
+      <comment value="Checks that a date has been selected using the calendar" line="29"/>
+      <comment value="sel_date array concatenated into a single string seperated by commas and inserted in the db" line="37"/>
+    </inline>
+  </method>
+  <method name="decide" start="43" end="72" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="skill_proposal_id" byreference="false" type="{unknown}"/>
+    <inline>
+      <comment value="Verify user logged in, get user_id" line="45"/>
+      <comment value="Check if proposal is not pending approval" line="47"/>
+      <comment value="Get details of proposal" line="55"/>
+      <todo value="Ensure user_id has created the initial skill" line="58"/>
+      <comment value="Read proposed dates" line="62"/>
+      <comment value="Generate Calendar with proposed dates marked with checkboxes in view" line="65"/>
+    </inline>
+  </method>
+  <method name="view_progress" start="74" end="97" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="skill_proposal_id" byreference="false" type="boolean" default="FALSE"/>
+    <inline>
+      <comment value="Verify user logged in, get user_id" line="76"/>
+    </inline>
+  </method>
+  <method name="view_history" start="99" end="112" abstract="false" final="false" static="false" visibility="public">
+    <inline>
+      <comment value="Verify user logged in, get user_id" line="101"/>
+      <comment value="Read trade history" line="103"/>
+    </inline>
+  </method>
+  <method name="accept_proposal" start="114" end="133" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="skill_proposal_id" byreference="false" type="{unknown}"/>
+    <inline>
+      <comment value="Verify user logged in, get user_id" line="116"/>
+      <comment value="Catch No date Selected" line="118"/>
+    </inline>
+  </method>
+  <method name="cancel_proposal" start="135" end="146" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="skill_proposal_id" byreference="false" type="{unknown}"/>
+    <inline>
+      <comment value="Verify user logged in, get user_id" line="137"/>
+      <todo value="check right user can decline the proposal" line="139"/>
+    </inline>
+  </method>
+  <method name="complete_trade" start="148" end="161" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="skill_proposal_id" byreference="false" type="{unknown}"/>
+    <inline>
+      <comment value="Verify user logged in, get user_id" line="150"/>
+      <comment value="verify its in progress" line="154"/>
+      <todo value="Add score to both users" line="157"/>
+    </inline>
+  </method>
+</class>

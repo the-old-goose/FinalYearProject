@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="Skills" namespace="" name="Skills" abstract="false" final="false" start="18" end="239">
+  <file path="/opt/lampp/htdocs/poc2/application/controllers" file="Skills.php" realpath="/opt/lampp/htdocs/poc2/application/controllers/Skills.php" size="10037" time="2019-03-09T23:59:18+01:00" unixtime="1552172358" sha1="3f1609b7dff6e7d0676ae1a06fa36737497834ce" relative="controllers/Skills.php"/>
+  <docblock>
+    <description compact="Credit to Guide: CodeIgniter tutorial &lt;https://www.codeigniter.com/userguide3/tutorial/news_section.html&gt; Credit to Guide: CodeIgniter RestApi tutorial &lt;https://code.tutsplus.com/tutorials/working-with-restful-services-in-codeigniter--net-8814&gt;">This controller deals with the skills marketplace.
+The url and parameters will dictate which view is processed.
+The functions follow a similar pattern so have been commented where appropriate.</description>
+    <author value="Youcef Adoum"/>
+    <var description="Default common data required in all functions." type="object">
+      <type full="$data" namespace="" name="$data"/>
+    </var>
+  </docblock>
+  <extends full="CI_Controller" namespace="" name="CI_Controller" unresolved="true"/>
+  <member name="data" visibility="public" static="false" line="20"/>
+  <constructor name="__construct" start="22" end="31" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="index" start="45" end="73" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="The index function is called when accessing the inital page when you land on the marketplace view.">Pagination is initialized,then a HTTP GET request is sent to the API to get all the skills
+with an $offset based on the url parameter in the third segment
+and a limit based on the number of skills per page.
+A JSON is returned from the API which is decoded and stored in an associative array
+iterated through in the view.</description>
+      <param description="Incremented by pagination, used to calculate which records to return from DB" type="int" variable="$offset"/>
+      <todo value="Implement cURL"/>
+      <todo value="'total rows' to be assigned via api"/>
+    </docblock>
+    <parameter name="offset" byreference="false" type="integer" default="0"/>
+    <inline>
+      <comment value="Get request sent to API , recieving JSON and decoding into an associative array" line="58"/>
+      <comment value="noresults boolean records if skills were returned,so view can act accordingly" line="66"/>
+      <comment value="load views" line="69"/>
+    </inline>
+  </method>
+  <method name="view" start="83" end="120" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="The view function is called when accessing an individual skill on the marketplace.">The call to the api has error supressed as if the api fails then a 404 error will not be displayed.
+Instead the view will display a user friendly error message if skill is empty</description>
+      <param description="The skill_id of the skill to be retrieved from the Skill table." type="int" variable="$skill_id"/>
+      <todo value="Implement cURL"/>
+    </docblock>
+    <parameter name="skill_id" byreference="false" type="{unknown}" default="NULL"/>
+    <parameter name="user_skill_offset" byreference="false" type="integer" default="0"/>
+    <inline>
+      <comment value="surpress 404 error from API" line="109"/>
+      <comment value="generate calendar params based on todays date." line="113"/>
+    </inline>
+  </method>
+  <method name="search" start="132" end="159" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="This function is called when the user searches for a term on the skills view.A http POST request contains the search term. The search term is set by the @method getSearchTerm().">A JSON file is returned after a HTTP GET request is sent to the api with the searchterm ,
+offset and results per page.The JSON is decoded into an associative array which is passed to the view.</description>
+      <param description="Incremented by pagination, used to calculate which records to return from DB" type="int" variable="$offset"/>
+      <todo value="'total_rows' to be assigned via api ."/>
+      <todo value="Implement cURL"/>
+    </docblock>
+    <parameter name="offset" byreference="false" type="integer" default="0"/>
+    <inline>
+      <comment value="get users searched term" line="134"/>
+      <comment value="pagination configuration" line="136"/>
+    </inline>
+  </method>
+  <method name="categories" start="170" end="196" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="This function is called when the user clicks a category on the marketplace page(skill index view).">The categories id is passed in the URI and HTTP GET request to the api returns
+all the skills which have a corrisponding category_id as a JSON which is converted to
+an associative array and passed onto the view.</description>
+      <param description="Id of the category to get skills for." type="int" variable="$c_id"/>
+      <param description="Incremented by pagination, used to calculate which records to return from DB" type="int" variable="$offset"/>
+    </docblock>
+    <parameter name="c_id" byreference="false" type="integer" default="0"/>
+    <parameter name="offset" byreference="false" type="integer" default="0"/>
+  </method>
+  <method name="create_skill" start="198" end="227" abstract="false" final="false" static="false" visibility="public">
+    <inline>
+      <comment value="Verify user logged in, get user_id" line="199"/>
+      <comment value="retrieve Post values and create skills" line="203"/>
+    </inline>
+  </method>
+  <method name="getcategories" start="235" end="238" abstract="false" final="false" static="false" visibility="private">
+    <docblock>
+      <description compact="This function will send a HTTP get request to the api and will recieve a JSON response of all the categories and corresponding ID's."/>
+      <return description="An Associative array decoded from the JSON file returned by the api" type="array"/>
+    </docblock>
+  </method>
+</class>

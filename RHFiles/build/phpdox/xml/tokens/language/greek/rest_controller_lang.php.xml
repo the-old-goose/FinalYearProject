@@ -1,0 +1,152 @@
+<?xml version="1.0"?>
+<source xmlns="http://xml.phpdox.net/token">
+  <file xmlns="http://xml.phpdox.net/src" path="/opt/lampp/htdocs/poc2/application/language/greek" file="rest_controller_lang.php" realpath="/opt/lampp/htdocs/poc2/application/language/greek/rest_controller_lang.php" size="1355" time="2018-11-09T13:33:01+01:00" unixtime="1541766781" sha1="8c2d128a1e57f7bfb761c76bbb556767fd75d0b3" relative="language/greek/rest_controller_lang.php"/>
+  <line no="1">
+    <token name="T_OPEN_TAG">&lt;?php</token>
+  </line>
+  <line no="2"/>
+  <line no="3">
+    <token name="T_COMMENT">/*</token>
+  </line>
+  <line no="4">
+    <token name="T_COMMENT"> * Greek language</token>
+  </line>
+  <line no="5">
+    <token name="T_COMMENT"> */</token>
+  </line>
+  <line no="6"/>
+  <line no="7">
+    <token name="T_VARIABLE">$lang</token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'text_rest_invalid_api_key'</token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'&#x39B;&#x3AC;&#x3B8;&#x3BF;&#x3C2; API key %s'</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_COMMENT">// %s &#x3B5;&#x3AF;&#x3BD;&#x3B1;&#x3B9; &#x3C4;&#x3BF; REST API key</token>
+  </line>
+  <line no="8">
+    <token name="T_VARIABLE">$lang</token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'text_rest_invalid_credentials'</token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'&#x39C;&#x3AE; &#x3AD;&#x3B3;&#x3BA;&#x3C5;&#x3C1;&#x3B1; &#x3B4;&#x3B9;&#x3B1;&#x3C0;&#x3B9;&#x3C3;&#x3C4;&#x3B5;&#x3C5;&#x3C4;&#x3AE;&#x3C1;&#x3B9;&#x3B1;'</token>
+  </line>
+  <line no="9"/>
+  <line no="10">
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_VARIABLE">$lang</token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'text_rest_ip_denied'</token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'&#x386;&#x3C1;&#x3BD;&#x3B7;&#x3C3;&#x3B7; &#x3C0;&#x3C1;&#x3CC;&#x3C3;&#x3B2;&#x3B1;&#x3C3;&#x3B7;&#x3C2; &#x3C4;&#x3B7;&#x3C2; &#x3B4;&#x3B9;&#x3B5;&#x3CD;&#x3B8;&#x3B7;&#x3BD;&#x3C3;&#x3B7;&#x3C2; IP'</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_VARIABLE">$lang</token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'text_rest_ip_unauthorized'</token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'&#x39C;&#x3B7; &#x3B5;&#x3BE;&#x3BF;&#x3C5;&#x3C3;&#x3B9;&#x3BF;&#x3B4;&#x3BF;&#x3C4;&#x3B7;&#x3BC;&#x3AD;&#x3BD;&#x3B7; &#x3B4;&#x3B9;&#x3B5;&#x3CD;&#x3B8;&#x3C5;&#x3BD;&#x3C3;&#x3B7; IP'</token>
+  </line>
+  <line no="11"/>
+  <line no="12">
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_VARIABLE">$lang</token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'text_rest_unauthorized'</token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'&#x386;&#x3C1;&#x3BD;&#x3B7;&#x3C3;&#x3B7; &#x3A0;&#x3C1;&#x3CC;&#x3C3;&#x3B2;&#x3B1;&#x3C3;&#x3B7;&#x3C2;. &#x39C;&#x3B7; &#x3B5;&#x3BE;&#x3BF;&#x3C5;&#x3C3;&#x3B9;&#x3BF;&#x3B4;&#x3BF;&#x3C4;&#x3B7;&#x3BC;&#x3AD;&#x3BD;&#x3BF;'</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_VARIABLE">$lang</token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'text_rest_ajax_only'</token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'&#x39C;&#x3CC;&#x3BD;&#x3BF; AJAX requests &#x3B5;&#x3C0;&#x3B9;&#x3C4;&#x3C1;&#x3AD;&#x3C0;&#x3BF;&#x3BD;&#x3C4;&#x3B1;&#x3B9;'</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="13">
+    <token name="T_VARIABLE">$lang</token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'text_rest_api_key_unauthorized'</token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'&#x391;&#x3C5;&#x3C4;&#x3CC; &#x3C4;&#x3BF; API key &#x3B4;&#x3B5;&#x3BD; &#x3AD;&#x3C7;&#x3B5;&#x3B9; &#x3C0;&#x3C1;&#x3CC;&#x3C3;&#x3B2;&#x3B1;&#x3C3;&#x3B7; &#x3C3;&#x3C4;&#x3BF;&#x3BD; &#x3C3;&#x3C5;&#x3B3;&#x3BA;&#x3B5;&#x3BA;&#x3C1;&#x3B9;&#x3BC;&#x3AD;&#x3BD;&#x3BF; controller'</token>
+  </line>
+  <line no="14"/>
+  <line no="15">
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_VARIABLE">$lang</token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'text_rest_api_key_permissions'</token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'&#x391;&#x3C5;&#x3C4;&#x3CC; &#x3C4;&#x3BF; API key &#x3B4;&#x3B5;&#x3BD; &#x3AD;&#x3C7;&#x3B5;&#x3B9; &#x3B1;&#x3C1;&#x3BA;&#x3B5;&#x3C4;&#x3AC; &#x3B4;&#x3B9;&#x3BA;&#x3B1;&#x3B9;&#x3CE;&#x3BC;&#x3B1;&#x3C4;&#x3B1;'</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_VARIABLE">$lang</token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'text_rest_api_key_time_limit'</token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'&#x391;&#x3C5;&#x3C4;&#x3CC; &#x3C4;&#x3BF; API key &#x3AD;&#x3C7;&#x3B5;&#x3B9; &#x3C6;&#x3C4;&#x3AC;&#x3C3;&#x3B5;&#x3B9; &#x3C3;&#x3C4;&#x3BF; &#x3BC;&#x3AD;&#x3B3;&#x3B9;&#x3C3;&#x3C4;&#x3BF; &#x3CC;&#x3C1;&#x3B9;&#x3BF; requests &#x3B3;&#x3B9;&#x3B1; &#x3C4;&#x3B7;&#x3BD; &#x3C3;&#x3C5;&#x3B3;&#x3BA;&#x3B5;&#x3BA;&#x3C1;&#x3B9;&#x3BC;&#x3AD;&#x3BD;&#x3B7; &#x3BC;&#x3AD;&#x3B8;&#x3BF;&#x3B4;&#x3BF;'</token>
+  </line>
+  <line no="16"/>
+  <line no="17">
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_VARIABLE">$lang</token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'text_rest_ip_address_time_limit'</token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'This IP Address has reached the time limit for this method'</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_COMMENT">//todo translate</token>
+    <token name="T_VARIABLE">$lang</token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'text_rest_unknown_method'</token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'&#x386;&#x3B3;&#x3BD;&#x3C9;&#x3C3;&#x3C4;&#x3B7; &#x3BC;&#x3AD;&#x3B8;&#x3BF;&#x3B4;&#x3BF;&#x3C2;'</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="18">
+    <token name="T_VARIABLE">$lang</token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'text_rest_unsupported'</token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'&#x3A4;&#x3BF; &#x3C3;&#x3C5;&#x3B3;&#x3BA;&#x3B5;&#x3BA;&#x3C1;&#x3B9;&#x3BC;&#x3AD;&#x3BD;&#x3BF; &#x3C0;&#x3C1;&#x3C9;&#x3C4;&#x3CC;&#x3BA;&#x3BF;&#x3BB;&#x3BB;&#x3BF; &#x3B4;&#x3B5;&#x3BD; &#x3C5;&#x3C0;&#x3BF;&#x3C3;&#x3C4;&#x3B7;&#x3C1;&#x3AF;&#x3B6;&#x3B5;&#x3C4;&#x3B1;&#x3B9;'</token>
+  </line>
+  <line no="19"/>
+  <line no="20">
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+</source>

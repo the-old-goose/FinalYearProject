@@ -1,0 +1,1911 @@
+<?xml version="1.0"?>
+<source xmlns="http://xml.phpdox.net/token">
+  <file xmlns="http://xml.phpdox.net/src" path="/opt/lampp/htdocs/poc2/application/config" file="config.php" realpath="/opt/lampp/htdocs/poc2/application/config/config.php" size="18447" time="2019-03-02T22:48:36+01:00" unixtime="1551563316" sha1="53df5ca58a4c5e47648cd6fc93417c2851311ea6" relative="config/config.php"/>
+  <line no="1">
+    <token name="T_OPEN_TAG">&lt;?php</token>
+  </line>
+  <line no="2">
+    <token name="T_STRING">defined</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'BASEPATH'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_LOGICAL_OR">OR</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_EXIT">exit</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'No direct script access allowed'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="3"/>
+  <line no="4">
+    <token name="T_COMMENT">/*</token>
+  </line>
+  <line no="5">
+    <token name="T_COMMENT">|--------------------------------------------------------------------------</token>
+  </line>
+  <line no="6">
+    <token name="T_COMMENT">| Base Site URL</token>
+  </line>
+  <line no="7">
+    <token name="T_COMMENT">|--------------------------------------------------------------------------</token>
+  </line>
+  <line no="8">
+    <token name="T_COMMENT">|</token>
+  </line>
+  <line no="9">
+    <token name="T_COMMENT">| URL to your CodeIgniter root. Typically this will be your base URL,</token>
+  </line>
+  <line no="10">
+    <token name="T_COMMENT">| WITH a trailing slash:</token>
+  </line>
+  <line no="11">
+    <token name="T_COMMENT">|</token>
+  </line>
+  <line no="12">
+    <token name="T_COMMENT">|	http://example.com/</token>
+  </line>
+  <line no="13">
+    <token name="T_COMMENT">|</token>
+  </line>
+  <line no="14">
+    <token name="T_COMMENT">| WARNING: You MUST set this value!</token>
+  </line>
+  <line no="15">
+    <token name="T_COMMENT">|</token>
+  </line>
+  <line no="16">
+    <token name="T_COMMENT">| If it is not set, then CodeIgniter will try guess the protocol and path</token>
+  </line>
+  <line no="17">
+    <token name="T_COMMENT">| your installation, but due to security concerns the hostname will be set</token>
+  </line>
+  <line no="18">
+    <token name="T_COMMENT">| to $_SERVER['SERVER_ADDR'] if available, or localhost otherwise.</token>
+  </line>
+  <line no="19">
+    <token name="T_COMMENT">| The auto-detection mechanism exists only for convenience during</token>
+  </line>
+  <line no="20">
+    <token name="T_COMMENT">| development and MUST NOT be used in production!</token>
+  </line>
+  <line no="21">
+    <token name="T_COMMENT">|</token>
+  </line>
+  <line no="22">
+    <token name="T_COMMENT">| If you need to allow multiple domains, remember that this file is still</token>
+  </line>
+  <line no="23">
+    <token name="T_COMMENT">| a PHP script and you can easily do that on your own.</token>
+  </line>
+  <line no="24">
+    <token name="T_COMMENT">|</token>
+  </line>
+  <line no="25">
+    <token name="T_COMMENT">*/</token>
+  </line>
+  <line no="26">
+    <token name="T_VARIABLE">$config</token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'base_url'</token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'http://localhost/poc2/'</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="27"/>
+  <line no="28">
+    <token name="T_COMMENT">/*</token>
+  </line>
+  <line no="29">
+    <token name="T_COMMENT">|--------------------------------------------------------------------------</token>
+  </line>
+  <line no="30">
+    <token name="T_COMMENT">| Index File</token>
+  </line>
+  <line no="31">
+    <token name="T_COMMENT">|--------------------------------------------------------------------------</token>
+  </line>
+  <line no="32">
+    <token name="T_COMMENT">|</token>
+  </line>
+  <line no="33">
+    <token name="T_COMMENT">| Typically this will be your index.php file, unless you've renamed it to</token>
+  </line>
+  <line no="34">
+    <token name="T_COMMENT">| something else. If you are using mod_rewrite to remove the page set this</token>
+  </line>
+  <line no="35">
+    <token name="T_COMMENT">| variable so that it is blank.</token>
+  </line>
+  <line no="36">
+    <token name="T_COMMENT">|</token>
+  </line>
+  <line no="37">
+    <token name="T_COMMENT">*/</token>
+  </line>
+  <line no="38">
+    <token name="T_VARIABLE">$config</token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'index_page'</token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">''</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="39"/>
+  <line no="40">
+    <token name="T_COMMENT">/*</token>
+  </line>
+  <line no="41">
+    <token name="T_COMMENT">|--------------------------------------------------------------------------</token>
+  </line>
+  <line no="42">
+    <token name="T_COMMENT">| URI PROTOCOL</token>
+  </line>
+  <line no="43">
+    <token name="T_COMMENT">|--------------------------------------------------------------------------</token>
+  </line>
+  <line no="44">
+    <token name="T_COMMENT">|</token>
+  </line>
+  <line no="45">
+    <token name="T_COMMENT">| This item determines which server global should be used to retrieve the</token>
+  </line>
+  <line no="46">
+    <token name="T_COMMENT">| URI string.  The default setting of 'REQUEST_URI' works for most servers.</token>
+  </line>
+  <line no="47">
+    <token name="T_COMMENT">| If your links do not seem to work, try one of the other delicious flavors:</token>
+  </line>
+  <line no="48">
+    <token name="T_COMMENT">|</token>
+  </line>
+  <line no="49">
+    <token name="T_COMMENT">| 'REQUEST_URI'    Uses $_SERVER['REQUEST_URI']</token>
+  </line>
+  <line no="50">
+    <token name="T_COMMENT">| 'QUERY_STRING'   Uses $_SERVER['QUERY_STRING']</token>
+  </line>
+  <line no="51">
+    <token name="T_COMMENT">| 'PATH_INFO'      Uses $_SERVER['PATH_INFO']</token>
+  </line>
+  <line no="52">
+    <token name="T_COMMENT">|</token>
+  </line>
+  <line no="53">
+    <token name="T_COMMENT">| WARNING: If you set this to 'PATH_INFO', URIs will always be URL-decoded!</token>
+  </line>
+  <line no="54">
+    <token name="T_COMMENT">*/</token>
+  </line>
+  <line no="55">
+    <token name="T_VARIABLE">$config</token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'uri_protocol'</token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_WHITESPACE">	</token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'REQUEST_URI'</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="56"/>
+  <line no="57">
+    <token name="T_COMMENT">/*</token>
+  </line>
+  <line no="58">
+    <token name="T_COMMENT">|--------------------------------------------------------------------------</token>
+  </line>
+  <line no="59">
+    <token name="T_COMMENT">| URL suffix</token>
+  </line>
+  <line no="60">
+    <token name="T_COMMENT">|--------------------------------------------------------------------------</token>
+  </line>
+  <line no="61">
+    <token name="T_COMMENT">|</token>
+  </line>
+  <line no="62">
+    <token name="T_COMMENT">| This option allows you to add a suffix to all URLs generated by CodeIgniter.</token>
+  </line>
+  <line no="63">
+    <token name="T_COMMENT">| For more information please see the user guide:</token>
+  </line>
+  <line no="64">
+    <token name="T_COMMENT">|</token>
+  </line>
+  <line no="65">
+    <token name="T_COMMENT">| https://codeigniter.com/user_guide/general/urls.html</token>
+  </line>
+  <line no="66">
+    <token name="T_COMMENT">*/</token>
+  </line>
+  <line no="67">
+    <token name="T_VARIABLE">$config</token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'url_suffix'</token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">''</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="68"/>
+  <line no="69">
+    <token name="T_COMMENT">/*</token>
+  </line>
+  <line no="70">
+    <token name="T_COMMENT">|--------------------------------------------------------------------------</token>
+  </line>
+  <line no="71">
+    <token name="T_COMMENT">| Default Language</token>
+  </line>
+  <line no="72">
+    <token name="T_COMMENT">|--------------------------------------------------------------------------</token>
+  </line>
+  <line no="73">
+    <token name="T_COMMENT">|</token>
+  </line>
+  <line no="74">
+    <token name="T_COMMENT">| This determines which set of language files should be used. Make sure</token>
+  </line>
+  <line no="75">
+    <token name="T_COMMENT">| there is an available translation if you intend to use something other</token>
+  </line>
+  <line no="76">
+    <token name="T_COMMENT">| than english.</token>
+  </line>
+  <line no="77">
+    <token name="T_COMMENT">|</token>
+  </line>
+  <line no="78">
+    <token name="T_COMMENT">*/</token>
+  </line>
+  <line no="79">
+    <token name="T_VARIABLE">$config</token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'language'</token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_WHITESPACE">	</token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'english'</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="80"/>
+  <line no="81">
+    <token name="T_COMMENT">/*</token>
+  </line>
+  <line no="82">
+    <token name="T_COMMENT">|--------------------------------------------------------------------------</token>
+  </line>
+  <line no="83">
+    <token name="T_COMMENT">| Default Character Set</token>
+  </line>
+  <line no="84">
+    <token name="T_COMMENT">|--------------------------------------------------------------------------</token>
+  </line>
+  <line no="85">
+    <token name="T_COMMENT">|</token>
+  </line>
+  <line no="86">
+    <token name="T_COMMENT">| This determines which character set is used by default in various methods</token>
+  </line>
+  <line no="87">
+    <token name="T_COMMENT">| that require a character set to be provided.</token>
+  </line>
+  <line no="88">
+    <token name="T_COMMENT">|</token>
+  </line>
+  <line no="89">
+    <token name="T_COMMENT">| See http://php.net/htmlspecialchars for a list of supported charsets.</token>
+  </line>
+  <line no="90">
+    <token name="T_COMMENT">|</token>
+  </line>
+  <line no="91">
+    <token name="T_COMMENT">*/</token>
+  </line>
+  <line no="92">
+    <token name="T_VARIABLE">$config</token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'charset'</token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'UTF-8'</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="93"/>
+  <line no="94">
+    <token name="T_COMMENT">/*</token>
+  </line>
+  <line no="95">
+    <token name="T_COMMENT">|--------------------------------------------------------------------------</token>
+  </line>
+  <line no="96">
+    <token name="T_COMMENT">| Enable/Disable System Hooks</token>
+  </line>
+  <line no="97">
+    <token name="T_COMMENT">|--------------------------------------------------------------------------</token>
+  </line>
+  <line no="98">
+    <token name="T_COMMENT">|</token>
+  </line>
+  <line no="99">
+    <token name="T_COMMENT">| If you would like to use the 'hooks' feature you must enable it by</token>
+  </line>
+  <line no="100">
+    <token name="T_COMMENT">| setting this variable to TRUE (boolean).  See the user guide for details.</token>
+  </line>
+  <line no="101">
+    <token name="T_COMMENT">|</token>
+  </line>
+  <line no="102">
+    <token name="T_COMMENT">*/</token>
+  </line>
+  <line no="103">
+    <token name="T_VARIABLE">$config</token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'enable_hooks'</token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">FALSE</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="104"/>
+  <line no="105">
+    <token name="T_COMMENT">/*</token>
+  </line>
+  <line no="106">
+    <token name="T_COMMENT">|--------------------------------------------------------------------------</token>
+  </line>
+  <line no="107">
+    <token name="T_COMMENT">| Class Extension Prefix</token>
+  </line>
+  <line no="108">
+    <token name="T_COMMENT">|--------------------------------------------------------------------------</token>
+  </line>
+  <line no="109">
+    <token name="T_COMMENT">|</token>
+  </line>
+  <line no="110">
+    <token name="T_COMMENT">| This item allows you to set the filename/classname prefix when extending</token>
+  </line>
+  <line no="111">
+    <token name="T_COMMENT">| native libraries.  For more information please see the user guide:</token>
+  </line>
+  <line no="112">
+    <token name="T_COMMENT">|</token>
+  </line>
+  <line no="113">
+    <token name="T_COMMENT">| https://codeigniter.com/user_guide/general/core_classes.html</token>
+  </line>
+  <line no="114">
+    <token name="T_COMMENT">| https://codeigniter.com/user_guide/general/creating_libraries.html</token>
+  </line>
+  <line no="115">
+    <token name="T_COMMENT">|</token>
+  </line>
+  <line no="116">
+    <token name="T_COMMENT">*/</token>
+  </line>
+  <line no="117">
+    <token name="T_VARIABLE">$config</token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'subclass_prefix'</token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'MY_'</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="118"/>
+  <line no="119">
+    <token name="T_COMMENT">/*</token>
+  </line>
+  <line no="120">
+    <token name="T_COMMENT">|--------------------------------------------------------------------------</token>
+  </line>
+  <line no="121">
+    <token name="T_COMMENT">| Composer auto-loading</token>
+  </line>
+  <line no="122">
+    <token name="T_COMMENT">|--------------------------------------------------------------------------</token>
+  </line>
+  <line no="123">
+    <token name="T_COMMENT">|</token>
+  </line>
+  <line no="124">
+    <token name="T_COMMENT">| Enabling this setting will tell CodeIgniter to look for a Composer</token>
+  </line>
+  <line no="125">
+    <token name="T_COMMENT">| package auto-loader script in application/vendor/autoload.php.</token>
+  </line>
+  <line no="126">
+    <token name="T_COMMENT">|</token>
+  </line>
+  <line no="127">
+    <token name="T_COMMENT">|	$config['composer_autoload'] = TRUE;</token>
+  </line>
+  <line no="128">
+    <token name="T_COMMENT">|</token>
+  </line>
+  <line no="129">
+    <token name="T_COMMENT">| Or if you have your vendor/ directory located somewhere else, you</token>
+  </line>
+  <line no="130">
+    <token name="T_COMMENT">| can opt to set a specific path as well:</token>
+  </line>
+  <line no="131">
+    <token name="T_COMMENT">|</token>
+  </line>
+  <line no="132">
+    <token name="T_COMMENT">|	$config['composer_autoload'] = '/path/to/vendor/autoload.php';</token>
+  </line>
+  <line no="133">
+    <token name="T_COMMENT">|</token>
+  </line>
+  <line no="134">
+    <token name="T_COMMENT">| For more information about Composer, please visit http://getcomposer.org/</token>
+  </line>
+  <line no="135">
+    <token name="T_COMMENT">|</token>
+  </line>
+  <line no="136">
+    <token name="T_COMMENT">| Note: This will NOT disable or override the CodeIgniter-specific</token>
+  </line>
+  <line no="137">
+    <token name="T_COMMENT">|	autoloading (application/config/autoload.php)</token>
+  </line>
+  <line no="138">
+    <token name="T_COMMENT">*/</token>
+  </line>
+  <line no="139">
+    <token name="T_VARIABLE">$config</token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'composer_autoload'</token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">FALSE</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="140"/>
+  <line no="141">
+    <token name="T_COMMENT">/*</token>
+  </line>
+  <line no="142">
+    <token name="T_COMMENT">|--------------------------------------------------------------------------</token>
+  </line>
+  <line no="143">
+    <token name="T_COMMENT">| Allowed URL Characters</token>
+  </line>
+  <line no="144">
+    <token name="T_COMMENT">|--------------------------------------------------------------------------</token>
+  </line>
+  <line no="145">
+    <token name="T_COMMENT">|</token>
+  </line>
+  <line no="146">
+    <token name="T_COMMENT">| This lets you specify which characters are permitted within your URLs.</token>
+  </line>
+  <line no="147">
+    <token name="T_COMMENT">| When someone tries to submit a URL with disallowed characters they will</token>
+  </line>
+  <line no="148">
+    <token name="T_COMMENT">| get a warning message.</token>
+  </line>
+  <line no="149">
+    <token name="T_COMMENT">|</token>
+  </line>
+  <line no="150">
+    <token name="T_COMMENT">| As a security measure you are STRONGLY encouraged to restrict URLs to</token>
+  </line>
+  <line no="151">
+    <token name="T_COMMENT">| as few characters as possible.  By default only these are allowed: a-z 0-9~%.:_-</token>
+  </line>
+  <line no="152">
+    <token name="T_COMMENT">|</token>
+  </line>
+  <line no="153">
+    <token name="T_COMMENT">| Leave blank to allow all characters -- but only if you are insane.</token>
+  </line>
+  <line no="154">
+    <token name="T_COMMENT">|</token>
+  </line>
+  <line no="155">
+    <token name="T_COMMENT">| The configured value is actually a regular expression character group</token>
+  </line>
+  <line no="156">
+    <token name="T_COMMENT">| and it will be executed as: ! preg_match('/^[&lt;permitted_uri_chars&gt;]+$/i</token>
+  </line>
+  <line no="157">
+    <token name="T_COMMENT">|</token>
+  </line>
+  <line no="158">
+    <token name="T_COMMENT">| DO NOT CHANGE THIS UNLESS YOU FULLY UNDERSTAND THE REPERCUSSIONS!!</token>
+  </line>
+  <line no="159">
+    <token name="T_COMMENT">|</token>
+  </line>
+  <line no="160">
+    <token name="T_COMMENT">*/</token>
+  </line>
+  <line no="161">
+    <token name="T_VARIABLE">$config</token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'permitted_uri_chars'</token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'a-z 0-9~%.:_\-'</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="162"/>
+  <line no="163">
+    <token name="T_COMMENT">/*</token>
+  </line>
+  <line no="164">
+    <token name="T_COMMENT">|--------------------------------------------------------------------------</token>
+  </line>
+  <line no="165">
+    <token name="T_COMMENT">| Enable Query Strings</token>
+  </line>
+  <line no="166">
+    <token name="T_COMMENT">|--------------------------------------------------------------------------</token>
+  </line>
+  <line no="167">
+    <token name="T_COMMENT">|</token>
+  </line>
+  <line no="168">
+    <token name="T_COMMENT">| By default CodeIgniter uses search-engine friendly segment based URLs:</token>
+  </line>
+  <line no="169">
+    <token name="T_COMMENT">| example.com/who/what/where/</token>
+  </line>
+  <line no="170">
+    <token name="T_COMMENT">|</token>
+  </line>
+  <line no="171">
+    <token name="T_COMMENT">| You can optionally enable standard query string based URLs:</token>
+  </line>
+  <line no="172">
+    <token name="T_COMMENT">| example.com?who=me&amp;what=something&amp;where=here</token>
+  </line>
+  <line no="173">
+    <token name="T_COMMENT">|</token>
+  </line>
+  <line no="174">
+    <token name="T_COMMENT">| Options are: TRUE or FALSE (boolean)</token>
+  </line>
+  <line no="175">
+    <token name="T_COMMENT">|</token>
+  </line>
+  <line no="176">
+    <token name="T_COMMENT">| The other items let you set the query string 'words' that will</token>
+  </line>
+  <line no="177">
+    <token name="T_COMMENT">| invoke your controllers and its functions:</token>
+  </line>
+  <line no="178">
+    <token name="T_COMMENT">| example.com/index.php?c=controller&amp;m=function</token>
+  </line>
+  <line no="179">
+    <token name="T_COMMENT">|</token>
+  </line>
+  <line no="180">
+    <token name="T_COMMENT">| Please note that some of the helpers won't work as expected when</token>
+  </line>
+  <line no="181">
+    <token name="T_COMMENT">| this feature is enabled, since CodeIgniter is designed primarily to</token>
+  </line>
+  <line no="182">
+    <token name="T_COMMENT">| use segment based URLs.</token>
+  </line>
+  <line no="183">
+    <token name="T_COMMENT">|</token>
+  </line>
+  <line no="184">
+    <token name="T_COMMENT">*/</token>
+  </line>
+  <line no="185">
+    <token name="T_VARIABLE">$config</token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'enable_query_strings'</token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">FALSE</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="186">
+    <token name="T_VARIABLE">$config</token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'controller_trigger'</token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'c'</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="187">
+    <token name="T_VARIABLE">$config</token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'function_trigger'</token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'m'</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="188">
+    <token name="T_VARIABLE">$config</token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'directory_trigger'</token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'d'</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="189"/>
+  <line no="190">
+    <token name="T_COMMENT">/*</token>
+  </line>
+  <line no="191">
+    <token name="T_COMMENT">|--------------------------------------------------------------------------</token>
+  </line>
+  <line no="192">
+    <token name="T_COMMENT">| Allow $_GET array</token>
+  </line>
+  <line no="193">
+    <token name="T_COMMENT">|--------------------------------------------------------------------------</token>
+  </line>
+  <line no="194">
+    <token name="T_COMMENT">|</token>
+  </line>
+  <line no="195">
+    <token name="T_COMMENT">| By default CodeIgniter enables access to the $_GET array.  If for some</token>
+  </line>
+  <line no="196">
+    <token name="T_COMMENT">| reason you would like to disable it, set 'allow_get_array' to FALSE.</token>
+  </line>
+  <line no="197">
+    <token name="T_COMMENT">|</token>
+  </line>
+  <line no="198">
+    <token name="T_COMMENT">| WARNING: This feature is DEPRECATED and currently available only</token>
+  </line>
+  <line no="199">
+    <token name="T_COMMENT">|          for backwards compatibility purposes!</token>
+  </line>
+  <line no="200">
+    <token name="T_COMMENT">|</token>
+  </line>
+  <line no="201">
+    <token name="T_COMMENT">*/</token>
+  </line>
+  <line no="202">
+    <token name="T_VARIABLE">$config</token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'allow_get_array'</token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">TRUE</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="203"/>
+  <line no="204">
+    <token name="T_COMMENT">/*</token>
+  </line>
+  <line no="205">
+    <token name="T_COMMENT">|--------------------------------------------------------------------------</token>
+  </line>
+  <line no="206">
+    <token name="T_COMMENT">| Error Logging Threshold</token>
+  </line>
+  <line no="207">
+    <token name="T_COMMENT">|--------------------------------------------------------------------------</token>
+  </line>
+  <line no="208">
+    <token name="T_COMMENT">|</token>
+  </line>
+  <line no="209">
+    <token name="T_COMMENT">| You can enable error logging by setting a threshold over zero. The</token>
+  </line>
+  <line no="210">
+    <token name="T_COMMENT">| threshold determines what gets logged. Threshold options are:</token>
+  </line>
+  <line no="211">
+    <token name="T_COMMENT">|</token>
+  </line>
+  <line no="212">
+    <token name="T_COMMENT">|	0 = Disables logging, Error logging TURNED OFF</token>
+  </line>
+  <line no="213">
+    <token name="T_COMMENT">|	1 = Error Messages (including PHP errors)</token>
+  </line>
+  <line no="214">
+    <token name="T_COMMENT">|	2 = Debug Messages</token>
+  </line>
+  <line no="215">
+    <token name="T_COMMENT">|	3 = Informational Messages</token>
+  </line>
+  <line no="216">
+    <token name="T_COMMENT">|	4 = All Messages</token>
+  </line>
+  <line no="217">
+    <token name="T_COMMENT">|</token>
+  </line>
+  <line no="218">
+    <token name="T_COMMENT">| You can also pass an array with threshold levels to show individual error types</token>
+  </line>
+  <line no="219">
+    <token name="T_COMMENT">|</token>
+  </line>
+  <line no="220">
+    <token name="T_COMMENT">| 	array(2) = Debug Messages, without Error Messages</token>
+  </line>
+  <line no="221">
+    <token name="T_COMMENT">|</token>
+  </line>
+  <line no="222">
+    <token name="T_COMMENT">| For a live site you'll usually only enable Errors (1) to be logged otherwise</token>
+  </line>
+  <line no="223">
+    <token name="T_COMMENT">| your log files will fill up very fast.</token>
+  </line>
+  <line no="224">
+    <token name="T_COMMENT">|</token>
+  </line>
+  <line no="225">
+    <token name="T_COMMENT">*/</token>
+  </line>
+  <line no="226">
+    <token name="T_VARIABLE">$config</token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'log_threshold'</token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_LNUMBER">0</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="227"/>
+  <line no="228">
+    <token name="T_COMMENT">/*</token>
+  </line>
+  <line no="229">
+    <token name="T_COMMENT">|--------------------------------------------------------------------------</token>
+  </line>
+  <line no="230">
+    <token name="T_COMMENT">| Error Logging Directory Path</token>
+  </line>
+  <line no="231">
+    <token name="T_COMMENT">|--------------------------------------------------------------------------</token>
+  </line>
+  <line no="232">
+    <token name="T_COMMENT">|</token>
+  </line>
+  <line no="233">
+    <token name="T_COMMENT">| Leave this BLANK unless you would like to set something other than the default</token>
+  </line>
+  <line no="234">
+    <token name="T_COMMENT">| application/logs/ directory. Use a full server path with trailing slash.</token>
+  </line>
+  <line no="235">
+    <token name="T_COMMENT">|</token>
+  </line>
+  <line no="236">
+    <token name="T_COMMENT">*/</token>
+  </line>
+  <line no="237">
+    <token name="T_VARIABLE">$config</token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'log_path'</token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">''</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="238"/>
+  <line no="239">
+    <token name="T_COMMENT">/*</token>
+  </line>
+  <line no="240">
+    <token name="T_COMMENT">|--------------------------------------------------------------------------</token>
+  </line>
+  <line no="241">
+    <token name="T_COMMENT">| Log File Extension</token>
+  </line>
+  <line no="242">
+    <token name="T_COMMENT">|--------------------------------------------------------------------------</token>
+  </line>
+  <line no="243">
+    <token name="T_COMMENT">|</token>
+  </line>
+  <line no="244">
+    <token name="T_COMMENT">| The default filename extension for log files. The default 'php' allows for</token>
+  </line>
+  <line no="245">
+    <token name="T_COMMENT">| protecting the log files via basic scripting, when they are to be stored</token>
+  </line>
+  <line no="246">
+    <token name="T_COMMENT">| under a publicly accessible directory.</token>
+  </line>
+  <line no="247">
+    <token name="T_COMMENT">|</token>
+  </line>
+  <line no="248">
+    <token name="T_COMMENT">| Note: Leaving it blank will default to 'php'.</token>
+  </line>
+  <line no="249">
+    <token name="T_COMMENT">|</token>
+  </line>
+  <line no="250">
+    <token name="T_COMMENT">*/</token>
+  </line>
+  <line no="251">
+    <token name="T_VARIABLE">$config</token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'log_file_extension'</token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">''</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="252"/>
+  <line no="253">
+    <token name="T_COMMENT">/*</token>
+  </line>
+  <line no="254">
+    <token name="T_COMMENT">|--------------------------------------------------------------------------</token>
+  </line>
+  <line no="255">
+    <token name="T_COMMENT">| Log File Permissions</token>
+  </line>
+  <line no="256">
+    <token name="T_COMMENT">|--------------------------------------------------------------------------</token>
+  </line>
+  <line no="257">
+    <token name="T_COMMENT">|</token>
+  </line>
+  <line no="258">
+    <token name="T_COMMENT">| The file system permissions to be applied on newly created log files.</token>
+  </line>
+  <line no="259">
+    <token name="T_COMMENT">|</token>
+  </line>
+  <line no="260">
+    <token name="T_COMMENT">| IMPORTANT: This MUST be an integer (no quotes) and you MUST use octal</token>
+  </line>
+  <line no="261">
+    <token name="T_COMMENT">|            integer notation (i.e. 0700, 0644, etc.)</token>
+  </line>
+  <line no="262">
+    <token name="T_COMMENT">*/</token>
+  </line>
+  <line no="263">
+    <token name="T_VARIABLE">$config</token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'log_file_permissions'</token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_LNUMBER">0644</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="264"/>
+  <line no="265">
+    <token name="T_COMMENT">/*</token>
+  </line>
+  <line no="266">
+    <token name="T_COMMENT">|--------------------------------------------------------------------------</token>
+  </line>
+  <line no="267">
+    <token name="T_COMMENT">| Date Format for Logs</token>
+  </line>
+  <line no="268">
+    <token name="T_COMMENT">|--------------------------------------------------------------------------</token>
+  </line>
+  <line no="269">
+    <token name="T_COMMENT">|</token>
+  </line>
+  <line no="270">
+    <token name="T_COMMENT">| Each item that is logged has an associated date. You can use PHP date</token>
+  </line>
+  <line no="271">
+    <token name="T_COMMENT">| codes to set your own date formatting</token>
+  </line>
+  <line no="272">
+    <token name="T_COMMENT">|</token>
+  </line>
+  <line no="273">
+    <token name="T_COMMENT">*/</token>
+  </line>
+  <line no="274">
+    <token name="T_VARIABLE">$config</token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'log_date_format'</token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'Y-m-d H:i:s'</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="275"/>
+  <line no="276">
+    <token name="T_COMMENT">/*</token>
+  </line>
+  <line no="277">
+    <token name="T_COMMENT">|--------------------------------------------------------------------------</token>
+  </line>
+  <line no="278">
+    <token name="T_COMMENT">| Error Views Directory Path</token>
+  </line>
+  <line no="279">
+    <token name="T_COMMENT">|--------------------------------------------------------------------------</token>
+  </line>
+  <line no="280">
+    <token name="T_COMMENT">|</token>
+  </line>
+  <line no="281">
+    <token name="T_COMMENT">| Leave this BLANK unless you would like to set something other than the default</token>
+  </line>
+  <line no="282">
+    <token name="T_COMMENT">| application/views/errors/ directory.  Use a full server path with trailing slash.</token>
+  </line>
+  <line no="283">
+    <token name="T_COMMENT">|</token>
+  </line>
+  <line no="284">
+    <token name="T_COMMENT">*/</token>
+  </line>
+  <line no="285">
+    <token name="T_VARIABLE">$config</token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'error_views_path'</token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">''</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="286"/>
+  <line no="287">
+    <token name="T_COMMENT">/*</token>
+  </line>
+  <line no="288">
+    <token name="T_COMMENT">|--------------------------------------------------------------------------</token>
+  </line>
+  <line no="289">
+    <token name="T_COMMENT">| Cache Directory Path</token>
+  </line>
+  <line no="290">
+    <token name="T_COMMENT">|--------------------------------------------------------------------------</token>
+  </line>
+  <line no="291">
+    <token name="T_COMMENT">|</token>
+  </line>
+  <line no="292">
+    <token name="T_COMMENT">| Leave this BLANK unless you would like to set something other than the default</token>
+  </line>
+  <line no="293">
+    <token name="T_COMMENT">| application/cache/ directory.  Use a full server path with trailing slash.</token>
+  </line>
+  <line no="294">
+    <token name="T_COMMENT">|</token>
+  </line>
+  <line no="295">
+    <token name="T_COMMENT">*/</token>
+  </line>
+  <line no="296">
+    <token name="T_VARIABLE">$config</token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'cache_path'</token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">''</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="297"/>
+  <line no="298">
+    <token name="T_COMMENT">/*</token>
+  </line>
+  <line no="299">
+    <token name="T_COMMENT">|--------------------------------------------------------------------------</token>
+  </line>
+  <line no="300">
+    <token name="T_COMMENT">| Cache Include Query String</token>
+  </line>
+  <line no="301">
+    <token name="T_COMMENT">|--------------------------------------------------------------------------</token>
+  </line>
+  <line no="302">
+    <token name="T_COMMENT">|</token>
+  </line>
+  <line no="303">
+    <token name="T_COMMENT">| Whether to take the URL query string into consideration when generating</token>
+  </line>
+  <line no="304">
+    <token name="T_COMMENT">| output cache files. Valid options are:</token>
+  </line>
+  <line no="305">
+    <token name="T_COMMENT">|</token>
+  </line>
+  <line no="306">
+    <token name="T_COMMENT">|	FALSE      = Disabled</token>
+  </line>
+  <line no="307">
+    <token name="T_COMMENT">|	TRUE       = Enabled, take all query parameters into account.</token>
+  </line>
+  <line no="308">
+    <token name="T_COMMENT">|	             Please be aware that this may result in numerous cache</token>
+  </line>
+  <line no="309">
+    <token name="T_COMMENT">|	             files generated for the same page over and over again.</token>
+  </line>
+  <line no="310">
+    <token name="T_COMMENT">|	array('q') = Enabled, but only take into account the specified list</token>
+  </line>
+  <line no="311">
+    <token name="T_COMMENT">|	             of query parameters.</token>
+  </line>
+  <line no="312">
+    <token name="T_COMMENT">|</token>
+  </line>
+  <line no="313">
+    <token name="T_COMMENT">*/</token>
+  </line>
+  <line no="314">
+    <token name="T_VARIABLE">$config</token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'cache_query_string'</token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">FALSE</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="315"/>
+  <line no="316">
+    <token name="T_COMMENT">/*</token>
+  </line>
+  <line no="317">
+    <token name="T_COMMENT">|--------------------------------------------------------------------------</token>
+  </line>
+  <line no="318">
+    <token name="T_COMMENT">| Encryption Key</token>
+  </line>
+  <line no="319">
+    <token name="T_COMMENT">|--------------------------------------------------------------------------</token>
+  </line>
+  <line no="320">
+    <token name="T_COMMENT">|</token>
+  </line>
+  <line no="321">
+    <token name="T_COMMENT">| If you use the Encryption class, you must set an encryption key.</token>
+  </line>
+  <line no="322">
+    <token name="T_COMMENT">| See the user guide for more info.</token>
+  </line>
+  <line no="323">
+    <token name="T_COMMENT">|</token>
+  </line>
+  <line no="324">
+    <token name="T_COMMENT">| https://codeigniter.com/user_guide/libraries/encryption.html</token>
+  </line>
+  <line no="325">
+    <token name="T_COMMENT">|</token>
+  </line>
+  <line no="326">
+    <token name="T_COMMENT">*/</token>
+  </line>
+  <line no="327">
+    <token name="T_VARIABLE">$config</token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'encryption_key'</token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">''</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="328"/>
+  <line no="329">
+    <token name="T_COMMENT">/*</token>
+  </line>
+  <line no="330">
+    <token name="T_COMMENT">|--------------------------------------------------------------------------</token>
+  </line>
+  <line no="331">
+    <token name="T_COMMENT">| Session Variables</token>
+  </line>
+  <line no="332">
+    <token name="T_COMMENT">|--------------------------------------------------------------------------</token>
+  </line>
+  <line no="333">
+    <token name="T_COMMENT">|</token>
+  </line>
+  <line no="334">
+    <token name="T_COMMENT">| 'sess_driver'</token>
+  </line>
+  <line no="335">
+    <token name="T_COMMENT">|</token>
+  </line>
+  <line no="336">
+    <token name="T_COMMENT">|	The storage driver to use: files, database, redis, memcached</token>
+  </line>
+  <line no="337">
+    <token name="T_COMMENT">|</token>
+  </line>
+  <line no="338">
+    <token name="T_COMMENT">| 'sess_cookie_name'</token>
+  </line>
+  <line no="339">
+    <token name="T_COMMENT">|</token>
+  </line>
+  <line no="340">
+    <token name="T_COMMENT">|	The session cookie name, must contain only [0-9a-z_-] characters</token>
+  </line>
+  <line no="341">
+    <token name="T_COMMENT">|</token>
+  </line>
+  <line no="342">
+    <token name="T_COMMENT">| 'sess_expiration'</token>
+  </line>
+  <line no="343">
+    <token name="T_COMMENT">|</token>
+  </line>
+  <line no="344">
+    <token name="T_COMMENT">|	The number of SECONDS you want the session to last.</token>
+  </line>
+  <line no="345">
+    <token name="T_COMMENT">|	Setting to 0 (zero) means expire when the browser is closed.</token>
+  </line>
+  <line no="346">
+    <token name="T_COMMENT">|</token>
+  </line>
+  <line no="347">
+    <token name="T_COMMENT">| 'sess_save_path'</token>
+  </line>
+  <line no="348">
+    <token name="T_COMMENT">|</token>
+  </line>
+  <line no="349">
+    <token name="T_COMMENT">|	The location to save sessions to, driver dependent.</token>
+  </line>
+  <line no="350">
+    <token name="T_COMMENT">|</token>
+  </line>
+  <line no="351">
+    <token name="T_COMMENT">|	For the 'files' driver, it's a path to a writable directory.</token>
+  </line>
+  <line no="352">
+    <token name="T_COMMENT">|	WARNING: Only absolute paths are supported!</token>
+  </line>
+  <line no="353">
+    <token name="T_COMMENT">|</token>
+  </line>
+  <line no="354">
+    <token name="T_COMMENT">|	For the 'database' driver, it's a table name.</token>
+  </line>
+  <line no="355">
+    <token name="T_COMMENT">|	Please read up the manual for the format with other session drivers.</token>
+  </line>
+  <line no="356">
+    <token name="T_COMMENT">|</token>
+  </line>
+  <line no="357">
+    <token name="T_COMMENT">|	IMPORTANT: You are REQUIRED to set a valid save path!</token>
+  </line>
+  <line no="358">
+    <token name="T_COMMENT">|</token>
+  </line>
+  <line no="359">
+    <token name="T_COMMENT">| 'sess_match_ip'</token>
+  </line>
+  <line no="360">
+    <token name="T_COMMENT">|</token>
+  </line>
+  <line no="361">
+    <token name="T_COMMENT">|	Whether to match the user's IP address when reading the session data.</token>
+  </line>
+  <line no="362">
+    <token name="T_COMMENT">|</token>
+  </line>
+  <line no="363">
+    <token name="T_COMMENT">|	WARNING: If you're using the database driver, don't forget to update</token>
+  </line>
+  <line no="364">
+    <token name="T_COMMENT">|	         your session table's PRIMARY KEY when changing this setting.</token>
+  </line>
+  <line no="365">
+    <token name="T_COMMENT">|</token>
+  </line>
+  <line no="366">
+    <token name="T_COMMENT">| 'sess_time_to_update'</token>
+  </line>
+  <line no="367">
+    <token name="T_COMMENT">|</token>
+  </line>
+  <line no="368">
+    <token name="T_COMMENT">|	How many seconds between CI regenerating the session ID.</token>
+  </line>
+  <line no="369">
+    <token name="T_COMMENT">|</token>
+  </line>
+  <line no="370">
+    <token name="T_COMMENT">| 'sess_regenerate_destroy'</token>
+  </line>
+  <line no="371">
+    <token name="T_COMMENT">|</token>
+  </line>
+  <line no="372">
+    <token name="T_COMMENT">|	Whether to destroy session data associated with the old session ID</token>
+  </line>
+  <line no="373">
+    <token name="T_COMMENT">|	when auto-regenerating the session ID. When set to FALSE, the data</token>
+  </line>
+  <line no="374">
+    <token name="T_COMMENT">|	will be later deleted by the garbage collector.</token>
+  </line>
+  <line no="375">
+    <token name="T_COMMENT">|</token>
+  </line>
+  <line no="376">
+    <token name="T_COMMENT">| Other session cookie settings are shared with the rest of the application,</token>
+  </line>
+  <line no="377">
+    <token name="T_COMMENT">| except for 'cookie_prefix' and 'cookie_httponly', which are ignored here.</token>
+  </line>
+  <line no="378">
+    <token name="T_COMMENT">|</token>
+  </line>
+  <line no="379">
+    <token name="T_COMMENT">*/</token>
+  </line>
+  <line no="380">
+    <token name="T_VARIABLE">$config</token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'sess_driver'</token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'files'</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="381">
+    <token name="T_VARIABLE">$config</token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'sess_cookie_name'</token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'rh_files'</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="382">
+    <token name="T_VARIABLE">$config</token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'sess_expiration'</token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_LNUMBER">7200</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="383">
+    <token name="T_VARIABLE">$config</token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'sess_save_path'</token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">NULL</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="384">
+    <token name="T_VARIABLE">$config</token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'sess_match_ip'</token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">FALSE</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="385">
+    <token name="T_VARIABLE">$config</token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'sess_time_to_update'</token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_LNUMBER">300</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="386">
+    <token name="T_VARIABLE">$config</token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'sess_regenerate_destroy'</token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">FALSE</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="387"/>
+  <line no="388">
+    <token name="T_COMMENT">/*</token>
+  </line>
+  <line no="389">
+    <token name="T_COMMENT">|--------------------------------------------------------------------------</token>
+  </line>
+  <line no="390">
+    <token name="T_COMMENT">| Cookie Related Variables</token>
+  </line>
+  <line no="391">
+    <token name="T_COMMENT">|--------------------------------------------------------------------------</token>
+  </line>
+  <line no="392">
+    <token name="T_COMMENT">|</token>
+  </line>
+  <line no="393">
+    <token name="T_COMMENT">| 'cookie_prefix'   = Set a cookie name prefix if you need to avoid collisions</token>
+  </line>
+  <line no="394">
+    <token name="T_COMMENT">| 'cookie_domain'   = Set to .your-domain.com for site-wide cookies</token>
+  </line>
+  <line no="395">
+    <token name="T_COMMENT">| 'cookie_path'     = Typically will be a forward slash</token>
+  </line>
+  <line no="396">
+    <token name="T_COMMENT">| 'cookie_secure'   = Cookie will only be set if a secure HTTPS connection exists.</token>
+  </line>
+  <line no="397">
+    <token name="T_COMMENT">| 'cookie_httponly' = Cookie will only be accessible via HTTP(S) (no javascript)</token>
+  </line>
+  <line no="398">
+    <token name="T_COMMENT">|</token>
+  </line>
+  <line no="399">
+    <token name="T_COMMENT">| Note: These settings (with the exception of 'cookie_prefix' and</token>
+  </line>
+  <line no="400">
+    <token name="T_COMMENT">|       'cookie_httponly') will also affect sessions.</token>
+  </line>
+  <line no="401">
+    <token name="T_COMMENT">|</token>
+  </line>
+  <line no="402">
+    <token name="T_COMMENT">*/</token>
+  </line>
+  <line no="403">
+    <token name="T_VARIABLE">$config</token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'cookie_prefix'</token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_WHITESPACE">	</token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">''</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="404">
+    <token name="T_VARIABLE">$config</token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'cookie_domain'</token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_WHITESPACE">	</token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">''</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="405">
+    <token name="T_VARIABLE">$config</token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'cookie_path'</token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_WHITESPACE">		</token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'/'</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="406">
+    <token name="T_VARIABLE">$config</token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'cookie_secure'</token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_WHITESPACE">	</token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">FALSE</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="407">
+    <token name="T_VARIABLE">$config</token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'cookie_httponly'</token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_WHITESPACE"> 	</token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">FALSE</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="408"/>
+  <line no="409">
+    <token name="T_COMMENT">/*</token>
+  </line>
+  <line no="410">
+    <token name="T_COMMENT">|--------------------------------------------------------------------------</token>
+  </line>
+  <line no="411">
+    <token name="T_COMMENT">| Standardize newlines</token>
+  </line>
+  <line no="412">
+    <token name="T_COMMENT">|--------------------------------------------------------------------------</token>
+  </line>
+  <line no="413">
+    <token name="T_COMMENT">|</token>
+  </line>
+  <line no="414">
+    <token name="T_COMMENT">| Determines whether to standardize newline characters in input data,</token>
+  </line>
+  <line no="415">
+    <token name="T_COMMENT">| meaning to replace \r\n, \r, \n occurrences with the PHP_EOL value.</token>
+  </line>
+  <line no="416">
+    <token name="T_COMMENT">|</token>
+  </line>
+  <line no="417">
+    <token name="T_COMMENT">| WARNING: This feature is DEPRECATED and currently available only</token>
+  </line>
+  <line no="418">
+    <token name="T_COMMENT">|          for backwards compatibility purposes!</token>
+  </line>
+  <line no="419">
+    <token name="T_COMMENT">|</token>
+  </line>
+  <line no="420">
+    <token name="T_COMMENT">*/</token>
+  </line>
+  <line no="421">
+    <token name="T_VARIABLE">$config</token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'standardize_newlines'</token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">FALSE</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="422"/>
+  <line no="423">
+    <token name="T_COMMENT">/*</token>
+  </line>
+  <line no="424">
+    <token name="T_COMMENT">|--------------------------------------------------------------------------</token>
+  </line>
+  <line no="425">
+    <token name="T_COMMENT">| Global XSS Filtering</token>
+  </line>
+  <line no="426">
+    <token name="T_COMMENT">|--------------------------------------------------------------------------</token>
+  </line>
+  <line no="427">
+    <token name="T_COMMENT">|</token>
+  </line>
+  <line no="428">
+    <token name="T_COMMENT">| Determines whether the XSS filter is always active when GET, POST or</token>
+  </line>
+  <line no="429">
+    <token name="T_COMMENT">| COOKIE data is encountered</token>
+  </line>
+  <line no="430">
+    <token name="T_COMMENT">|</token>
+  </line>
+  <line no="431">
+    <token name="T_COMMENT">| WARNING: This feature is DEPRECATED and currently available only</token>
+  </line>
+  <line no="432">
+    <token name="T_COMMENT">|          for backwards compatibility purposes!</token>
+  </line>
+  <line no="433">
+    <token name="T_COMMENT">|</token>
+  </line>
+  <line no="434">
+    <token name="T_COMMENT">*/</token>
+  </line>
+  <line no="435">
+    <token name="T_VARIABLE">$config</token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'global_xss_filtering'</token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">FALSE</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="436"/>
+  <line no="437">
+    <token name="T_COMMENT">/*</token>
+  </line>
+  <line no="438">
+    <token name="T_COMMENT">|--------------------------------------------------------------------------</token>
+  </line>
+  <line no="439">
+    <token name="T_COMMENT">| Cross Site Request Forgery</token>
+  </line>
+  <line no="440">
+    <token name="T_COMMENT">|--------------------------------------------------------------------------</token>
+  </line>
+  <line no="441">
+    <token name="T_COMMENT">| Enables a CSRF cookie token to be set. When set to TRUE, token will be</token>
+  </line>
+  <line no="442">
+    <token name="T_COMMENT">| checked on a submitted form. If you are accepting user data, it is strongly</token>
+  </line>
+  <line no="443">
+    <token name="T_COMMENT">| recommended CSRF protection be enabled.</token>
+  </line>
+  <line no="444">
+    <token name="T_COMMENT">|</token>
+  </line>
+  <line no="445">
+    <token name="T_COMMENT">| 'csrf_token_name' = The token name</token>
+  </line>
+  <line no="446">
+    <token name="T_COMMENT">| 'csrf_cookie_name' = The cookie name</token>
+  </line>
+  <line no="447">
+    <token name="T_COMMENT">| 'csrf_expire' = The number in seconds the token should expire.</token>
+  </line>
+  <line no="448">
+    <token name="T_COMMENT">| 'csrf_regenerate' = Regenerate token on every submission</token>
+  </line>
+  <line no="449">
+    <token name="T_COMMENT">| 'csrf_exclude_uris' = Array of URIs which ignore CSRF checks</token>
+  </line>
+  <line no="450">
+    <token name="T_COMMENT">*/</token>
+  </line>
+  <line no="451">
+    <token name="T_VARIABLE">$config</token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'csrf_protection'</token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">FALSE</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="452">
+    <token name="T_VARIABLE">$config</token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'csrf_token_name'</token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'csrf_test_name'</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="453">
+    <token name="T_VARIABLE">$config</token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'csrf_cookie_name'</token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'csrf_cookie_name'</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="454">
+    <token name="T_VARIABLE">$config</token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'csrf_expire'</token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_LNUMBER">7200</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="455">
+    <token name="T_VARIABLE">$config</token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'csrf_regenerate'</token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">TRUE</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="456">
+    <token name="T_VARIABLE">$config</token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'csrf_exclude_uris'</token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_ARRAY">array</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="457"/>
+  <line no="458">
+    <token name="T_COMMENT">/*</token>
+  </line>
+  <line no="459">
+    <token name="T_COMMENT">|--------------------------------------------------------------------------</token>
+  </line>
+  <line no="460">
+    <token name="T_COMMENT">| Output Compression</token>
+  </line>
+  <line no="461">
+    <token name="T_COMMENT">|--------------------------------------------------------------------------</token>
+  </line>
+  <line no="462">
+    <token name="T_COMMENT">|</token>
+  </line>
+  <line no="463">
+    <token name="T_COMMENT">| Enables Gzip output compression for faster page loads.  When enabled,</token>
+  </line>
+  <line no="464">
+    <token name="T_COMMENT">| the output class will test whether your server supports Gzip.</token>
+  </line>
+  <line no="465">
+    <token name="T_COMMENT">| Even if it does, however, not all browsers support compression</token>
+  </line>
+  <line no="466">
+    <token name="T_COMMENT">| so enable only if you are reasonably sure your visitors can handle it.</token>
+  </line>
+  <line no="467">
+    <token name="T_COMMENT">|</token>
+  </line>
+  <line no="468">
+    <token name="T_COMMENT">| Only used if zlib.output_compression is turned off in your php.ini.</token>
+  </line>
+  <line no="469">
+    <token name="T_COMMENT">| Please do not use it together with httpd-level output compression.</token>
+  </line>
+  <line no="470">
+    <token name="T_COMMENT">|</token>
+  </line>
+  <line no="471">
+    <token name="T_COMMENT">| VERY IMPORTANT:  If you are getting a blank page when compression is enabled it</token>
+  </line>
+  <line no="472">
+    <token name="T_COMMENT">| means you are prematurely outputting something to your browser. It could</token>
+  </line>
+  <line no="473">
+    <token name="T_COMMENT">| even be a line of whitespace at the end of one of your scripts.  For</token>
+  </line>
+  <line no="474">
+    <token name="T_COMMENT">| compression to work, nothing can be sent before the output buffer is called</token>
+  </line>
+  <line no="475">
+    <token name="T_COMMENT">| by the output class.  Do not 'echo' any values with compression enabled.</token>
+  </line>
+  <line no="476">
+    <token name="T_COMMENT">|</token>
+  </line>
+  <line no="477">
+    <token name="T_COMMENT">*/</token>
+  </line>
+  <line no="478">
+    <token name="T_VARIABLE">$config</token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'compress_output'</token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">FALSE</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="479"/>
+  <line no="480">
+    <token name="T_COMMENT">/*</token>
+  </line>
+  <line no="481">
+    <token name="T_COMMENT">|--------------------------------------------------------------------------</token>
+  </line>
+  <line no="482">
+    <token name="T_COMMENT">| Master Time Reference</token>
+  </line>
+  <line no="483">
+    <token name="T_COMMENT">|--------------------------------------------------------------------------</token>
+  </line>
+  <line no="484">
+    <token name="T_COMMENT">|</token>
+  </line>
+  <line no="485">
+    <token name="T_COMMENT">| Options are 'local' or any PHP supported timezone. This preference tells</token>
+  </line>
+  <line no="486">
+    <token name="T_COMMENT">| the system whether to use your server's local time as the master 'now'</token>
+  </line>
+  <line no="487">
+    <token name="T_COMMENT">| reference, or convert it to the configured one timezone. See the 'date</token>
+  </line>
+  <line no="488">
+    <token name="T_COMMENT">| helper' page of the user guide for information regarding date handling.</token>
+  </line>
+  <line no="489">
+    <token name="T_COMMENT">|</token>
+  </line>
+  <line no="490">
+    <token name="T_COMMENT">*/</token>
+  </line>
+  <line no="491">
+    <token name="T_VARIABLE">$config</token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'time_reference'</token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'local'</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="492"/>
+  <line no="493">
+    <token name="T_COMMENT">/*</token>
+  </line>
+  <line no="494">
+    <token name="T_COMMENT">|--------------------------------------------------------------------------</token>
+  </line>
+  <line no="495">
+    <token name="T_COMMENT">| Rewrite PHP Short Tags</token>
+  </line>
+  <line no="496">
+    <token name="T_COMMENT">|--------------------------------------------------------------------------</token>
+  </line>
+  <line no="497">
+    <token name="T_COMMENT">|</token>
+  </line>
+  <line no="498">
+    <token name="T_COMMENT">| If your PHP installation does not have short tag support enabled CI</token>
+  </line>
+  <line no="499">
+    <token name="T_COMMENT">| can rewrite the tags on-the-fly, enabling you to utilize that syntax</token>
+  </line>
+  <line no="500">
+    <token name="T_COMMENT">| in your view files.  Options are TRUE or FALSE (boolean)</token>
+  </line>
+  <line no="501">
+    <token name="T_COMMENT">|</token>
+  </line>
+  <line no="502">
+    <token name="T_COMMENT">| Note: You need to have eval() enabled for this to work.</token>
+  </line>
+  <line no="503">
+    <token name="T_COMMENT">|</token>
+  </line>
+  <line no="504">
+    <token name="T_COMMENT">*/</token>
+  </line>
+  <line no="505">
+    <token name="T_VARIABLE">$config</token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'rewrite_short_tags'</token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">FALSE</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="506"/>
+  <line no="507">
+    <token name="T_COMMENT">/*</token>
+  </line>
+  <line no="508">
+    <token name="T_COMMENT">|--------------------------------------------------------------------------</token>
+  </line>
+  <line no="509">
+    <token name="T_COMMENT">| Reverse Proxy IPs</token>
+  </line>
+  <line no="510">
+    <token name="T_COMMENT">|--------------------------------------------------------------------------</token>
+  </line>
+  <line no="511">
+    <token name="T_COMMENT">|</token>
+  </line>
+  <line no="512">
+    <token name="T_COMMENT">| If your server is behind a reverse proxy, you must whitelist the proxy</token>
+  </line>
+  <line no="513">
+    <token name="T_COMMENT">| IP addresses from which CodeIgniter should trust headers such as</token>
+  </line>
+  <line no="514">
+    <token name="T_COMMENT">| HTTP_X_FORWARDED_FOR and HTTP_CLIENT_IP in order to properly identify</token>
+  </line>
+  <line no="515">
+    <token name="T_COMMENT">| the visitor's IP address.</token>
+  </line>
+  <line no="516">
+    <token name="T_COMMENT">|</token>
+  </line>
+  <line no="517">
+    <token name="T_COMMENT">| You can use both an array or a comma-separated list of proxy addresses,</token>
+  </line>
+  <line no="518">
+    <token name="T_COMMENT">| as well as specifying whole subnets. Here are a few examples:</token>
+  </line>
+  <line no="519">
+    <token name="T_COMMENT">|</token>
+  </line>
+  <line no="520">
+    <token name="T_COMMENT">| Comma-separated:	'10.0.1.200,192.168.5.0/24'</token>
+  </line>
+  <line no="521">
+    <token name="T_COMMENT">| Array:		array('10.0.1.200', '192.168.5.0/24')</token>
+  </line>
+  <line no="522">
+    <token name="T_COMMENT">*/</token>
+  </line>
+  <line no="523">
+    <token name="T_VARIABLE">$config</token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'proxy_ips'</token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">''</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="524"/>
+</source>

@@ -1,0 +1,145 @@
+<?xml version="1.0"?>
+<source xmlns="http://xml.phpdox.net/token">
+  <file xmlns="http://xml.phpdox.net/src" path="/opt/lampp/htdocs/poc2/application/views/users" file="register.php" realpath="/opt/lampp/htdocs/poc2/application/views/users/register.php" size="1573" time="2019-02-22T21:07:31+01:00" unixtime="1550866051" sha1="2f68e3b1cea48425356cd2191d923073ad14fddb" relative="views/users/register.php"/>
+  <line no="1">
+    <token name="T_INLINE_HTML">&lt;!-- register-view --&gt;</token>
+  </line>
+  <line no="2"/>
+  <line no="3">
+    <token name="T_INLINE_HTML">&lt;div class="row top-padding"&gt;</token>
+  </line>
+  <line no="4"/>
+  <line no="5">
+    <token name="T_INLINE_HTML">  &lt;div class="four columns full-height"&gt; </token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_ECHO">echo</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">validation_errors</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+    <token name="T_INLINE_HTML">&lt;/div&gt;</token>
+  </line>
+  <line no="6"/>
+  <line no="7">
+    <token name="T_INLINE_HTML">  &lt;div class="four columns" style="height:90%;"&gt;</token>
+  </line>
+  <line no="8">
+    <token name="T_INLINE_HTML">    &lt;div id="signup"&gt;</token>
+  </line>
+  <line no="9">
+    <token name="T_INLINE_HTML">      </token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_ECHO">echo</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">form_open</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'users/register'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="10">
+    <token name="T_INLINE_HTML">          &lt;h1&gt;Register&lt;/h1&gt;</token>
+  </line>
+  <line no="11">
+    <token name="T_INLINE_HTML">          &lt;label&gt;First Name&lt;/label&gt;</token>
+  </line>
+  <line no="12">
+    <token name="T_INLINE_HTML">          &lt;input type='text' maxlength='15' name='first_name' value=''&gt;&lt;br&gt;</token>
+  </line>
+  <line no="13">
+    <token name="T_INLINE_HTML">          &lt;label&gt;Last Name&lt;/label&gt;</token>
+  </line>
+  <line no="14">
+    <token name="T_INLINE_HTML">          &lt;input type='text' maxlength='15' name='last_name' value=''&gt;&lt;br&gt;</token>
+  </line>
+  <line no="15">
+    <token name="T_INLINE_HTML">          &lt;label&gt;Username&lt;/label&gt;</token>
+  </line>
+  <line no="16">
+    <token name="T_INLINE_HTML">          &lt;input type='text' maxlength='15' name='user' value=''&gt;&lt;br&gt;</token>
+  </line>
+  <line no="17">
+    <token name="T_INLINE_HTML">          &lt;label&gt;Email&lt;/label&gt;</token>
+  </line>
+  <line no="18">
+    <token name="T_INLINE_HTML">          &lt;input type='text' maxlength='255' name='email' value=''&gt;&lt;br&gt;</token>
+  </line>
+  <line no="19">
+    <token name="T_INLINE_HTML">          &lt;label&gt;Password&lt;/label&gt;</token>
+  </line>
+  <line no="20">
+    <token name="T_INLINE_HTML">          &lt;input type='password' maxlength='15' name='pass' value=''&gt;&lt;br&gt;</token>
+  </line>
+  <line no="21">
+    <token name="T_INLINE_HTML">          &lt;span class='fieldname'&gt;&amp;nbsp;&lt;/span&gt;</token>
+  </line>
+  <line no="22">
+    <token name="T_INLINE_HTML">          &lt;label&gt;Halls&lt;/label&gt;</token>
+  </line>
+  <line no="23">
+    <token name="T_INLINE_HTML">          &lt;select  name="locationid" style="width:70%;"&gt;</token>
+  </line>
+  <line no="24">
+    <token name="T_INLINE_HTML">              &lt;option value="1"&gt;Founders&lt;/option&gt;</token>
+  </line>
+  <line no="25">
+    <token name="T_INLINE_HTML">              &lt;option value="2"&gt;Reid&lt;/option&gt;</token>
+  </line>
+  <line no="26">
+    <token name="T_INLINE_HTML">              &lt;option value="3"&gt;EngleField Green&lt;/option&gt;</token>
+  </line>
+  <line no="27">
+    <token name="T_INLINE_HTML">              &lt;option value="4"&gt;Williamson&lt;/option&gt;</token>
+  </line>
+  <line no="28">
+    <token name="T_INLINE_HTML">              &lt;option value="5"&gt;Tuke&lt;/option&gt;</token>
+  </line>
+  <line no="29">
+    <token name="T_INLINE_HTML">              &lt;option value="6"&gt;Butler&lt;/option&gt;</token>
+  </line>
+  <line no="30">
+    <token name="T_INLINE_HTML">              &lt;option value="7"&gt;George Eliot&lt;/option&gt;</token>
+  </line>
+  <line no="31">
+    <token name="T_INLINE_HTML">              &lt;option value="8"&gt;Another Galaxy&lt;/option&gt;</token>
+  </line>
+  <line no="32">
+    <token name="T_INLINE_HTML">          &lt;/select&gt;</token>
+  </line>
+  <line no="33">
+    <token name="T_INLINE_HTML">          &lt;br&gt;</token>
+  </line>
+  <line no="34">
+    <token name="T_INLINE_HTML">          &lt;input class='btn' type='submit' value='Register'&gt;</token>
+  </line>
+  <line no="35">
+    <token name="T_INLINE_HTML">      </token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_ECHO">echo</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">form_close</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="36">
+    <token name="T_INLINE_HTML">    &lt;/div&gt;</token>
+  </line>
+  <line no="37">
+    <token name="T_INLINE_HTML">  &lt;/div&gt;</token>
+  </line>
+  <line no="38"/>
+  <line no="39">
+    <token name="T_INLINE_HTML">  &lt;div class="four columns full-height"&gt;&lt;/div&gt;</token>
+  </line>
+  <line no="40"/>
+  <line no="41">
+    <token name="T_INLINE_HTML">&lt;/div&gt;</token>
+  </line>
+</source>

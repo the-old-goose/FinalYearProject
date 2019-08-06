@@ -1,0 +1,784 @@
+<?xml version="1.0"?>
+<source xmlns="http://xml.phpdox.net/token">
+  <file xmlns="http://xml.phpdox.net/src" path="/opt/lampp/htdocs/poc2/application/views/profiles" file="view.php" realpath="/opt/lampp/htdocs/poc2/application/views/profiles/view.php" size="6163" time="2019-02-23T03:50:16+01:00" unixtime="1550890216" sha1="23a1335e80a73c04f0698b4311952abfcf01f771" relative="views/profiles/view.php"/>
+  <line no="1">
+    <token name="T_INLINE_HTML">&lt;script&gt;</token>
+  </line>
+  <line no="2">
+    <token name="T_INLINE_HTML">              function myFunction() </token>
+  </line>
+  <line no="3">
+    <token name="T_INLINE_HTML">              {</token>
+  </line>
+  <line no="4">
+    <token name="T_INLINE_HTML">              var grav_dialog = document.getElementById("gravatar-dialog");</token>
+  </line>
+  <line no="5">
+    <token name="T_INLINE_HTML">              if (grav_dialog.style.display === "none") </token>
+  </line>
+  <line no="6">
+    <token name="T_INLINE_HTML">                 {</token>
+  </line>
+  <line no="7">
+    <token name="T_INLINE_HTML">                    grav_dialog.style.display = "block";</token>
+  </line>
+  <line no="8">
+    <token name="T_INLINE_HTML">                 } </token>
+  </line>
+  <line no="9">
+    <token name="T_INLINE_HTML">              else </token>
+  </line>
+  <line no="10">
+    <token name="T_INLINE_HTML">                  {</token>
+  </line>
+  <line no="11">
+    <token name="T_INLINE_HTML">                     grav_dialog.style.display = "none";</token>
+  </line>
+  <line no="12">
+    <token name="T_INLINE_HTML">                  }</token>
+  </line>
+  <line no="13">
+    <token name="T_INLINE_HTML">                } </token>
+  </line>
+  <line no="14">
+    <token name="T_INLINE_HTML">&lt;/script&gt;</token>
+  </line>
+  <line no="15"/>
+  <line no="16">
+    <token name="T_INLINE_HTML">&lt;div class="container tile" id="d1"&gt; </token>
+  </line>
+  <line no="17">
+    <token name="T_INLINE_HTML">    &lt;div class="row" id="title-row"&gt;</token>
+  </line>
+  <line no="18">
+    <token name="T_INLINE_HTML">          &lt;div class="twelve columns"&gt;</token>
+  </line>
+  <line no="19">
+    <token name="T_INLINE_HTML">            &lt;h1&gt;Profile</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_ECHO">echo</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">validation_errors</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+    <token name="T_INLINE_HTML"> &lt;/h1&gt;</token>
+  </line>
+  <line no="20">
+    <token name="T_INLINE_HTML">            </token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_IF">if</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_PHPDOX_EXCLAMATION_MARK">!</token>
+    <token name="T_VARIABLE">$no_results</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_COLON">:</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+    <token name="T_INLINE_HTML"> </token>
+  </line>
+  <line no="21"/>
+  <line no="22">
+    <token name="T_INLINE_HTML">              </token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_IF">if</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_VARIABLE">$myprofile</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_COLON">:</token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="23">
+    <token name="T_INLINE_HTML">                &lt;input type="button" value="Edit" onclick="window.location.href='</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_ECHO">echo</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">site_url</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_DOT">.</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'/profiles/view/'</token>
+    <token name="T_PHPDOX_DOT">.</token>
+    <token name="T_VARIABLE">$_SESSION</token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'user_id'</token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_PHPDOX_DOT">.</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'/1'</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+    <token name="T_INLINE_HTML">'" /&gt;</token>
+  </line>
+  <line no="24">
+    <token name="T_INLINE_HTML">                </token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_IF">if</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_VARIABLE">$edit</token>
+    <token name="T_IS_IDENTICAL">===</token>
+    <token name="T_LNUMBER">1</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_COLON">:</token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="25">
+    <token name="T_INLINE_HTML">                </token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_ECHO">echo</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">form_open</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'profiles/update'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="26">
+    <token name="T_INLINE_HTML">                &lt;input class="btn" type="submit" value="Update"&gt;</token>
+  </line>
+  <line no="27">
+    <token name="T_INLINE_HTML">                </token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_ENDIF">endif</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+    <token name="T_INLINE_HTML"> </token>
+  </line>
+  <line no="28">
+    <token name="T_INLINE_HTML">              </token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_ENDIF">endif</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+    <token name="T_INLINE_HTML">   </token>
+  </line>
+  <line no="29">
+    <token name="T_INLINE_HTML">          &lt;/div&gt; </token>
+  </line>
+  <line no="30">
+    <token name="T_INLINE_HTML">        &lt;/div&gt;</token>
+  </line>
+  <line no="31">
+    <token name="T_INLINE_HTML">        &lt;div class="row"&gt;</token>
+  </line>
+  <line no="32">
+    <token name="T_INLINE_HTML">          &lt;div class="two columns" id="c1"&gt;</token>
+  </line>
+  <line no="33"/>
+  <line no="34">
+    <token name="T_INLINE_HTML">            &lt;div id="lister-picture"&gt;</token>
+  </line>
+  <line no="35">
+    <token name="T_INLINE_HTML">              &lt;img src="</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_ECHO">echo</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$gravatar_url</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+    <token name="T_INLINE_HTML">"&gt;</token>
+  </line>
+  <line no="36">
+    <token name="T_INLINE_HTML">            &lt;/div&gt;</token>
+  </line>
+  <line no="37">
+    <token name="T_INLINE_HTML">              </token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_IF">if</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_VARIABLE">$myprofile</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_COLON">:</token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="38">
+    <token name="T_INLINE_HTML">                  &lt;span id="upload-link"&gt;&lt;a onclick="myFunction()"&gt;Upload&lt;/a&gt;&lt;/span&gt;</token>
+  </line>
+  <line no="39">
+    <token name="T_INLINE_HTML">                  &lt;div id="gravatar-dialog" style="display:none;"&gt;</token>
+  </line>
+  <line no="40">
+    <token name="T_INLINE_HTML">                    This Site uses Gravatar! &lt;br&gt;</token>
+  </line>
+  <line no="41">
+    <token name="T_INLINE_HTML">                    &lt;u&gt;Tip: Use the email you signed up with&lt;/u&gt;&lt;br&gt;</token>
+  </line>
+  <line no="42">
+    <token name="T_INLINE_HTML">                    &lt;a id="upload-link" href="https://en.gravatar.com/"&gt;Click here to set your Image&lt;/a&gt;</token>
+  </line>
+  <line no="43">
+    <token name="T_INLINE_HTML">                  &lt;/div&gt;</token>
+  </line>
+  <line no="44">
+    <token name="T_INLINE_HTML">              </token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_ENDIF">endif</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="45">
+    <token name="T_INLINE_HTML">          &lt;/div&gt;</token>
+  </line>
+  <line no="46">
+    <token name="T_INLINE_HTML">            &lt;div class="two columns" id="c1"&gt;</token>
+  </line>
+  <line no="47">
+    <token name="T_INLINE_HTML">                &lt;table style="width:100%;"&gt;</token>
+  </line>
+  <line no="48">
+    <token name="T_INLINE_HTML">                    &lt;tr&gt;</token>
+  </line>
+  <line no="49">
+    <token name="T_INLINE_HTML">                      &lt;th&gt;First Name:&lt;/th&gt;</token>
+  </line>
+  <line no="50">
+    <token name="T_INLINE_HTML">                      &lt;td&gt;</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_ECHO">echo</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$profile</token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'first_name'</token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="51">
+    <token name="T_INLINE_HTML">                          </token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_IF">if</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_VARIABLE">$edit</token>
+    <token name="T_IS_IDENTICAL">===</token>
+    <token name="T_LNUMBER">1</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_COLON">:</token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="52">
+    <token name="T_INLINE_HTML">                            &lt;input type='text' maxlength='15' name='first_name' value='</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_ECHO">echo</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$profile</token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'first_name'</token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+    <token name="T_INLINE_HTML">'&gt;</token>
+  </line>
+  <line no="53">
+    <token name="T_INLINE_HTML">                          </token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_ENDIF">endif</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+    <token name="T_INLINE_HTML"> </token>
+  </line>
+  <line no="54">
+    <token name="T_INLINE_HTML">                      &lt;/td&gt;</token>
+  </line>
+  <line no="55">
+    <token name="T_INLINE_HTML">                    &lt;/tr&gt;</token>
+  </line>
+  <line no="56">
+    <token name="T_INLINE_HTML">                    &lt;tr&gt;</token>
+  </line>
+  <line no="57">
+    <token name="T_INLINE_HTML">                      &lt;th&gt;Last Name:&lt;/th&gt;</token>
+  </line>
+  <line no="58">
+    <token name="T_INLINE_HTML">                      &lt;td&gt;</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_ECHO">echo</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$profile</token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'last_name'</token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="59">
+    <token name="T_INLINE_HTML">                      </token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_IF">if</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_VARIABLE">$edit</token>
+    <token name="T_IS_IDENTICAL">===</token>
+    <token name="T_LNUMBER">1</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_COLON">:</token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="60">
+    <token name="T_INLINE_HTML">                        &lt;input type='text' maxlength='15' name='last_name' value='</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_ECHO">echo</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$profile</token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'last_name'</token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+    <token name="T_INLINE_HTML">'&gt;</token>
+  </line>
+  <line no="61">
+    <token name="T_INLINE_HTML">                      </token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_ENDIF">endif</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="62">
+    <token name="T_INLINE_HTML">                      &lt;/td&gt;</token>
+  </line>
+  <line no="63">
+    <token name="T_INLINE_HTML">                    &lt;/tr&gt;</token>
+  </line>
+  <line no="64">
+    <token name="T_INLINE_HTML">                    &lt;tr&gt;</token>
+  </line>
+  <line no="65">
+    <token name="T_INLINE_HTML">                      &lt;th&gt;Username:&lt;/th&gt;</token>
+  </line>
+  <line no="66">
+    <token name="T_INLINE_HTML">                      &lt;td&gt;</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_ECHO">echo</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$profile</token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'username'</token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+    <token name="T_INLINE_HTML">&lt;/td&gt;</token>
+  </line>
+  <line no="67">
+    <token name="T_INLINE_HTML">                    &lt;/tr&gt;</token>
+  </line>
+  <line no="68">
+    <token name="T_INLINE_HTML">                    &lt;tr&gt;</token>
+  </line>
+  <line no="69">
+    <token name="T_INLINE_HTML">                      &lt;th&gt;Rank:&lt;/th&gt;</token>
+  </line>
+  <line no="70">
+    <token name="T_INLINE_HTML">                      &lt;td&gt;</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_ECHO">echo</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$profile</token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'rank'</token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+    <token name="T_INLINE_HTML">&lt;/td&gt;</token>
+  </line>
+  <line no="71">
+    <token name="T_INLINE_HTML">                    &lt;/tr&gt;</token>
+  </line>
+  <line no="72">
+    <token name="T_INLINE_HTML">                    &lt;tr&gt;</token>
+  </line>
+  <line no="73">
+    <token name="T_INLINE_HTML">                      &lt;th&gt;Galaxy:&lt;/th&gt;</token>
+  </line>
+  <line no="74">
+    <token name="T_INLINE_HTML">                      &lt;td&gt;</token>
+  </line>
+  <line no="75">
+    <token name="T_INLINE_HTML">                        </token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_ECHO">echo</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$profile</token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'location_name'</token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="76">
+    <token name="T_INLINE_HTML">                        </token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_IF">if</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_VARIABLE">$edit</token>
+    <token name="T_IS_IDENTICAL">===</token>
+    <token name="T_LNUMBER">1</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_COLON">:</token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="77">
+    <token name="T_INLINE_HTML">                          &lt;select  name="locationid"&gt;</token>
+  </line>
+  <line no="78">
+    <token name="T_INLINE_HTML">                            &lt;option value="1"&gt;Founders&lt;/option&gt;</token>
+  </line>
+  <line no="79">
+    <token name="T_INLINE_HTML">                            &lt;option value="2"&gt;Reid&lt;/option&gt;</token>
+  </line>
+  <line no="80">
+    <token name="T_INLINE_HTML">                            &lt;option value="3"&gt;EngleField Green&lt;/option&gt;</token>
+  </line>
+  <line no="81">
+    <token name="T_INLINE_HTML">                            &lt;option value="4"&gt;Williamson&lt;/option&gt;</token>
+  </line>
+  <line no="82">
+    <token name="T_INLINE_HTML">                            &lt;option value="5"&gt;Tuke&lt;/option&gt;</token>
+  </line>
+  <line no="83">
+    <token name="T_INLINE_HTML">                            &lt;option value="6"&gt;Butler&lt;/option&gt;</token>
+  </line>
+  <line no="84">
+    <token name="T_INLINE_HTML">                            &lt;option value="7"&gt;George Eliot&lt;/option&gt;</token>
+  </line>
+  <line no="85">
+    <token name="T_INLINE_HTML">                            &lt;option value="8"&gt;Another Galaxy&lt;/option&gt;</token>
+  </line>
+  <line no="86">
+    <token name="T_INLINE_HTML">                          &lt;/select&gt;</token>
+  </line>
+  <line no="87">
+    <token name="T_INLINE_HTML">                        </token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_ENDIF">endif</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+    <token name="T_INLINE_HTML"> </token>
+  </line>
+  <line no="88">
+    <token name="T_INLINE_HTML">                      &lt;/td&gt;</token>
+  </line>
+  <line no="89">
+    <token name="T_INLINE_HTML">                    &lt;/tr&gt;</token>
+  </line>
+  <line no="90">
+    <token name="T_INLINE_HTML">                    &lt;tr&gt;</token>
+  </line>
+  <line no="91">
+    <token name="T_INLINE_HTML">                      &lt;th&gt;Year:&lt;/th&gt;</token>
+  </line>
+  <line no="92">
+    <token name="T_INLINE_HTML">                      &lt;td&gt;</token>
+  </line>
+  <line no="93">
+    <token name="T_INLINE_HTML">                        </token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_ECHO">echo</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$profile</token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'year'</token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="94">
+    <token name="T_INLINE_HTML">                        </token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_IF">if</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_VARIABLE">$edit</token>
+    <token name="T_IS_IDENTICAL">===</token>
+    <token name="T_LNUMBER">1</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_COLON">:</token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="95">
+    <token name="T_INLINE_HTML">                          &lt;select  name="year"&gt;</token>
+  </line>
+  <line no="96">
+    <token name="T_INLINE_HTML">                            &lt;option value="First"&gt;First&lt;/option&gt;</token>
+  </line>
+  <line no="97">
+    <token name="T_INLINE_HTML">                            &lt;option value="Second"&gt;Second&lt;/option&gt;</token>
+  </line>
+  <line no="98">
+    <token name="T_INLINE_HTML">                            &lt;option value="Third"&gt;Third&lt;/option&gt;</token>
+  </line>
+  <line no="99">
+    <token name="T_INLINE_HTML">                            &lt;option value="Fourth"&gt;Fourth&lt;/option&gt;</token>
+  </line>
+  <line no="100">
+    <token name="T_INLINE_HTML">                            &lt;option value="Masters"&gt;Masters&lt;/option&gt;</token>
+  </line>
+  <line no="101">
+    <token name="T_INLINE_HTML">                            &lt;option value="PhD"&gt;PhD&lt;/option&gt;</token>
+  </line>
+  <line no="102">
+    <token name="T_INLINE_HTML">                          &lt;/select&gt;</token>
+  </line>
+  <line no="103">
+    <token name="T_INLINE_HTML">                        </token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_ENDIF">endif</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+    <token name="T_INLINE_HTML"> </token>
+  </line>
+  <line no="104">
+    <token name="T_INLINE_HTML">                      &lt;/td&gt;</token>
+  </line>
+  <line no="105">
+    <token name="T_INLINE_HTML">                    &lt;/tr&gt;</token>
+  </line>
+  <line no="106">
+    <token name="T_INLINE_HTML">                    &lt;tr&gt;</token>
+  </line>
+  <line no="107">
+    <token name="T_INLINE_HTML">                      &lt;th&gt;Score:&lt;/th&gt;</token>
+  </line>
+  <line no="108">
+    <token name="T_INLINE_HTML">                      &lt;td&gt;</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_ECHO">echo</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$profile</token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'score'</token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+    <token name="T_INLINE_HTML">&lt;/td&gt;</token>
+  </line>
+  <line no="109">
+    <token name="T_INLINE_HTML">                    &lt;/tr&gt;</token>
+  </line>
+  <line no="110">
+    <token name="T_INLINE_HTML">                    &lt;tr&gt;</token>
+  </line>
+  <line no="111">
+    <token name="T_INLINE_HTML">                      &lt;th&gt;Description:&lt;/th&gt;</token>
+  </line>
+  <line no="112">
+    <token name="T_INLINE_HTML">                      &lt;td&gt;</token>
+  </line>
+  <line no="113">
+    <token name="T_INLINE_HTML">                        </token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_ECHO">echo</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$profile</token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'description'</token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="114">
+    <token name="T_INLINE_HTML">                        </token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_IF">if</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_VARIABLE">$edit</token>
+    <token name="T_IS_IDENTICAL">===</token>
+    <token name="T_LNUMBER">1</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_COLON">:</token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="115">
+    <token name="T_INLINE_HTML">                          &lt;textarea class="u-full-width" maxlength="253" name="profdesc"&gt;</token>
+    <token name="T_OPEN_TAG_WITH_ECHO">&lt;?=</token>
+    <token name="T_VARIABLE">$profile</token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'description'</token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+    <token name="T_INLINE_HTML">&lt;/textarea&gt;</token>
+  </line>
+  <line no="116">
+    <token name="T_INLINE_HTML">                        </token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_ENDIF">endif</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+    <token name="T_INLINE_HTML"> </token>
+  </line>
+  <line no="117">
+    <token name="T_INLINE_HTML">                      &lt;/td&gt;</token>
+  </line>
+  <line no="118">
+    <token name="T_INLINE_HTML">                    &lt;/tr&gt;</token>
+  </line>
+  <line no="119">
+    <token name="T_INLINE_HTML">                    &lt;tr&gt;</token>
+  </line>
+  <line no="120">
+    <token name="T_INLINE_HTML">                      &lt;th&gt;Listings:&lt;/th&gt;</token>
+  </line>
+  <line no="121">
+    <token name="T_INLINE_HTML">                      &lt;td&gt;</token>
+  </line>
+  <line no="122">
+    <token name="T_INLINE_HTML">                      </token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_IF">if</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_PHPDOX_EXCLAMATION_MARK">!</token>
+    <token name="T_VARIABLE">$no_listings</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_COLON">:</token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="123">
+    <token name="T_INLINE_HTML">                         &lt;div style="height:100px;width:100%;overflow:auto;"&gt;</token>
+  </line>
+  <line no="124">
+    <token name="T_INLINE_HTML">                         </token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_FOREACH">foreach</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_VARIABLE">$listings</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_AS">as</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$listing</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_COLON">:</token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="125">
+    <token name="T_INLINE_HTML">                            &lt;a href="</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_ECHO">echo</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">site_url</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+    <token name="T_INLINE_HTML">skills/view/</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_ECHO">echo</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$listing</token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'skill_id'</token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+    <token name="T_INLINE_HTML">"&gt;&lt;code&gt;</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_ECHO">echo</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$listing</token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'name'</token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+    <token name="T_INLINE_HTML">&lt;/code&gt;&lt;/a&gt;</token>
+  </line>
+  <line no="126">
+    <token name="T_INLINE_HTML">                         </token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_ENDFOREACH">endforeach</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="127">
+    <token name="T_INLINE_HTML">                        &lt;/div&gt;</token>
+  </line>
+  <line no="128">
+    <token name="T_INLINE_HTML">                      </token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_ENDIF">endif</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="129">
+    <token name="T_INLINE_HTML">                      &lt;/td&gt;</token>
+  </line>
+  <line no="130">
+    <token name="T_INLINE_HTML">                    &lt;/tr&gt;</token>
+  </line>
+  <line no="131">
+    <token name="T_INLINE_HTML">                &lt;/table&gt;</token>
+  </line>
+  <line no="132">
+    <token name="T_INLINE_HTML">                </token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_ECHO">echo</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">form_close</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="133">
+    <token name="T_INLINE_HTML">            &lt;/div&gt;</token>
+  </line>
+  <line no="134">
+    <token name="T_INLINE_HTML">        </token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_ELSE">else</token>
+    <token name="T_PHPDOX_COLON">:</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="135">
+    <token name="T_INLINE_HTML">        &lt;/div&gt;</token>
+  </line>
+  <line no="136">
+    <token name="T_INLINE_HTML">          &lt;div class="row"&gt;</token>
+  </line>
+  <line no="137">
+    <token name="T_INLINE_HTML">            &lt;div class="twelve columns"&gt;</token>
+  </line>
+  <line no="138">
+    <token name="T_INLINE_HTML">              &lt;p&gt;This Profile does not exist&lt;/p&gt;</token>
+  </line>
+  <line no="139">
+    <token name="T_INLINE_HTML">            &lt;/div&gt;</token>
+  </line>
+  <line no="140">
+    <token name="T_INLINE_HTML">          &lt;/div&gt;</token>
+  </line>
+  <line no="141">
+    <token name="T_INLINE_HTML">        </token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_ENDIF">endif</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="142">
+    <token name="T_INLINE_HTML">    &lt;/div&gt;</token>
+  </line>
+  <line no="143">
+    <token name="T_INLINE_HTML">&lt;/div&gt;</token>
+  </line>
+</source>

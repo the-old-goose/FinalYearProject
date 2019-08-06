@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="Gravatar" namespace="" name="Gravatar" abstract="false" final="false" start="24" end="509">
+  <file path="/opt/lampp/htdocs/poc2/application/libraries" file="Gravatar.php" realpath="/opt/lampp/htdocs/poc2/application/libraries/Gravatar.php" size="14990" time="2016-04-20T01:13:33+02:00" unixtime="1461107613" sha1="efeb34f24a4f88b67d3a5594a831d5b81061dd5c" relative="libraries/Gravatar.php"/>
+  <member name="defaults" visibility="protected" static="false" line="26"/>
+  <member name="gravatar_base_url" visibility="protected" static="false" line="28"/>
+  <member name="gravatar_secure_base_url" visibility="protected" static="false" line="29"/>
+  <member name="gravatar_image_extension" visibility="protected" static="false" line="30"/>
+  <member name="gravatar_image_size" visibility="protected" static="false" line="31"/>
+  <member name="gravatar_default_image" visibility="protected" static="false" line="32"/>
+  <member name="gravatar_force_default_image" visibility="protected" static="false" line="33"/>
+  <member name="gravatar_rating" visibility="protected" static="false" line="34"/>
+  <member name="gravatar_useragent" visibility="protected" static="false" line="35"/>
+  <member name="last_error" default="" type="{unknown}" constant="GRAVATAR_NO_ERROR" visibility="protected" static="false" line="37"/>
+  <member name="is_https" visibility="protected" static="false" line="39"/>
+  <member name="curl_exists" visibility="protected" static="false" line="40"/>
+  <member name="allow_url_fopen" visibility="protected" static="false" line="41"/>
+  <constructor name="__construct" start="43" end="68" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="config" byreference="false" type="array" default=""/>
+  </constructor>
+  <method name="initialize" start="70" end="96" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="config" byreference="false" type="array" default=""/>
+  </method>
+  <method name="reset" start="98" end="103" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="get_defaults" start="105" end="108" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="get" start="124" end="175" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Creates a URL for requesting a Gravatar image."/>
+      <link value="http://en.gravatar.com/site/implement/images/"/>
+      <param description="A registered email." type="string" variable="$email"/>
+      <param description="The requested size of the avarar in pixels (a square image)." type="int" variable="$size"/>
+      <param description="The fallback image option: '', '404', 'mm', 'identicon', 'monsterid', 'wavatar', 'retro', 'blank'." type="string" variable="$default_image"/>
+      <param description="Enforces the fallback image to be shown." type="object" variable="$force_default_image">
+        <type full="bool" namespace="" name="bool"/>
+      </param>
+      <param description="The level of allowed self-rate of the avatar: '', 'g' (default), 'pg', 'r', 'x'." type="string" variable="$rating"/>
+      <return description="Returns the URL of the avatar to be requested." type="string">When optional parameters are not set, their default values are taken
+from the configuration file application/config/gravatar.php</return>
+    </docblock>
+    <parameter name="email" byreference="false" type="{unknown}"/>
+    <parameter name="size" byreference="false" type="{unknown}" default="NULL"/>
+    <parameter name="default_image" byreference="false" type="{unknown}" default="NULL"/>
+    <parameter name="force_default_image" byreference="false" type="{unknown}" default="NULL"/>
+    <parameter name="rating" byreference="false" type="{unknown}" default="NULL"/>
+  </method>
+  <method name="get_profile_data" start="184" end="213" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Executes a request for Gravatar profile data and returns it as a multidimensional array."/>
+      <link value="https://en.gravatar.com/site/implement/profiles/"/>
+      <param description="A registered email." type="string" variable="$email"/>
+      <return description="Received profile data." type="object">
+        <type full="array/null" namespace="" name="array/null"/>
+      </return>
+    </docblock>
+    <parameter name="email" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="execute_profile_request" start="223" end="313" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Executes a request for Gravatar profile data and returns raw received response."/>
+      <link value="https://en.gravatar.com/site/implement/profiles/"/>
+      <param description="A registered email." type="string" variable="$email"/>
+      <param description="'', 'json', 'xml', 'php', 'vcf', 'qr'." type="string" variable="$format"/>
+      <return description="Received profile raw data." type="object">
+        <type full="string/null" namespace="" name="string/null"/>
+      </return>
+    </docblock>
+    <parameter name="email" byreference="false" type="{unknown}"/>
+    <parameter name="format" byreference="false" type="{unknown}" default="NULL"/>
+  </method>
+  <method name="last_error" start="321" end="324" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Returns the error code as a result of the last profile request operation."/>
+      <return description="GRAVATAR_NO_ERROR - the last operation was successfull," type="int">other returned value indicates failure.</return>
+    </docblock>
+  </method>
+  <method name="create_hash" start="333" end="336" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Creates a hash value from a provided e-mail address."/>
+      <link value="https://en.gravatar.com/site/implement/hash/"/>
+      <param description="A registered email." type="string" variable="$email"/>
+      <return description="The hash for accessing the avatar or profile data." type="object">
+        <type full="string/null" namespace="" name="string/null"/>
+      </return>
+    </docblock>
+    <parameter name="email" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="is_https" start="338" end="353" abstract="false" final="false" static="false" visibility="protected"/>
+  <method name="set_email" start="370" end="380" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set the email to be used, converting it into an md5 hash as required by gravatar.com"/>
+      <param type="string" variable="$email"/>
+      <return description="Email hash or if email didn't validate then return NULL" type="object">
+        <type full="string|null" namespace="" name="string|null"/>
+      </return>
+      <deprecated/>
+    </docblock>
+    <parameter name="email" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="get_gravatar" start="396" end="439" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="get_gravatar_url"/>
+      <see value="http://en.gravatar.com/site/implement/images/ for available options"/>
+      <param description="defaults to g" type="string" variable="$rating"/>
+      <param description="defaults to 80" type="string" variable="$size"/>
+      <param description="default sets can be found on the above link" type="string" variable="$default_image"/>
+      <param description="set to TRUE if a secure url is required" type="boolean" variable="$secure"/>
+      <return description="gratavar url" type="string"/>
+      <deprecated/>
+    </docblock>
+    <parameter name="email" byreference="false" type="{unknown}"/>
+    <parameter name="rating" byreference="false" type="{unknown}" default="NULL"/>
+    <parameter name="size" byreference="false" type="{unknown}" default="NULL"/>
+    <parameter name="default_image" byreference="false" type="{unknown}" default="NULL"/>
+    <parameter name="secure" byreference="false" type="{unknown}" default="NULL"/>
+  </method>
+  <method name="get_profile" start="451" end="507" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Grab the full profile data for a given email from gravatar.com in xml format"/>
+      <param type="string" variable="$email"/>
+      <param description="fetch_method defaults to file, 'curl' is the other option" type="string"/>
+      <return description="$xml-&gt;entry on success, NULL on an error" type="object">
+        <type full="object|null" namespace="" name="object|null"/>
+      </return>
+      <deprecated/>
+    </docblock>
+    <parameter name="email" byreference="false" type="{unknown}"/>
+    <parameter name="fetch_method" byreference="false" type="string" default="'file'"/>
+  </method>
+</class>

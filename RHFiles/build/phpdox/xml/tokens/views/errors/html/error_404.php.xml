@@ -1,0 +1,209 @@
+<?xml version="1.0"?>
+<source xmlns="http://xml.phpdox.net/token">
+  <file xmlns="http://xml.phpdox.net/src" path="/opt/lampp/htdocs/poc2/application/views/errors/html" file="error_404.php" realpath="/opt/lampp/htdocs/poc2/application/views/errors/html/error_404.php" size="1187" time="2018-06-12T15:45:46+02:00" unixtime="1528811146" sha1="03f234992f11a3442ea46bf3f2cdf38689bb8ee0" relative="views/errors/html/error_404.php"/>
+  <line no="1">
+    <token name="T_OPEN_TAG">&lt;?php</token>
+  </line>
+  <line no="2">
+    <token name="T_STRING">defined</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'BASEPATH'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_LOGICAL_OR">OR</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_EXIT">exit</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'No direct script access allowed'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="3">
+    <token name="T_CLOSE_TAG">?&gt;</token>
+    <token name="T_INLINE_HTML">&lt;!DOCTYPE html&gt;</token>
+  </line>
+  <line no="4">
+    <token name="T_INLINE_HTML">&lt;html lang="en"&gt;</token>
+  </line>
+  <line no="5">
+    <token name="T_INLINE_HTML">&lt;head&gt;</token>
+  </line>
+  <line no="6">
+    <token name="T_INLINE_HTML">&lt;meta charset="utf-8"&gt;</token>
+  </line>
+  <line no="7">
+    <token name="T_INLINE_HTML">&lt;title&gt;404 Page Not Found&lt;/title&gt;</token>
+  </line>
+  <line no="8">
+    <token name="T_INLINE_HTML">&lt;style type="text/css"&gt;</token>
+  </line>
+  <line no="9"/>
+  <line no="10">
+    <token name="T_INLINE_HTML">::selection { background-color: #E13300; color: white; }</token>
+  </line>
+  <line no="11">
+    <token name="T_INLINE_HTML">::-moz-selection { background-color: #E13300; color: white; }</token>
+  </line>
+  <line no="12"/>
+  <line no="13">
+    <token name="T_INLINE_HTML">body {</token>
+  </line>
+  <line no="14">
+    <token name="T_INLINE_HTML">	background-color: #fff;</token>
+  </line>
+  <line no="15">
+    <token name="T_INLINE_HTML">	margin: 40px;</token>
+  </line>
+  <line no="16">
+    <token name="T_INLINE_HTML">	font: 13px/20px normal Helvetica, Arial, sans-serif;</token>
+  </line>
+  <line no="17">
+    <token name="T_INLINE_HTML">	color: #4F5155;</token>
+  </line>
+  <line no="18">
+    <token name="T_INLINE_HTML">}</token>
+  </line>
+  <line no="19"/>
+  <line no="20">
+    <token name="T_INLINE_HTML">a {</token>
+  </line>
+  <line no="21">
+    <token name="T_INLINE_HTML">	color: #003399;</token>
+  </line>
+  <line no="22">
+    <token name="T_INLINE_HTML">	background-color: transparent;</token>
+  </line>
+  <line no="23">
+    <token name="T_INLINE_HTML">	font-weight: normal;</token>
+  </line>
+  <line no="24">
+    <token name="T_INLINE_HTML">}</token>
+  </line>
+  <line no="25"/>
+  <line no="26">
+    <token name="T_INLINE_HTML">h1 {</token>
+  </line>
+  <line no="27">
+    <token name="T_INLINE_HTML">	color: #444;</token>
+  </line>
+  <line no="28">
+    <token name="T_INLINE_HTML">	background-color: transparent;</token>
+  </line>
+  <line no="29">
+    <token name="T_INLINE_HTML">	border-bottom: 1px solid #D0D0D0;</token>
+  </line>
+  <line no="30">
+    <token name="T_INLINE_HTML">	font-size: 19px;</token>
+  </line>
+  <line no="31">
+    <token name="T_INLINE_HTML">	font-weight: normal;</token>
+  </line>
+  <line no="32">
+    <token name="T_INLINE_HTML">	margin: 0 0 14px 0;</token>
+  </line>
+  <line no="33">
+    <token name="T_INLINE_HTML">	padding: 14px 15px 10px 15px;</token>
+  </line>
+  <line no="34">
+    <token name="T_INLINE_HTML">}</token>
+  </line>
+  <line no="35"/>
+  <line no="36">
+    <token name="T_INLINE_HTML">code {</token>
+  </line>
+  <line no="37">
+    <token name="T_INLINE_HTML">	font-family: Consolas, Monaco, Courier New, Courier, monospace;</token>
+  </line>
+  <line no="38">
+    <token name="T_INLINE_HTML">	font-size: 12px;</token>
+  </line>
+  <line no="39">
+    <token name="T_INLINE_HTML">	background-color: #f9f9f9;</token>
+  </line>
+  <line no="40">
+    <token name="T_INLINE_HTML">	border: 1px solid #D0D0D0;</token>
+  </line>
+  <line no="41">
+    <token name="T_INLINE_HTML">	color: #002166;</token>
+  </line>
+  <line no="42">
+    <token name="T_INLINE_HTML">	display: block;</token>
+  </line>
+  <line no="43">
+    <token name="T_INLINE_HTML">	margin: 14px 0 14px 0;</token>
+  </line>
+  <line no="44">
+    <token name="T_INLINE_HTML">	padding: 12px 10px 12px 10px;</token>
+  </line>
+  <line no="45">
+    <token name="T_INLINE_HTML">}</token>
+  </line>
+  <line no="46"/>
+  <line no="47">
+    <token name="T_INLINE_HTML">#container {</token>
+  </line>
+  <line no="48">
+    <token name="T_INLINE_HTML">	margin: 10px;</token>
+  </line>
+  <line no="49">
+    <token name="T_INLINE_HTML">	border: 1px solid #D0D0D0;</token>
+  </line>
+  <line no="50">
+    <token name="T_INLINE_HTML">	box-shadow: 0 0 8px #D0D0D0;</token>
+  </line>
+  <line no="51">
+    <token name="T_INLINE_HTML">}</token>
+  </line>
+  <line no="52"/>
+  <line no="53">
+    <token name="T_INLINE_HTML">p {</token>
+  </line>
+  <line no="54">
+    <token name="T_INLINE_HTML">	margin: 12px 15px 12px 15px;</token>
+  </line>
+  <line no="55">
+    <token name="T_INLINE_HTML">}</token>
+  </line>
+  <line no="56">
+    <token name="T_INLINE_HTML">&lt;/style&gt;</token>
+  </line>
+  <line no="57">
+    <token name="T_INLINE_HTML">&lt;/head&gt;</token>
+  </line>
+  <line no="58">
+    <token name="T_INLINE_HTML">&lt;body&gt;</token>
+  </line>
+  <line no="59">
+    <token name="T_INLINE_HTML">	&lt;div id="container"&gt;</token>
+  </line>
+  <line no="60">
+    <token name="T_INLINE_HTML">		&lt;h1&gt;</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_ECHO">echo</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$heading</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+    <token name="T_INLINE_HTML">&lt;/h1&gt;</token>
+  </line>
+  <line no="61">
+    <token name="T_INLINE_HTML">		</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_ECHO">echo</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$message</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="62">
+    <token name="T_INLINE_HTML">	&lt;/div&gt;</token>
+  </line>
+  <line no="63">
+    <token name="T_INLINE_HTML">&lt;/body&gt;</token>
+  </line>
+  <line no="64">
+    <token name="T_INLINE_HTML">&lt;/html&gt;</token>
+  </line>
+</source>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="Users" namespace="" name="Users" abstract="false" final="false" start="14" end="171">
+  <file path="/opt/lampp/htdocs/poc2/application/controllers" file="Users.php" realpath="/opt/lampp/htdocs/poc2/application/controllers/Users.php" size="7625" time="2019-03-09T22:14:44+01:00" unixtime="1552166084" sha1="f151a01c8bcbb628fc043df953004d0605de00ff" relative="controllers/Users.php"/>
+  <docblock>
+    <description compact="Credit to Guide: CodeIgniter tutorial&lt;https://www.codeigniter.com/userguide3/libraries/form_validation.html&gt; Credit to Guide: Travesy media &lt;https://www.youtube.com/watch?v=qS0a4nKQ6h8&amp;index=6&amp;list=PLillGF-RfqbaP_71rOyChhjeK1swokUIS&gt; I have based my code on the approach used in the video ,implementing POST requests when registering to my api.">This controller deals with the login,logout and register pages.</description>
+    <author value="Youcef Adoum"/>
+  </docblock>
+  <extends full="CI_Controller" namespace="" name="CI_Controller" unresolved="true"/>
+  <method name="register" start="25" end="76" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="This function is called when the user attempts to register. The fields sent by the POST request are validated using codeigniters validation library and one custom check defined in this class.">If validation is failed reload the page and display the errors, if it passes then encrypt the password
+and send all the data in another post request to the api which will respond with a success or failure.
+Then redirect to the homepage setting codeigniter flash data, notifying the user which will apear once.</description>
+      <todo value="Implement cURL"/>
+    </docblock>
+  </method>
+  <method name="login" start="90" end="137" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="This function is called when the user attempts to login , validation checks occur and if failed the page is reloaded and the failures displayed in the view.If validation is passed a GET request is sent to the api which recieves a JSON with the users ID , this is bad security practice as sending passwords, even encryted should never be done in a get request.">I will be implementing cURL library shortly and sending POST requests to my api with authentication.
+A session is then created with the users data.
+Supressing 404 response from api and dealing with it in view as with other functions
+
+  @todo implement cURL sending using a POST request to send data to api
+  @todo have the api return a result array  of the row,storing it in the session</description>
+    </docblock>
+  </method>
+  <method name="logout" start="143" end="150" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="This function is called when logging out, it will unset the session data.The user is redirected to the homepage and flash data is displayed"/>
+    </docblock>
+  </method>
+  <method name="username_exists_check" start="161" end="165" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Example of a custom validation method,the user model will check the database to see if the username has already been registered returning true if it does not exist."/>
+      <param type="string" variable="$username"/>
+      <return description="If the validation check passed return true" type="object">
+        <type full="bool" namespace="" name="bool"/>
+      </return>
+      <link value="https://www.codeigniter.com/userguide3/libraries/form_validation.html#callbacks-your-own-validation-methods"/>
+      <todo value="use model via api"/>
+    </docblock>
+    <parameter name="username" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="password_alphanumeric_check" start="167" end="170" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="password" byreference="false" type="{unknown}"/>
+  </method>
+</class>

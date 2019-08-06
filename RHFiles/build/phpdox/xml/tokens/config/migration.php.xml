@@ -1,0 +1,306 @@
+<?xml version="1.0"?>
+<source xmlns="http://xml.phpdox.net/token">
+  <file xmlns="http://xml.phpdox.net/src" path="/opt/lampp/htdocs/poc2/application/config" file="migration.php" realpath="/opt/lampp/htdocs/poc2/application/config/migration.php" size="3032" time="2018-06-12T15:45:46+02:00" unixtime="1528811146" sha1="1371597bdeb43605e51b0549280d57087e6c90d0" relative="config/migration.php"/>
+  <line no="1">
+    <token name="T_OPEN_TAG">&lt;?php</token>
+  </line>
+  <line no="2">
+    <token name="T_STRING">defined</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'BASEPATH'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_LOGICAL_OR">OR</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_EXIT">exit</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'No direct script access allowed'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="3"/>
+  <line no="4">
+    <token name="T_COMMENT">/*</token>
+  </line>
+  <line no="5">
+    <token name="T_COMMENT">|--------------------------------------------------------------------------</token>
+  </line>
+  <line no="6">
+    <token name="T_COMMENT">| Enable/Disable Migrations</token>
+  </line>
+  <line no="7">
+    <token name="T_COMMENT">|--------------------------------------------------------------------------</token>
+  </line>
+  <line no="8">
+    <token name="T_COMMENT">|</token>
+  </line>
+  <line no="9">
+    <token name="T_COMMENT">| Migrations are disabled by default for security reasons.</token>
+  </line>
+  <line no="10">
+    <token name="T_COMMENT">| You should enable migrations whenever you intend to do a schema migration</token>
+  </line>
+  <line no="11">
+    <token name="T_COMMENT">| and disable it back when you're done.</token>
+  </line>
+  <line no="12">
+    <token name="T_COMMENT">|</token>
+  </line>
+  <line no="13">
+    <token name="T_COMMENT">*/</token>
+  </line>
+  <line no="14">
+    <token name="T_VARIABLE">$config</token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'migration_enabled'</token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">FALSE</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="15"/>
+  <line no="16">
+    <token name="T_COMMENT">/*</token>
+  </line>
+  <line no="17">
+    <token name="T_COMMENT">|--------------------------------------------------------------------------</token>
+  </line>
+  <line no="18">
+    <token name="T_COMMENT">| Migration Type</token>
+  </line>
+  <line no="19">
+    <token name="T_COMMENT">|--------------------------------------------------------------------------</token>
+  </line>
+  <line no="20">
+    <token name="T_COMMENT">|</token>
+  </line>
+  <line no="21">
+    <token name="T_COMMENT">| Migration file names may be based on a sequential identifier or on</token>
+  </line>
+  <line no="22">
+    <token name="T_COMMENT">| a timestamp. Options are:</token>
+  </line>
+  <line no="23">
+    <token name="T_COMMENT">|</token>
+  </line>
+  <line no="24">
+    <token name="T_COMMENT">|   'sequential' = Sequential migration naming (001_add_blog.php)</token>
+  </line>
+  <line no="25">
+    <token name="T_COMMENT">|   'timestamp'  = Timestamp migration naming (20121031104401_add_blog.php)</token>
+  </line>
+  <line no="26">
+    <token name="T_COMMENT">|                  Use timestamp format YYYYMMDDHHIISS.</token>
+  </line>
+  <line no="27">
+    <token name="T_COMMENT">|</token>
+  </line>
+  <line no="28">
+    <token name="T_COMMENT">| Note: If this configuration value is missing the Migration library</token>
+  </line>
+  <line no="29">
+    <token name="T_COMMENT">|       defaults to 'sequential' for backward compatibility with CI2.</token>
+  </line>
+  <line no="30">
+    <token name="T_COMMENT">|</token>
+  </line>
+  <line no="31">
+    <token name="T_COMMENT">*/</token>
+  </line>
+  <line no="32">
+    <token name="T_VARIABLE">$config</token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'migration_type'</token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'timestamp'</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="33"/>
+  <line no="34">
+    <token name="T_COMMENT">/*</token>
+  </line>
+  <line no="35">
+    <token name="T_COMMENT">|--------------------------------------------------------------------------</token>
+  </line>
+  <line no="36">
+    <token name="T_COMMENT">| Migrations table</token>
+  </line>
+  <line no="37">
+    <token name="T_COMMENT">|--------------------------------------------------------------------------</token>
+  </line>
+  <line no="38">
+    <token name="T_COMMENT">|</token>
+  </line>
+  <line no="39">
+    <token name="T_COMMENT">| This is the name of the table that will store the current migrations state.</token>
+  </line>
+  <line no="40">
+    <token name="T_COMMENT">| When migrations runs it will store in a database table which migration</token>
+  </line>
+  <line no="41">
+    <token name="T_COMMENT">| level the system is at. It then compares the migration level in this</token>
+  </line>
+  <line no="42">
+    <token name="T_COMMENT">| table to the $config['migration_version'] if they are not the same it</token>
+  </line>
+  <line no="43">
+    <token name="T_COMMENT">| will migrate up. This must be set.</token>
+  </line>
+  <line no="44">
+    <token name="T_COMMENT">|</token>
+  </line>
+  <line no="45">
+    <token name="T_COMMENT">*/</token>
+  </line>
+  <line no="46">
+    <token name="T_VARIABLE">$config</token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'migration_table'</token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'migrations'</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="47"/>
+  <line no="48">
+    <token name="T_COMMENT">/*</token>
+  </line>
+  <line no="49">
+    <token name="T_COMMENT">|--------------------------------------------------------------------------</token>
+  </line>
+  <line no="50">
+    <token name="T_COMMENT">| Auto Migrate To Latest</token>
+  </line>
+  <line no="51">
+    <token name="T_COMMENT">|--------------------------------------------------------------------------</token>
+  </line>
+  <line no="52">
+    <token name="T_COMMENT">|</token>
+  </line>
+  <line no="53">
+    <token name="T_COMMENT">| If this is set to TRUE when you load the migrations class and have</token>
+  </line>
+  <line no="54">
+    <token name="T_COMMENT">| $config['migration_enabled'] set to TRUE the system will auto migrate</token>
+  </line>
+  <line no="55">
+    <token name="T_COMMENT">| to your latest migration (whatever $config['migration_version'] is</token>
+  </line>
+  <line no="56">
+    <token name="T_COMMENT">| set to). This way you do not have to call migrations anywhere else</token>
+  </line>
+  <line no="57">
+    <token name="T_COMMENT">| in your code to have the latest migration.</token>
+  </line>
+  <line no="58">
+    <token name="T_COMMENT">|</token>
+  </line>
+  <line no="59">
+    <token name="T_COMMENT">*/</token>
+  </line>
+  <line no="60">
+    <token name="T_VARIABLE">$config</token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'migration_auto_latest'</token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">FALSE</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="61"/>
+  <line no="62">
+    <token name="T_COMMENT">/*</token>
+  </line>
+  <line no="63">
+    <token name="T_COMMENT">|--------------------------------------------------------------------------</token>
+  </line>
+  <line no="64">
+    <token name="T_COMMENT">| Migrations version</token>
+  </line>
+  <line no="65">
+    <token name="T_COMMENT">|--------------------------------------------------------------------------</token>
+  </line>
+  <line no="66">
+    <token name="T_COMMENT">|</token>
+  </line>
+  <line no="67">
+    <token name="T_COMMENT">| This is used to set migration version that the file system should be on.</token>
+  </line>
+  <line no="68">
+    <token name="T_COMMENT">| If you run $this-&gt;migration-&gt;current() this is the version that schema will</token>
+  </line>
+  <line no="69">
+    <token name="T_COMMENT">| be upgraded / downgraded to.</token>
+  </line>
+  <line no="70">
+    <token name="T_COMMENT">|</token>
+  </line>
+  <line no="71">
+    <token name="T_COMMENT">*/</token>
+  </line>
+  <line no="72">
+    <token name="T_VARIABLE">$config</token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'migration_version'</token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_LNUMBER">0</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="73"/>
+  <line no="74">
+    <token name="T_COMMENT">/*</token>
+  </line>
+  <line no="75">
+    <token name="T_COMMENT">|--------------------------------------------------------------------------</token>
+  </line>
+  <line no="76">
+    <token name="T_COMMENT">| Migrations Path</token>
+  </line>
+  <line no="77">
+    <token name="T_COMMENT">|--------------------------------------------------------------------------</token>
+  </line>
+  <line no="78">
+    <token name="T_COMMENT">|</token>
+  </line>
+  <line no="79">
+    <token name="T_COMMENT">| Path to your migrations folder.</token>
+  </line>
+  <line no="80">
+    <token name="T_COMMENT">| Typically, it will be within your application path.</token>
+  </line>
+  <line no="81">
+    <token name="T_COMMENT">| Also, writing permission is required within the migrations path.</token>
+  </line>
+  <line no="82">
+    <token name="T_COMMENT">|</token>
+  </line>
+  <line no="83">
+    <token name="T_COMMENT">*/</token>
+  </line>
+  <line no="84">
+    <token name="T_VARIABLE">$config</token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'migration_path'</token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">APPPATH</token>
+    <token name="T_PHPDOX_DOT">.</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'migrations/'</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="85"/>
+</source>

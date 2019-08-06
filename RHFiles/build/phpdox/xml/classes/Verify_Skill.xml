@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="Verify_Skill" namespace="" name="Verify_Skill" abstract="false" final="false" start="4" end="30">
+  <file path="/opt/lampp/htdocs/poc2/application/libraries" file="Verify_Skill.php" realpath="/opt/lampp/htdocs/poc2/application/libraries/Verify_Skill.php" size="980" time="2019-02-22T22:52:45+01:00" unixtime="1550872365" sha1="78549103f4fab472c9cc52e64c97fa50314fac95" relative="libraries/Verify_Skill.php"/>
+  <member name="skill" visibility="public" static="false" line="6"/>
+  <member name="CI" visibility="protected" static="false" line="7"/>
+  <constructor name="__construct" start="9" end="13" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="skill" byreference="false" type="{unknown}" default="NULL"/>
+  </constructor>
+  <method name="verify_created_skill" start="15" end="28" abstract="false" final="false" static="false" visibility="public">
+    <inline>
+      <comment value="Custom validation for Bad words!" line="25"/>
+    </inline>
+  </method>
+</class>

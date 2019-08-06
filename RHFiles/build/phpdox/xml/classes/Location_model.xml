@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="Location_model" namespace="" name="Location_model" abstract="false" final="false" start="3" end="10">
+  <file path="/opt/lampp/htdocs/poc2/application/models" file="Location_model.php" realpath="/opt/lampp/htdocs/poc2/application/models/Location_model.php" size="233" time="2019-01-16T00:29:54+01:00" unixtime="1547594994" sha1="b123c5dd32f0d1cf6e0734ebf8b99dbe1c21db68" relative="models/Location_model.php"/>
+  <extends full="CI_Model" namespace="" name="CI_Model" unresolved="true"/>
+  <method name="read_location" start="5" end="9" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="location_id" byreference="false" type="{unknown}"/>
+  </method>
+</class>

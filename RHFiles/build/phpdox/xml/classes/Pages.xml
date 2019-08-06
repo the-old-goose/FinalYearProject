@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="Pages" namespace="" name="Pages" abstract="false" final="false" start="13" end="41">
+  <file path="/opt/lampp/htdocs/poc2/application/controllers" file="Pages.php" realpath="/opt/lampp/htdocs/poc2/application/controllers/Pages.php" size="1179" time="2019-02-18T15:38:03+01:00" unixtime="1550500683" sha1="bda333d1a14c2da2edf84158f4dfaa27cd21ea6a" relative="controllers/Pages.php"/>
+  <docblock>
+    <description compact="This Class extends the CI_controller and is used to display static pages in the site.">The page as a variable is passed in the URL and the corrisponding view is routed
+and displayed to the user.</description>
+    <see value="&lt;https://www.codeigniter.com/userguide3/tutorial/static_pages.html&gt;"/>
+  </docblock>
+  <extends full="CI_Controller" namespace="" name="CI_Controller" unresolved="true"/>
+  <method name="view" start="22" end="40" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="This function will load the corrisponding view along with the page header and footer.">If the $page provided does not exist in the views folder, 404 error will be displayed.</description>
+      <param description="Name of a page in the site." type="string" variable="$page"/>
+    </docblock>
+    <parameter name="page" byreference="false" type="string" default="'home'"/>
+  </method>
+</class>

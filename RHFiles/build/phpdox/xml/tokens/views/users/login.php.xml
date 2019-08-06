@@ -1,0 +1,94 @@
+<?xml version="1.0"?>
+<source xmlns="http://xml.phpdox.net/token">
+  <file xmlns="http://xml.phpdox.net/src" path="/opt/lampp/htdocs/poc2/application/views/users" file="login.php" realpath="/opt/lampp/htdocs/poc2/application/views/users/login.php" size="810" time="2019-02-24T19:28:10+01:00" unixtime="1551032890" sha1="a496b780740cf2c8297577cbdec3d0e656b12ec1" relative="views/users/login.php"/>
+  <line no="1">
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_ECHO">echo</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">validation_errors</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="2"/>
+  <line no="3"/>
+  <line no="4">
+    <token name="T_INLINE_HTML">&lt;div class="row top-padding"&gt;</token>
+  </line>
+  <line no="5"/>
+  <line no="6">
+    <token name="T_INLINE_HTML">    &lt;div class="four columns full-height"&gt;&lt;/div&gt;</token>
+  </line>
+  <line no="7"/>
+  <line no="8">
+    <token name="T_INLINE_HTML">      &lt;div class="four columns third-height"&gt;</token>
+  </line>
+  <line no="9">
+    <token name="T_INLINE_HTML">        &lt;div id="signup"&gt;</token>
+  </line>
+  <line no="10">
+    <token name="T_INLINE_HTML">                                </token>
+  </line>
+  <line no="11">
+    <token name="T_INLINE_HTML">          </token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_ECHO">echo</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">form_open</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'users/login'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="12">
+    <token name="T_INLINE_HTML">                &lt;h1&gt;Log In&lt;/h1&gt;</token>
+  </line>
+  <line no="13">
+    <token name="T_INLINE_HTML">                &lt;label&gt;Email&lt;/label&gt;</token>
+  </line>
+  <line no="14">
+    <token name="T_INLINE_HTML">                &lt;input class="login-input" type='text' maxlength='255' name='email' value='hoosive@hotmail.co.uk'&gt;&lt;br&gt;</token>
+  </line>
+  <line no="15">
+    <token name="T_INLINE_HTML">                &lt;label&gt;Password&lt;/label&gt;</token>
+  </line>
+  <line no="16">
+    <token name="T_INLINE_HTML">                &lt;input class="login-input" type='password' maxlength='40' name='pass' value='test1'&gt;&lt;br&gt;</token>
+  </line>
+  <line no="17">
+    <token name="T_INLINE_HTML">                &lt;input class='btn' type='submit' value='Login'&gt;</token>
+  </line>
+  <line no="18"/>
+  <line no="19">
+    <token name="T_INLINE_HTML">          </token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_ECHO">echo</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">form_close</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="20">
+    <token name="T_INLINE_HTML">                </token>
+  </line>
+  <line no="21">
+    <token name="T_INLINE_HTML">        &lt;/div&gt;</token>
+  </line>
+  <line no="22">
+    <token name="T_INLINE_HTML">      &lt;/div&gt;</token>
+  </line>
+  <line no="23"/>
+  <line no="24">
+    <token name="T_INLINE_HTML">    &lt;div class="four columns full-height"&gt;&lt;/div&gt;</token>
+  </line>
+  <line no="25"/>
+  <line no="26">
+    <token name="T_INLINE_HTML">&lt;/div&gt;</token>
+  </line>
+  <line no="27"/>
+  <line no="28"/>
+</source>

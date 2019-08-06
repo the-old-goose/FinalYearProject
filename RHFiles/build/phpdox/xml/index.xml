@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index xmlns="http://xml.phpdox.net/src" basedir="/opt/lampp/htdocs/poc2/application">
+  <namespace name="">
+    <class name="ProfilerEnabler" src="hooks/hooks.profiler.php" xml="classes/ProfilerEnabler.xml"/>
+    <class name="Availability" src="libraries/Availability.php" xml="classes/Availability.xml"/>
+    <class name="Gravatar" src="libraries/Gravatar.php" xml="classes/Gravatar.xml"/>
+    <class name="Verify_User" src="libraries/Verify_User.php" xml="classes/Verify_User.xml"/>
+    <class name="User_Input" src="libraries/User_Input.php" xml="classes/User_Input.xml"/>
+    <class name="Verify_Skill" src="libraries/Verify_Skill.php" xml="classes/Verify_Skill.xml"/>
+    <class name="User_model" src="models/User_model.php" description="The user model is used to carry out database queries on the User table, Create and Read functionality so far" xml="classes/User_model.xml"/>
+    <class name="Proposal_model" src="models/Proposal_model.php" xml="classes/Proposal_model.xml"/>
+    <class name="Trade_model" src="models/Trade_model.php" xml="classes/Trade_model.xml"/>
+    <class name="Location_model" src="models/Location_model.php" xml="classes/Location_model.xml"/>
+    <class name="Skill_model" src="models/Skill_model.php" description="The skill model is used to carry out the database queries on the Skill table , most of the Read in CRUD has been implemented." xml="classes/Skill_model.xml"/>
+    <class name="Profile_model" src="models/Profile_model.php" xml="classes/Profile_model.xml"/>
+    
+    
+    
+    <class name="Tdd" src="controllers/testing/Tdd.php" xml="classes/Tdd.xml"/>
+    <class name="User_tdd" src="controllers/testing/model/User_tdd.php" xml="classes/User_tdd.xml"/>
+    
+    <class name="Trades" src="controllers/Trades.php" xml="classes/Trades.xml"/>
+    <class name="Pages" src="controllers/Pages.php" description="This Class extends the CI_controller and is used to display static pages in the site." xml="classes/Pages.xml"/>
+    <class name="Listings" src="controllers/Listings.php" xml="classes/Listings.xml"/>
+    <class name="Users" src="controllers/Users.php" description="Credit to Guide: CodeIgniter tutorial&lt;https://www.codeigniter.com/userguide3/libraries/form_validation.html&gt; Credit to Guide: Travesy media &lt;https://www.youtube.com/watch?v=qS0a4nKQ6h8&amp;index=6&amp;list=PLillGF-RfqbaP_71rOyChhjeK1swokUIS&gt; I have based my code on the approach used in the video ,implementing POST requests when registering to my api." xml="classes/Users.xml"/>
+    <class name="Profiles" src="controllers/Profiles.php" xml="classes/Profiles.xml"/>
+  <class name="Skills" src="controllers/Skills.php" description="Credit to Guide: CodeIgniter tutorial &lt;https://www.codeigniter.com/userguide3/tutorial/news_section.html&gt; Credit to Guide: CodeIgniter RestApi tutorial &lt;https://code.tutsplus.com/tutorials/working-with-restful-services-in-codeigniter--net-8814&gt;" xml="classes/Skills.xml"/></namespace>
+  <namespace name="Restserver\Libraries">
+    <class name="Format" src="libraries/Format.php" description="Format class Help convert between various formats such as XML, JSON, CSV, etc." xml="classes/Restserver_Libraries_Format.xml"/>
+    <class name="REST_Controller" src="libraries/REST_Controller.php" description="CodeIgniter Rest Controller A fully RESTful server implementation for CodeIgniter using one library, one config file and one controller." xml="classes/Restserver_Libraries_REST_Controller.xml"/>
+  </namespace>
+<namespace name="Rhfiles\API"><class name="Category" src="controllers/api/Category.php" description="This class uses the Rest library which processes HTTP requests returning resources concerning Category queries resources in many formats such as JSON,csv,html,xml by adding optional format parameters to the http request." xml="classes/Rhfiles_API_Category.xml"/><class name="Trade" src="controllers/api/Trade.php" description="This class uses the Rest library which processes HTTP requests returning resources concerning Trade queries in many formats such as JSON,csv,html,xml by adding optional format parameters to the http request." xml="classes/Rhfiles_API_Trade.xml"/><class name="Skill" src="controllers/api/Skill.php" description="This class uses the Rest library which processes HTTP requests returning resources concerning Skill queries resources in many formats such as JSON,csv,html,xml by adding optional format parameters to the http request." xml="classes/Rhfiles_API_Skill.xml"/><class name="Profile" src="controllers/api/Profile.php" description="This class uses the Rest library which processes HTTP requests returning resources concerning Profile queries in many formats such as JSON,csv,html,xml by adding optional format parameters to the http request." xml="classes/Rhfiles_API_Profile.xml"/><class name="User" src="controllers/api/User.php" description="This class uses the Rest library which processes HTTP requests returning resources concerning User queries in many formats such as JSON,csv,html,xml by adding optional format parameters to the http request." xml="classes/Rhfiles_API_User.xml"/></namespace><namespace name="Rhfile\API"/></index>

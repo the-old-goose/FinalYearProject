@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="Listings" namespace="" name="Listings" abstract="false" final="false" start="4" end="84">
+  <file path="/opt/lampp/htdocs/poc2/application/controllers" file="Listings.php" realpath="/opt/lampp/htdocs/poc2/application/controllers/Listings.php" size="3507" time="2019-02-24T21:25:25+01:00" unixtime="1551039925" sha1="15cd4ff7937349b385ede195e133149d197bd66b" relative="controllers/Listings.php"/>
+  <extends full="CI_Controller" namespace="" name="CI_Controller" unresolved="true"/>
+  <method name="view_offers" start="7" end="32" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="offset" byreference="false" type="integer" default="0"/>
+    <inline>
+      <comment value="Verfify user logged in,get user_id" line="9"/>
+      <comment value="initialize pagination" line="11"/>
+      <comment value="read offers using model" line="18"/>
+      <comment value="set no_results which will prevent foreach running in view if there is no results" line="26"/>
+    </inline>
+  </method>
+  <method name="view_sent_offers" start="34" end="60" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="offset" byreference="false" type="integer" default="0"/>
+    <inline>
+      <comment value="Verify user logged in, get user_id" line="36"/>
+      <comment value="initialize pagination" line="38"/>
+      <comment value="put inside no results" line="47"/>
+      <comment value="set no_results which will prevent foreach running in view if there is no results" line="54"/>
+    </inline>
+  </method>
+  <method name="view_skills" start="62" end="82" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="offset" byreference="false" type="integer" default="0"/>
+    <inline>
+      <comment value="Verify user logged in, get user_id" line="64"/>
+      <comment value="initialize pagination" line="66"/>
+      <comment value="Read users skills using model" line="73"/>
+      <comment value="set no_results which will prevent foreach running in view if there is no results" line="76"/>
+    </inline>
+  </method>
+</class>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="Trade_model" namespace="" name="Trade_model" abstract="false" final="false" start="3" end="513">
+  <file path="/opt/lampp/htdocs/poc2/application/models" file="Trade_model.php" realpath="/opt/lampp/htdocs/poc2/application/models/Trade_model.php" size="18859" time="2019-02-24T22:11:57+01:00" unixtime="1551042717" sha1="0b00716a457cd2a83e63079c0dce4abf04590c38" relative="models/Trade_model.php"/>
+  <extends full="CI_Model" namespace="" name="CI_Model" unresolved="true"/>
+  <method name="read_trade_history" start="5" end="70" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="user_id" byreference="false" type="{unknown}"/>
+    <inline>
+      <todo value="LIMIT 10 OFFSET 0  ORDERBY DATE DESC" line="7"/>
+      <comment value="LIMIT 10 OFFSET 0  ORDERBY DATE DESC TODO" line="40"/>
+    </inline>
+  </method>
+  <method name="create_trade" start="72" end="95" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="skill_proposal_id" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="read_skill_proposal" start="97" end="101" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="skill_proposal_id" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="read_status" start="105" end="117" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <var description="String (inprogress,complete,...)" type="object">
+        <type full="$status_check_value" namespace="" name="$status_check_value"/>
+      </var>
+    </docblock>
+    <parameter name="skill_proposal_id" byreference="false" type="{unknown}"/>
+    <parameter name="check_mode" byreference="false" type="boolean" default="FALSE"/>
+    <parameter name="status_check_value" byreference="false" type="boolean" default="FALSE"/>
+  </method>
+  <method name="update_status_as_complete" start="119" end="127" abstract="false" final="false" static="false" visibility="private">
+    <parameter name="skill_proposal_id" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="read_proposal_count" start="128" end="164" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="user_id" byreference="false" type="{unknown}"/>
+    <parameter name="as_proposer" byreference="false" type="boolean" default="FALSE"/>
+  </method>
+  <method name="read_if_user_offerer" start="165" end="180" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="current_user_id" byreference="false" type="{unknown}"/>
+    <parameter name="skill_proposal_id" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="read_accepted_date_and_opposite_username" start="183" end="222" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="current_user_id" byreference="false" type="{unknown}"/>
+    <parameter name="skill_proposal_id" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="read_proposal_as_offerer" start="224" end="296" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="user_id" byreference="false" type="{unknown}"/>
+    <parameter name="skill_proposal_id" byreference="false" type="boolean" default="FALSE"/>
+    <parameter name="limit" byreference="false" type="integer" default="5"/>
+    <parameter name="offset" byreference="false" type="integer" default="0"/>
+  </method>
+  <method name="read_proposal" start="299" end="372" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="user_id" byreference="false" type="{unknown}"/>
+    <parameter name="skill_proposal_id" byreference="false" type="boolean" default="FALSE"/>
+    <parameter name="limit" byreference="false" type="integer" default="5"/>
+    <parameter name="offset" byreference="false" type="integer" default="0"/>
+  </method>
+  <method name="start_trade" start="374" end="383" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="skill_proposal_id" byreference="false" type="{unknown}"/>
+    <parameter name="accepted_date" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="create_proposal" start="385" end="398" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="initial_skill" byreference="false" type="{unknown}"/>
+    <parameter name="offer_skill" byreference="false" type="{unknown}"/>
+    <parameter name="proposed_dates" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="read_initiator_skill" start="400" end="422" abstract="false" final="false" static="false" visibility="private">
+    <parameter name="initial_skill_id" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="read_offer_skill" start="424" end="447" abstract="false" final="false" static="false" visibility="private">
+    <parameter name="offer_skill_id" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="read_initial_skill" start="449" end="472" abstract="false" final="false" static="false" visibility="private">
+    <parameter name="initial_skill_id" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="create_initial_skill" start="474" end="482" abstract="false" final="false" static="false" visibility="private">
+    <parameter name="initial_user_skill_id" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="create_offer_skill" start="484" end="491" abstract="false" final="false" static="false" visibility="private">
+    <parameter name="offer_user_skill_id" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="create_skill_proposal" start="493" end="504" abstract="false" final="false" static="false" visibility="private">
+    <parameter name="initial_skill_id" byreference="false" type="{unknown}"/>
+    <parameter name="offer_skill_id" byreference="false" type="{unknown}"/>
+    <parameter name="proposed_dates" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="get_user_skill_id" start="506" end="512" abstract="false" final="false" static="false" visibility="private">
+    <parameter name="skill" byreference="false" type="{unknown}"/>
+  </method>
+</class>

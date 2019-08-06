@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <title>phpDox - Gravatar::get</title>
+    <link rel="stylesheet" type="text/css" href="../../css/style.css" media="screen"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+  </head>
+  <body>
+    <nav class="topnav">
+      <ul>
+        <li>
+          <div class="logo"><span>/**</span>phpDox</div>
+        </li>
+        <li class="separator">
+          <a href="../../index.xhtml">Overview</a>
+        </li>
+        <li class="separator">
+          <a href="../../namespaces.xhtml">Namespaces</a>
+        </li>
+        <li>
+          <a href="../../classes.xhtml">Classes</a>
+        </li>
+        <li class="separator">
+          <a href="../../source/index.xhtml">Source</a>
+        </li>
+      </ul>
+    </nav>
+    <div id="mainstage">
+      <div class="box">
+        <ul class="breadcrumb">
+          <li>
+            <a href="../../index.xhtml">Overview</a>
+          </li>
+          <li class="separator">
+            <a href="../../classes.xhtml">Classes</a>
+          </li>
+          <li class="separator">
+            <a href="../../classes.xhtml#"/>
+          </li>
+          <li class="separator">
+            <a title="Gravatar" href="../../classes/Gravatar.xhtml">Gravatar</a>
+          </li>
+          <li class="separator">get</li>
+        </ul>
+      </div>
+      <nav class="box">
+        <ul>
+          <li>
+            <a href="#introduction">Introduction</a>
+          </li>
+          <li>
+            <a href="#synopsis">Synopsis</a>
+          </li>
+          <li>
+            <a href="#parameter">Parameter</a>
+          </li>
+          <li>
+            <a href="#return">Return</a>
+          </li>
+          <li>
+            <a href="../../source/libraries/Gravatar.php.xhtml#line124">Source</a>
+          </li>
+        </ul>
+      </nav>
+      <section>
+        <h1><small>Gravatar::</small>get</h1>
+        <h4>Creates a URL for requesting a Gravatar image.</h4>
+        <p/>
+        <ul/>
+        <h2 id="signature">Signature</h2>
+        <div class="styled synopsis">
+          <code>public function get(string
+        $email,
+            [int
+        $size = NULL,
+            [string
+        $default_image = NULL,
+            [<a title="bool" href="../../classes/bool.xhtml">bool</a>
+        $force_default_image = NULL,
+            [string
+        $rating = NULL]]]] )
+            </code>
+        </div>
+        <h2 id="parameterlist">Parameters</h2>
+        <dl class="styled">
+          <dt><code>$email</code>
+                —
+                string</dt>
+          <dd>A registered email.</dd>
+          <dt><code>$size</code>
+                —
+                int</dt>
+          <dd>The requested size of the avarar in pixels (a square image).</dd>
+          <dt><code>$default_image</code>
+                —
+                string</dt>
+          <dd>The fallback image option: '', '404', 'mm', 'identicon', 'monsterid', 'wavatar', 'retro', 'blank'.</dd>
+          <dt><code>$force_default_image</code>
+                —
+                object</dt>
+          <dd>Enforces the fallback image to be shown.<br/><br/><br/>      </dd>
+          <dt><code>$rating</code>
+                —
+                string</dt>
+          <dd>The level of allowed self-rate of the avatar: '', 'g' (default), 'pg', 'r', 'x'.</dd>
+        </dl>
+        <h2 id="return">Returns</h2>
+        <dl class="styled">
+          <dt>string</dt>
+          <dd>Returns the URL of the avatar to be requested.<br/>When optional parameters are not set, their default values are taken
+from the configuration file application/config/gravatar.php</dd>
+        </dl>
+      </section>
+    </div>
+    <footer>
+      <span>Generated using phpDox 0.11.0-dev - Copyright (C) 2010 - 2019 by Arne Blankerts and Contributors</span>
+    </footer>
+  </body>
+</html>

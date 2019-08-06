@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="Skill_model" namespace="" name="Skill_model" abstract="false" final="false" start="9" end="312">
+  <file path="/opt/lampp/htdocs/poc2/application/models" file="Skill_model.php" realpath="/opt/lampp/htdocs/poc2/application/models/Skill_model.php" size="10778" time="2019-02-25T02:20:19+01:00" unixtime="1551057619" sha1="ce494fc57a63a0c00acf107c1e5d08ae78d24f4e" relative="models/Skill_model.php"/>
+  <docblock>
+    <description compact="The skill model is used to carry out the database queries on the Skill table , most of the Read in CRUD has been implemented."/>
+    <author value="Youcef Adoum"/>
+  </docblock>
+  <extends full="CI_Model" namespace="" name="CI_Model" unresolved="true"/>
+  <method name="get_all_count" start="17" end="20" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="This function will query the database returning the number of records in the Skill table"/>
+      <return description="Number of records in Skill Table." type="int"/>
+    </docblock>
+  </method>
+  <method name="read_users_skills_count" start="21" end="26" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="user_id" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="get_all_like_count" start="34" end="37" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="This function takes a $term and counts how many skills have a 'name' like the string $term returning the number"/>
+      <param description="A term to check against skill name attribute." type="string" variable="$term"/>
+      <return description="Number of records that have a name field like '$term'" type="int"/>
+    </docblock>
+    <parameter name="term" byreference="false" type="string" default="&quot;&quot;"/>
+  </method>
+  <method name="get_all_in_category_count" start="45" end="48" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="This function returns the number of skills where their category_id=$c_id"/>
+      <param description="A category_id to check" type="int" variable="$c_id"/>
+      <return description="Number of skill records with category_id = $c_id" type="int"/>
+    </docblock>
+    <parameter name="c_id" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="get_all" start="55" end="59" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="This function returns an Array of all the skills in the Skill table"/>
+      <return description="Array of all of the skills in the Database." type="array"/>
+    </docblock>
+  </method>
+  <method name="get_specific_skills" start="70" end="125" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="This function returns either a single skill in an array if $skill_id is set, otherwise returns an array of all the skills using a limit and offset, normally used in conjunction with pagination."/>
+      <param description="A specific skills id, Defualt=False(not passed)" type="boolean" variable="$skill_id"/>
+      <param description="A limit on the number of results returned usually defined by 'results_per_page'" type="int" variable="$limit"/>
+      <param description="The offset for finding the next set of skills,usually defined by pagination URI segment" type="int" variable="$offset"/>
+      <return description="An Associative array containing skill record(s) from the Skill table" type="array"/>
+    </docblock>
+    <parameter name="skill_id" byreference="false" type="boolean" default="FALSE"/>
+    <parameter name="limit" byreference="false" type="integer" default="5"/>
+    <parameter name="offset" byreference="false" type="integer" default="0"/>
+    <inline>
+      <comment value="exit();" line="103"/>
+      <comment value="$query= $this-&gt;db-&gt;get_where('Skill',array('skill_id'=&gt;$skill_id))" line="106"/>
+      <comment value="-&gt;join('User_Skill','Skill.skill_id = User_Skill.skill_id');" line="107"/>
+      <comment value="$query_2=$this-&gt;db-&gt;get_where('User_Skill',array('skill_id'=&gt;$skill_id));" line="122"/>
+    </inline>
+  </method>
+  <method name="read_if_user_created_skill" start="127" end="138" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="user_id" byreference="false" type="{unknown}"/>
+    <parameter name="skill_id" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="read_users_skills" start="140" end="163" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="user_id" byreference="false" type="{unknown}"/>
+    <parameter name="limit" byreference="false" type="boolean" default="FALSE"/>
+    <parameter name="offset" byreference="false" type="integer" default="0"/>
+  </method>
+  <method name="get_users_skills" start="165" end="187" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="user_id" byreference="false" type="{unknown}"/>
+    <parameter name="skill_offset" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="get_search_skills" start="197" end="223" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="This function returns an array of skills that have a name attribute like $searchterm with a limit and offset"/>
+      <param description="A string to be searched" type="string" variable="$searchterm"/>
+      <param description="The limit of results to return , usually defined by 'results_per_page'" type="int" variable="$limit"/>
+      <param description="The offset for finding the next set of skills,usually defined by pagination URI segment" type="int" variable="$offset"/>
+      <return description="An Associative array containing skill record(s) from the Skill table" type="array"/>
+    </docblock>
+    <parameter name="searchterm" byreference="false" type="string" default="&quot;&quot;"/>
+    <parameter name="limit" byreference="false" type="integer" default="5"/>
+    <parameter name="offset" byreference="false" type="integer" default="0"/>
+    <inline>
+      <comment value="$this-&gt;db-&gt;cache_on();// $this-&gt;db-&gt;cache_off();implement cache clearing!" line="199"/>
+    </inline>
+  </method>
+  <method name="get_category_search_skills" start="234" end="263" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="This function returns an array of skills that have a category_id attribute matching $c_id with a limit and offset applied."/>
+      <param description="The category_id to check" type="object" variable="$c_id">
+        <type full="number" namespace="" name="number"/>
+      </param>
+      <param description="The limit of results to return , usually defined by 'results_per_page'" type="object" variable="$limit">
+        <type full="number" namespace="" name="number"/>
+      </param>
+      <param description="The offset for finding the next set of skills,usually defined by pagination URI segment" type="object" variable="$offset">
+        <type full="number" namespace="" name="number"/>
+      </param>
+      <return description="An associative array of skills" type="array"/>
+    </docblock>
+    <parameter name="c_id" byreference="false" type="integer" default="0"/>
+    <parameter name="limit" byreference="false" type="integer" default="5"/>
+    <parameter name="offset" byreference="false" type="integer" default="0"/>
+  </method>
+  <method name="get_categories" start="271" end="275" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="This function returns an array of All the categories from the Category table"/>
+      <return description="An associative array of categories for Category table" type="array"/>
+      <todo value="Refactor into Category Model"/>
+    </docblock>
+  </method>
+  <method name="create_skill" start="283" end="311" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="user_id" byreference="false" type="{unknown}"/>
+    <parameter name="skill_name" byreference="false" type="{unknown}"/>
+    <parameter name="desc" byreference="false" type="{unknown}"/>
+    <parameter name="val" byreference="false" type="{unknown}"/>
+    <parameter name="cat_id" byreference="false" type="{unknown}"/>
+  </method>
+</class>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <title>phpDox - Users</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css" media="screen"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+  </head>
+  <body>
+    <nav class="topnav">
+      <ul>
+        <li>
+          <div class="logo"><span>/**</span>phpDox</div>
+        </li>
+        <li class="separator">
+          <a href="../index.xhtml">Overview</a>
+        </li>
+        <li class="separator">
+          <a href="../namespaces.xhtml">Namespaces</a>
+        </li>
+        <li>
+          <a href="../classes.xhtml">Classes</a>
+        </li>
+        <li class="separator">
+          <a href="../source/index.xhtml">Source</a>
+        </li>
+      </ul>
+    </nav>
+    <div id="mainstage">
+      <div class="box">
+        <ul class="breadcrumb">
+          <li>
+            <a href="../index.xhtml">Overview</a>
+          </li>
+          <li class="separator">
+            <a href="../classes.xhtml">Classes</a>
+          </li>
+          <li class="separator">Users</li>
+        </ul>
+      </div>
+      <nav class="box">
+        <ul>
+          <li>
+            <a href="#introduction">Introduction</a>
+          </li>
+          <li>
+            <a href="#synopsis">Synopsis</a>
+          </li>
+          <li>
+            <a href="#hierarchy">Hierarchy</a>
+          </li>
+          <li>
+            <a href="#tasks">Tasks</a>
+          </li>
+          <li>
+            <a href="#methods">Methods</a>
+          </li>
+          <li>
+            <a href="../source/controllers/Users.php.xhtml#line14">Source</a>
+          </li>
+        </ul>
+      </nav>
+      <section>
+        <h1 id="introduction"><small>\</small>Users</h1>
+        <h4>Credit to Guide: CodeIgniter tutorial&lt;https://www.codeigniter.com/userguide3/libraries/form_validation.html&gt; Credit to Guide: Travesy media &lt;https://www.youtube.com/watch?v=qS0a4nKQ6h8&amp;index=6&amp;list=PLillGF-RfqbaP_71rOyChhjeK1swokUIS&gt; I have based my code on the approach used in the video ,implementing POST requests when registering to my api.</h4>
+        <p>This controller deals with the login,logout and register pages.</p>
+        <ul>
+          <li>Author: Youcef Adoum</li>
+        </ul>
+        <h2 id="synopsis">Synopsis</h2>
+        <div class="synopsis">class Users
+                extends CI_Controller
+            {<br/><ul class="none"><li>// methods</li><li>public void <a title="Users" href="../classes/Users/register.xhtml">register</a>()
+                    </li><li>public void <a title="Users" href="../classes/Users/login.xhtml">login</a>()
+                    </li><li>public void <a title="Users" href="../classes/Users/logout.xhtml">logout</a>()
+                    </li><li>public bool <a title="Users" href="../classes/Users/username_exists_check.xhtml">username_exists_check</a>()
+                    </li><li>public void <a title="Users" href="../classes/Users/password_alphanumeric_check.xhtml">password_alphanumeric_check</a>()
+                    </li></ul>
+
+            }<br/></div>
+        <h2 id="hierarchy">Hierarchy</h2>
+        <div class="styled">
+          <h4>Extends</h4>
+          <ul>
+            <li>CI_Controller</li>
+          </ul>
+        </div>
+        <h2 id="tasks">Tasks</h2>
+        <table class="styled">
+          <thead>
+            <tr>
+              <th style="width:3em;">Line</th>
+              <th>Task</th>
+            </tr>
+          </thead>
+          <tr>
+            <td class="nummeric">25+</td>
+            <td>Implement cURL</td>
+          </tr>
+          <tr>
+            <td class="nummeric">161+</td>
+            <td>use model via api</td>
+          </tr>
+        </table>
+        <h2 id="methods">Methods</h2>
+        <div class="styled">
+          <h4>public</h4>
+          <ul>
+            <li id="login"><a title="Users" href="../classes/Users/login.xhtml">login()</a>
+                — This function is called when the user attempts to login , validation checks occur and if failed the page is reloaded and the failures displayed in the view.If validation is passed a GET request is sent to the api which recieves a JSON with the users ID , this is bad security practice as sending passwords, even encryted should never be done in a get request.</li>
+            <li id="logout"><a title="Users" href="../classes/Users/logout.xhtml">logout()</a>
+                — This function is called when logging out, it will unset the session data.The user is redirected to the homepage and flash data is displayed</li>
+            <li id="password_alphanumeric_check">
+              <a title="Users" href="../classes/Users/password_alphanumeric_check.xhtml">password_alphanumeric_check()</a>
+            </li>
+            <li id="register"><a title="Users" href="../classes/Users/register.xhtml">register()</a>
+                — This function is called when the user attempts to register. The fields sent by the POST request are validated using codeigniters validation library and one custom check defined in this class.</li>
+            <li id="username_exists_check"><a title="Users" href="../classes/Users/username_exists_check.xhtml">username_exists_check()</a>
+                — Example of a custom validation method,the user model will check the database to see if the username has already been registered returning true if it does not exist.</li>
+          </ul>
+        </div>
+      </section>
+    </div>
+    <footer>
+      <span>Generated using phpDox 0.11.0-dev - Copyright (C) 2010 - 2019 by Arne Blankerts and Contributors</span>
+    </footer>
+  </body>
+</html>

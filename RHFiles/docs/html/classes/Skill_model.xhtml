@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <title>phpDox - Skill_model</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css" media="screen"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+  </head>
+  <body>
+    <nav class="topnav">
+      <ul>
+        <li>
+          <div class="logo"><span>/**</span>phpDox</div>
+        </li>
+        <li class="separator">
+          <a href="../index.xhtml">Overview</a>
+        </li>
+        <li class="separator">
+          <a href="../namespaces.xhtml">Namespaces</a>
+        </li>
+        <li>
+          <a href="../classes.xhtml">Classes</a>
+        </li>
+        <li class="separator">
+          <a href="../source/index.xhtml">Source</a>
+        </li>
+      </ul>
+    </nav>
+    <div id="mainstage">
+      <div class="box">
+        <ul class="breadcrumb">
+          <li>
+            <a href="../index.xhtml">Overview</a>
+          </li>
+          <li class="separator">
+            <a href="../classes.xhtml">Classes</a>
+          </li>
+          <li class="separator">Skill_model</li>
+        </ul>
+      </div>
+      <nav class="box">
+        <ul>
+          <li>
+            <a href="#introduction">Introduction</a>
+          </li>
+          <li>
+            <a href="#synopsis">Synopsis</a>
+          </li>
+          <li>
+            <a href="#hierarchy">Hierarchy</a>
+          </li>
+          <li>
+            <a href="#tasks">Tasks</a>
+          </li>
+          <li>
+            <a href="#methods">Methods</a>
+          </li>
+          <li>
+            <a href="../source/models/Skill_model.php.xhtml#line9">Source</a>
+          </li>
+        </ul>
+      </nav>
+      <section>
+        <h1 id="introduction"><small>\</small>Skill_model</h1>
+        <h4>The skill model is used to carry out the database queries on the Skill table , most of the Read in CRUD has been implemented.</h4>
+        <p/>
+        <ul>
+          <li>Author: Youcef Adoum</li>
+        </ul>
+        <h2 id="synopsis">Synopsis</h2>
+        <div class="synopsis">class Skill_model
+                extends CI_Model
+            {<br/><ul class="none"><li>// methods</li><li>public int <a title="Skill_model" href="../classes/Skill_model/get_all_count.xhtml">get_all_count</a>()
+                    </li><li>public void <a title="Skill_model" href="../classes/Skill_model/read_users_skills_count.xhtml">read_users_skills_count</a>()
+                    </li><li>public int <a title="Skill_model" href="../classes/Skill_model/get_all_like_count.xhtml">get_all_like_count</a>()
+                    </li><li>public int <a title="Skill_model" href="../classes/Skill_model/get_all_in_category_count.xhtml">get_all_in_category_count</a>()
+                    </li><li>public array <a title="Skill_model" href="../classes/Skill_model/get_all.xhtml">get_all</a>()
+                    </li><li>public array <a title="Skill_model" href="../classes/Skill_model/get_specific_skills.xhtml">get_specific_skills</a>()
+                    </li><li>public void <a title="Skill_model" href="../classes/Skill_model/read_if_user_created_skill.xhtml">read_if_user_created_skill</a>()
+                    </li><li>public void <a title="Skill_model" href="../classes/Skill_model/read_users_skills.xhtml">read_users_skills</a>()
+                    </li><li>public void <a title="Skill_model" href="../classes/Skill_model/get_users_skills.xhtml">get_users_skills</a>()
+                    </li><li>public array <a title="Skill_model" href="../classes/Skill_model/get_search_skills.xhtml">get_search_skills</a>()
+                    </li><li>public array <a title="Skill_model" href="../classes/Skill_model/get_category_search_skills.xhtml">get_category_search_skills</a>()
+                    </li><li>public array <a title="Skill_model" href="../classes/Skill_model/get_categories.xhtml">get_categories</a>()
+                    </li><li>public void <a title="Skill_model" href="../classes/Skill_model/create_skill.xhtml">create_skill</a>()
+                    </li></ul>
+
+            }<br/></div>
+        <h2 id="hierarchy">Hierarchy</h2>
+        <div class="styled">
+          <h4>Extends</h4>
+          <ul>
+            <li>CI_Model</li>
+          </ul>
+        </div>
+        <h2 id="tasks">Tasks</h2>
+        <table class="styled">
+          <thead>
+            <tr>
+              <th style="width:3em;">Line</th>
+              <th>Task</th>
+            </tr>
+          </thead>
+          <tr>
+            <td class="nummeric">271+</td>
+            <td>Refactor into Category Model</td>
+          </tr>
+        </table>
+        <h2 id="methods">Methods</h2>
+        <div class="styled">
+          <h4>public</h4>
+          <ul>
+            <li id="create_skill">
+              <a title="Skill_model" href="../classes/Skill_model/create_skill.xhtml">create_skill()</a>
+            </li>
+            <li id="get_all"><a title="Skill_model" href="../classes/Skill_model/get_all.xhtml">get_all()</a>
+                — This function returns an Array of all the skills in the Skill table</li>
+            <li id="get_all_count"><a title="Skill_model" href="../classes/Skill_model/get_all_count.xhtml">get_all_count()</a>
+                — This function will query the database returning the number of records in the Skill table</li>
+            <li id="get_all_in_category_count"><a title="Skill_model" href="../classes/Skill_model/get_all_in_category_count.xhtml">get_all_in_category_count()</a>
+                — This function returns the number of skills where their category_id=$c_id</li>
+            <li id="get_all_like_count"><a title="Skill_model" href="../classes/Skill_model/get_all_like_count.xhtml">get_all_like_count()</a>
+                — This function takes a $term and counts how many skills have a 'name' like the string $term returning the number</li>
+            <li id="get_categories"><a title="Skill_model" href="../classes/Skill_model/get_categories.xhtml">get_categories()</a>
+                — This function returns an array of All the categories from the Category table</li>
+            <li id="get_category_search_skills"><a title="Skill_model" href="../classes/Skill_model/get_category_search_skills.xhtml">get_category_search_skills()</a>
+                — This function returns an array of skills that have a category_id attribute matching $c_id with a limit and offset applied.</li>
+            <li id="get_search_skills"><a title="Skill_model" href="../classes/Skill_model/get_search_skills.xhtml">get_search_skills()</a>
+                — This function returns an array of skills that have a name attribute like $searchterm with a limit and offset</li>
+            <li id="get_specific_skills"><a title="Skill_model" href="../classes/Skill_model/get_specific_skills.xhtml">get_specific_skills()</a>
+                — This function returns either a single skill in an array if $skill_id is set, otherwise returns an array of all the skills using a limit and offset, normally used in conjunction with pagination.</li>
+            <li id="get_users_skills">
+              <a title="Skill_model" href="../classes/Skill_model/get_users_skills.xhtml">get_users_skills()</a>
+            </li>
+            <li id="read_if_user_created_skill">
+              <a title="Skill_model" href="../classes/Skill_model/read_if_user_created_skill.xhtml">read_if_user_created_skill()</a>
+            </li>
+            <li id="read_users_skills">
+              <a title="Skill_model" href="../classes/Skill_model/read_users_skills.xhtml">read_users_skills()</a>
+            </li>
+            <li id="read_users_skills_count">
+              <a title="Skill_model" href="../classes/Skill_model/read_users_skills_count.xhtml">read_users_skills_count()</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
+    <footer>
+      <span>Generated using phpDox 0.11.0-dev - Copyright (C) 2010 - 2019 by Arne Blankerts and Contributors</span>
+    </footer>
+  </body>
+</html>
