@@ -39,13 +39,13 @@ Version 1.0
 
 ![](https://i.ibb.co/jGLdTX1/Capture-6.png)
 
-![](https://i.ibb.co/Gv9vZVw/Capture-5.png)
+![](https://i.ibb.co/SXcXkKT/Capture-5.png)
 
-![](https://i.ibb.co/b1BCwKF/Capture-3.png)
+![](https://i.ibb.co/zsRB94F/Capture-3.png)
 
-![](https://i.ibb.co/5Lyj5Ch/Capture-2.png)
+![](https://i.ibb.co/yq1k8KF/Capture-2.png)
 
-![](https://i.ibb.co/PGTSy16/Capture.png)
+![](https://i.ibb.co/RTh5KQD/Capture.png)
 
 Features
 =============
